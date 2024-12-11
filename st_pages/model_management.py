@@ -14,16 +14,28 @@ def get_available_models():
                   not in model and model.strip()]
         return models
     except Exception as e:
-        st.error(f"Ollama is not running. Make sure to have Ollama API installed (PC Restart may be needed) | Error fetching models: {e}")
+        st.warning(f"Ollama is not running. Make sure to have Ollama API installed | Error fetching models: {e}")
         return []
 
 def pull_model(model_name):
     try:
-        with st.spinner(f"Downloading model {model_name}..."):
-            subprocess.run(['ollama', 'pull', model_name], check=True)
-        st.success(f"Successfully installed {model_name}")
-    except subprocess.CalledProcessError as e:
-        st.error(f"Error pulling {model_name}: {e}")
+        with st.spinner(f'🤖 Downloading {model_name}  ... This may take a bit depending on the model size'):
+            # Run the download command
+            process = subprocess.run(
+                ['ollama', 'pull', model_name],
+                capture_output=True,
+                text=True,
+                encoding='utf-8',
+                errors='replace'
+            )
+            
+            if process.returncode == 0:
+                st.success(f"✅ Successfully installed {model_name}")
+            else:
+                st.error(f"❌ Error pulling {model_name}: {process.stderr}")
+                
+    except Exception as e:
+        st.error(f"❌ Error downloading {model_name}: {str(e)}")
 
 def run():
     # Main title with styling

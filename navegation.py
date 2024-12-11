@@ -1,7 +1,8 @@
 import streamlit as st
+import st_pages # required modules
 
 # Set page config
-st.set_page_config(page_title="Ollama Chat Interface", layout="wide", page_icon="🤖")
+st.set_page_config(page_title="TalkNexus - Ollama Chatbot Multi-Model Interface", layout="wide", page_icon="🤖")
 
 # Load custom CSS from file
 def load_css(file_name):
@@ -15,7 +16,6 @@ if 'current_page' not in st.session_state:
     st.session_state.current_page = "Home"
 
 # Header
-# Change COLOR ##############################################################################
 st.markdown(f"""
 <div class="header">
     <div class="animated-bg"></div>
@@ -25,9 +25,6 @@ st.markdown(f"""
     </div>
 </div>
 """, unsafe_allow_html=True)
-
-# Import required modules
-import st_pages
 
 # Enhanced pages definition
 PAGES = {
@@ -51,6 +48,13 @@ PAGES = {
         "description": "Interactive AI Chat",
         "badge": "Application",
         "color": "var(--highlight-color)"
+    },
+    "RAG Conversation": {
+        "icon": "chat-dots",
+        "func": st_pages.rag_chat,
+        "description": "PDF AI Chat Assistant",
+        "badge": "Application",
+        "color": "var(--highlight-color)"
     }
 }
 
@@ -60,17 +64,18 @@ st.markdown("""
 
 def navigate():
     with st.sidebar:
-        st.markdown("""
-        <div class="profile-section">
-            <div class="profile-image">🧠</div>
-            <div class="profile-info">
-                <h4> </h4>
-                <h2>Navigation Menu</h2>
-                <span class="active-badge">AI Chatbot Multi-Model Application</span>
-                <h3> </h3>
+        st.markdown('''
+        <a href="https://github.com/TsLu1s/talknexus" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+            <div class="header-container" style="cursor: pointer;">
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h1 style="font-size: 32px;">TalkNexus</h1>
+                        <span class="active-badge" style="font-size: 16px;">AI Chatbot Multi-Model Application</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        """, unsafe_allow_html=True)
+        </a>
+        ''', unsafe_allow_html=True)
 
         st.markdown('---')
 
@@ -127,8 +132,8 @@ st.markdown("""
 <div class="footer">
     <div class="footer-content">
         <p>© 2024 Powered by <a href="https://github.com/TsLu1s" target="_blank">TsLu1s </a>. 
-        Advanced Language Models & Intelligent Conversations.
-        | Project Source: <a href="https://github.com/TsLu1s/ollama-chatbot-interface" target="_blank"> Ollama Chatbot Interface</p>
+        Advanced Language Models & Intelligent Conversations
+        | Project Source: <a href="https://github.com/TsLu1s/talknexus" target="_blank"> TalkNexus</p>
     </div>
 </div>
 """, unsafe_allow_html=True)

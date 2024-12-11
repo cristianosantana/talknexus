@@ -1,131 +1,206 @@
 import streamlit as st
 import requests
-import subprocess
-import json
+from langchain.callbacks.base import BaseCallbackHandler
+from langchain.chains import ConversationChain
+from langchain.memory import ConversationBufferMemory
+from langchain.prompts import PromptTemplate
+#from langchain_ollama import ChatOllama
+from langchain_community.llms import Ollama
 
-def is_ollama_running():
-    try:
-        response = requests.get("http://localhost:11434/api/tags")
-        return response.status_code == 200
-    except requests.RequestException:
-        return False
 
-def start_ollama():
-    try:
-        subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        st.success("Ollama started successfully!")
-    except FileNotFoundError:
-        st.error("Ollama is not installed or not in the system PATH.")
+class StreamHandler(BaseCallbackHandler):
+    """
+    Custom callback handler for streaming LLM responses token by token.
+    
+    Attributes:
+        container: Streamlit container object for displaying streamed tokens
+        text (str): Accumulated response text
+    """
+    def __init__(self, container):
+        self.container = container
+        self.text = ""
+        
+    def on_llm_new_token(self, token: str, **kwargs):
+        """
+        Processes each new token from the LLM response stream.
+        
+        Args:
+            token (str): Individual token from the LLM response
+            **kwargs: Additional keyword arguments from the callback
+        """
+        try:
+            self.text += token
+            clean_text = self.text
+            
+            # Check if we need to clean up AIMessage formatting
+            if "AIMessage" in clean_text:
+                # Handle complete AIMessage format
+                if "content=\"" in clean_text:
+                    try:
+                        clean_text = clean_text.split("content=\"")[1].rsplit("\"", 1)[0]
+                    except IndexError:
+                        # If splitting fails, keep the original text
+                        pass
+                
+                # Remove any remaining AIMessage wrapper
+                clean_text = (clean_text.replace("AIMessage(", "")
+                                      .replace(", additional_kwargs={}", "")
+                                      .replace(", response_metadata={})", "")
+                                      .replace('{ "data":' , "")
+                                      .replace('}' , "")
+                )
+            
+            # Update the display with cleaned text
+            self.container.markdown(clean_text)
+            
+        except Exception as e:
+            # Log the error without disrupting the stream
+            print(f"Warning in StreamHandler: {str(e)}")
+            # Still try to display something to the user
+            self.container.markdown(self.text)
 
-def get_available_models():
+def get_ollama_models() -> list:
+    """
+    Retrieves available models from Ollama API.
+    
+    Sends GET request to Ollama API endpoint and processes response to extract
+    valid model names, filtering out failed or invalid models.
+    
+    Returns:
+        list: List of available model names, empty if API unreachable
+    """
     try:
         response = requests.get("http://localhost:11434/api/tags")
         if response.status_code == 200:
             models = response.json()
             return [model['name'] for model in models['models'] if 'failed' not in model['name'].lower()]
         return []
-    except requests.RequestException:
+    except:
         return []
 
-def chat_with_llama(prompt, model_name):
-    url = "http://localhost:11434/api/generate"
-    data = {
-        "model": model_name,
-        "prompt": prompt
-    }
-    try:
-        response = requests.post(url, json=data, stream=True)
-        response.raise_for_status()
+def get_conversation_chain(model_name: str) -> ConversationChain:
+    """
+    Initializes LangChain conversation chain with specified model.
+    
+    Args:
+        model_name (str): Name of Ollama model to use
         
-        full_response = ""
-        for line in response.iter_lines():
-            if line:
-                try:
-                    json_line = json.loads(line)
-                    if 'response' in json_line:
-                        full_response += json_line['response']
-                except json.JSONDecodeError as e:
-                    st.error(f"Error decoding JSON: {e}")
-                    st.text(f"Problematic line: {line}")
+    Returns:
+        ConversationChain: Configured conversation chain with memory and prompt template
+    """
+    # Set up Ollama LLM
+    #llm = ChatOllama(
+    #    model=model_name,
+    #    temperature=0.2,
+    #    base_url="http://localhost:11434",
+        #format="json"  # Updated to use simple string format
+    #)
+
+    # Set up Ollama LLM
+    llm = Ollama(
+        model=model_name,
+        temperature=0.2,
+        base_url="http://localhost:11434",
+        #system_prompt="You are a helpful AI assistant. Keep your answers brief and concise."
+    )
         
-        return full_response
-    except requests.RequestException as e:
-        st.error(f"Error communicating with Ollama: {e}")
-        return None
+
+    prompt = PromptTemplate(
+        input_variables=["history", "input"], 
+        template="""Current conversation:
+                    {history}
+                    Human: {input}
+                    Assistant:""")
+
+    memory = ConversationBufferMemory(return_messages=True)
+    return ConversationChain(llm=llm, memory=memory, prompt=prompt, verbose=True)
 
 def on_model_change():
-    current_model = st.session_state.model_selectbox
+    """
+    Callback function triggered when selected model changes.
     
-    # Clear messages whenever the model changes
-    if 'previous_model' in st.session_state and st.session_state.previous_model != current_model:
-        st.session_state.messages = []
-    
-    # Update the previous model
-    st.session_state.previous_model = current_model
-
+    Resets conversation state by clearing message history and conversation chain
+    to start fresh with new model.
+    """
+    st.session_state.messages = []
+    st.session_state.conversation = None
 
 def run():
-    # Main title with styling
+    """
+    Main function to run the Streamlit chat interface.
+    
+    Initializes UI components, manages conversation state, handles model selection,
+    and processes chat interactions. Implements real-time streaming of model responses
+    and maintains chat history.
+    """
     st.markdown('''
     <div class="header-container">
         <p class="header-subtitle">🤖 Chat with State-of-the-Art Language Models</p>
     </div>
     ''', unsafe_allow_html=True)
 
-    # Initialize session state variables
+    # Initialize session state
     if 'messages' not in st.session_state:
         st.session_state.messages = []
-    if 'previous_model' not in st.session_state:
-        st.session_state.previous_model = None
+    if 'conversation' not in st.session_state:
+        st.session_state.conversation = None
 
-    # Main chat interface
-    if not is_ollama_running():
-        st.warning("Ollama is not running. Make sure to have Ollama API installed (PC Restart may be needed).")
-        if st.button("Start Ollama"):
-            start_ollama()
+    # Get available models
+    models = get_ollama_models()
+    if not models:
+        st.warning(f"Ollama is not running. Make sure to have Ollama API installed")
         return
 
-    # Model selection with callback
+    # Model selection
     st.subheader("Select a Language Model:")
-    col1, col2 = st.columns([3, 6])
+    col1, _ = st.columns([2, 6])
     with col1:
         model_name = st.selectbox(
-            label="Language Model Selection",
-            options=get_available_models(),
+            "Model",
+            models,
             format_func=lambda x: f'🔮 {x}',
-            key="model_selectbox",
+            key="model_select",
             on_change=on_model_change,
             label_visibility="collapsed"
         )
-    with col2:
-        pass
 
-    st.markdown('---')
+    # Initialize conversation if needed
+    if st.session_state.conversation is None:
+        st.session_state.conversation = get_conversation_chain(model_name)
 
-    # Display chat messages
+    # Display chat history
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Chat input
-    prompt = st.chat_input(
-        f"What would you like to ask {model_name}?",
-        key="chat_input",
-    )
-
-    if prompt:
-        # Add user message to chat history
+    # Handle new user input
+    if prompt := st.chat_input(f"Chat with {model_name}"):
+        # Add user message to history
         st.session_state.messages.append({"role": "user", "content": prompt})
-
-        # Display user message
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Display assistant response
+        # Generate and display assistant response
         with st.chat_message("assistant"):
-            response = chat_with_llama(prompt, model_name)
-            if response:
-                st.markdown(response)
+            response_placeholder = st.empty()
+            
+            try:
+                # Create a new stream handler for this response
+                stream_handler = StreamHandler(response_placeholder)
+                
+                # Temporarily add stream handler to the conversation
+                st.session_state.conversation.llm.callbacks = [stream_handler]
+                
+                # Generate response
+                response = st.session_state.conversation.run(prompt)
+                
+                # Clear the stream handler after generation
+                st.session_state.conversation.llm.callbacks = []
+                
+                # Add response to message history
                 st.session_state.messages.append({"role": "assistant", "content": response})
-            else:
-                st.error(f"Failed to get a response from {model_name}. Please check if Ollama is running correctly and the model is available.")
+            
+            except Exception as e:
+                error_message = f"Error generating response: {str(e)}"
+                response_placeholder.error(error_message)
+                st.session_state.messages.append({"role": "assistant", "content": error_message})

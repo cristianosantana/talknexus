@@ -4,25 +4,27 @@
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/luísfssantos/
-[contributors-shield]: https://img.shields.io/github/contributors/TsLu1s/ollama-chatbot-interface.svg?style=for-the-badge&logo=github&logoColor=white
-[contributors-url]: https://github.com/TsLu1s/ollama-chatbot-interface/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/TsLu1s/ollama-chatbot-interface.svg?style=for-the-badge&logo=opensource&logoColor=white
-[license-url]: https://github.com/TsLu1s/ollama-chatbot-interface/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/TsLu1s/talknexus.svg?style=for-the-badge&logo=github&logoColor=white
+[contributors-url]: https://github.com/TsLu1s/talknexus/graphs/contributors
+[license-shield]: https://img.shields.io/github/license/TsLu1s/talknexus.svg?style=for-the-badge&logo=opensource&logoColor=white
+[license-url]: https://github.com/TsLu1s/talknexus/blob/main/LICENSE
 
-# Streamlit Ollama Chatbot Multi-Model Interface
+# TalkNexus: Ollama Multi-Model Chatbot & RAG Interface
 
-A comprehensive and scalable Streamlit Chatbot Application that integrates multiple language models through the Ollama API, featuring a sophisticated multi language model management system with an intuitive user interface.
+A comprehensive and scalable Streamlit Chatbot Application that integrates multiple language models through the Ollama API, featuring sophisticated model management, interactive chat interfaces, and RAG (Retrieval-Augmented Generation) capabilities for document analysis.
 
 ## 🌟 Key Features
 
 - **Multi-Model Support**: Seamlessly interact with various state-of-the-art Ollama language models including Llama, Mistral, Gemma, and 125+ more.
 - **Model Management Interface**: Easy-to-use interface for downloading, managing, and switching between different language models.
 - **Real-time Chat Interface**:  Clean interface with model-specific chat history and streamed responses.
+- **RAG-Powered Document Analysis**: Advanced document processing system supporting PDF analysis with multiple embedding models for context-aware document querying and intelligent responses.
 - **Responsive Design**: Modern, responsive UI with animated components and intuitive navigation.
 
 ## 👏 Acknowledgments
 
 * [Ollama](https://ollama.com/)
+* [Langchain](https://langchain.com/)
 * [Streamlit](https://streamlit.io/)  
 
 ## 📋 Prerequisites
@@ -34,7 +36,7 @@ A comprehensive and scalable Streamlit Chatbot Application that integrates multi
 
 ## Streamlit Demo APP
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ollama-chatbot-interface.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://talknexus.streamlit.app/)
 
 **Important Note:** Demo Version is not able to run Ollama API, run the app locally for full feature usability.
 
@@ -42,8 +44,8 @@ A comprehensive and scalable Streamlit Chatbot Application that integrates multi
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/TsLu1s/ollama-chatbot-interface.git
-cd ollama-chatbot-interface
+git clone https://github.com/TsLu1s/talknexus.git
+cd talknexus
 ```
 
 2. **Set Up Conda Environment**
@@ -91,7 +93,7 @@ streamlit run navegation.py
 <details>
 <summary>📸 View Home Page Template</summary>
 
-![Home Page](https://github.com/TsLu1s/ollama-chatbot-interface/blob/main/imgs/home_page.jpg)
+![Home Page](https://github.com/TsLu1s/talknexus/blob/main/imgs/home_page.jpg)
 </details>
 
 ### Model Management
@@ -103,7 +105,7 @@ streamlit run navegation.py
 <details>
 <summary>📸 View Model Management Template</summary>
 
-![Model Management](https://github.com/TsLu1s/ollama-chatbot-interface/blob/main/imgs/models_page.jpg)
+![Model Management](https://github.com/TsLu1s/talknexus/blob/main/imgs/models_page.jpg)
 </details>
 
 ### Chat Interface
@@ -115,8 +117,22 @@ streamlit run navegation.py
 <details>
 <summary>📸 View Chat Interface Template</summary>
 
-![Chat Interface](https://github.com/TsLu1s/ollama-chatbot-interface/blob/main/imgs/chat_page.jpg)
+![Chat Interface](https://github.com/TsLu1s/talknexus/blob/main/imgs/chat_page.jpg)
 </details>
+
+### RAG Chat Interface
+
+1. Upload PDF documents for analysis
+2. Select embedding model and language model
+3. Ask questions about your documents
+4. Receive context-aware responses based on document content
+
+<details>
+<summary>📸 View Chat Interface Template</summary>
+
+![RAG Chat Interface](https://github.com/TsLu1s/talknexus/blob/main/imgs/rag_page.jpg)
+</details>
+
 
 ## 🤝 Contributing
 
@@ -128,7 +144,7 @@ streamlit run navegation.py
 
 ## 📄 License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/TsLu1s/ollama-chatbot-interface/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/TsLu1s/talknexus/blob/main/LICENSE) for more information.
 
 ## 🔗 Contact 
  
