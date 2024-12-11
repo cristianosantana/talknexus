@@ -208,9 +208,9 @@ def setup_model_selection():
     """Setup the embedding and LLM model selection interface."""
     
     models = get_ollama_models()
-        if not models:
-            st.warning(f"Ollama is not running. Make sure to have Ollama API installed (PC Restart may be Needed)")
-            return None, None, None
+    if not models:
+        st.warning(f"Ollama is not running. Make sure to have Ollama API installed (PC Restart may be Needed)")
+        return None, None, None
     
     col1, col2 = st.columns(2)
     with col1:
