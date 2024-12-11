@@ -209,7 +209,7 @@ def setup_model_selection():
     
     models = get_ollama_models()
         if not models:
-            st.error(f"Ollama is not running. Make sure to have Ollama API installed")
+            st.warning(f"Ollama is not running. Make sure to have Ollama API installed (PC Restart may be Needed)")
             return None, None, None
     
     col1, col2 = st.columns(2)
