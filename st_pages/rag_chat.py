@@ -9,6 +9,7 @@ from langchain.chains import RetrievalQA
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import FAISS
+import nltk
 from nltk.tokenize import sent_tokenize
 import tempfile
 import os
@@ -16,6 +17,12 @@ import logging
 
 import warnings
 warnings.filterwarnings("ignore", category=Warning)
+
+# Download NLTK data at startup
+try:
+    nltk.download('punkt_tab', quiet=True)
+except Exception as e:
+    logging.warning(f"Failed to download NLTK punkt: {e}")
 
 class StreamHandler(BaseCallbackHandler):
     """
