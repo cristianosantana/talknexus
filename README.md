@@ -24,6 +24,10 @@ A comprehensive and scalable Streamlit Chatbot Application that integrates multi
 * [Langchain](https://langchain.com/)
 * [Streamlit](https://streamlit.io/)  
 
+## Streamlit Demo APP
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://talknexus-ai.streamlit.app/)
+
 ## 📋 Prerequisites
 
 - Python 3.10 or higher
