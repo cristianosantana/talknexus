@@ -31,10 +31,6 @@ A comprehensive and scalable Streamlit Chatbot Application that integrates multi
 - Streamlit
 - 8GB+ RAM (varies based on model size)
 
-## Streamlit Demo APP
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://talknexus.streamlit.app/)
-
 **Important Note:** Demo Version is not able to run Ollama API, run the app locally for full feature usability.
 
 ## ⚙️ Installation
