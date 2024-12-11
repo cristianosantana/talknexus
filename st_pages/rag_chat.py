@@ -322,14 +322,7 @@ def process_chat_message(prompt, llm_model):
 
 def run():
     """Main application function."""
-    init_session_state()
-    
-    # Check for Ollama first
-    models = get_ollama_models()
-    if not models:
-        st.warning("Ollama is not running. Make sure to have Ollama API installed")
-        return
-    
+    init_session_state()   
     render_header()
     
     st.markdown("#### 📋 Configuration")
