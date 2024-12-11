@@ -206,19 +206,19 @@ def render_header():
 
 def setup_model_selection():
     """Setup the embedding and LLM model selection interface."""
-    col1, col2 = st.columns(2)
     
+    models = get_ollama_models()
+        if not models:
+            st.error(f"Ollama is not running. Make sure to have Ollama API installed")
+            return None, None, None
+    
+    col1, col2 = st.columns(2)
     with col1:
         embedding_model = st.selectbox(
             "Select Embedding Model:",
             list(RAGChat.EMBEDDING_MODELS.keys()),
             format_func=lambda x: f"{x} - {RAGChat.EMBEDDING_MODELS[x]['description']}"
         )
-
-        models = get_ollama_models()
-        if not models:
-            st.error(f"Ollama is not running. Make sure to have Ollama API installed")
-            return None, None
             
         llm_model = st.selectbox(
             "Select Language Model:",
