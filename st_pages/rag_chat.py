@@ -217,7 +217,7 @@ def setup_model_selection():
 
         models = get_ollama_models()
         if not models:
-            st.warning(f"Ollama is not running. Make sure to have Ollama API installed")
+            st.error(f"Ollama is not running. Make sure to have Ollama API installed")
             return None, None
             
         llm_model = st.selectbox(
