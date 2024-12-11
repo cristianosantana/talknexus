@@ -1,13 +1,10 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/luísfssantos/
 [contributors-shield]: https://img.shields.io/github/contributors/TsLu1s/talknexus.svg?style=for-the-badge&logo=github&logoColor=white
 [contributors-url]: https://github.com/TsLu1s/talknexus/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/TsLu1s/talknexus.svg?style=for-the-badge&logo=opensource&logoColor=white
-[license-url]: https://github.com/TsLu1s/talknexus/blob/main/LICENSE
 
 # TalkNexus: Ollama Multi-Model Chatbot & RAG Interface
 
