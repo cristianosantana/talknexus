@@ -1,11 +1,3 @@
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Contributors][contributors-shield]][contributors-url]
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/luísfssantos/
-[contributors-shield]: https://img.shields.io/github/contributors/TsLu1s/talknexus.svg?style=for-the-badge&logo=github&logoColor=white
-[contributors-url]: https://github.com/TsLu1s/talknexus/graphs/contributors
-
 # TalkNexus: Ollama Multi-Model Chatbot & RAG Interface
 
 A comprehensive and scalable Streamlit Chatbot Application that integrates multiple language models through the Ollama API, featuring sophisticated model management, interactive chat interfaces, and RAG (Retrieval-Augmented Generation) capabilities for document analysis.
