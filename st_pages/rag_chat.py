@@ -173,7 +173,8 @@ class RAGChat:
         return RetrievalQA.from_chain_type(
             llm=llm,
             chain_type="stuff",
-            retriever=self.vectorstore.as_retriever(search_kwargs={"k": 7}),
+            retriever=self.vectorstore.as_retriever(search_kwargs={"k": 7,
+                                                                   "fetch_k": 20}),
             return_source_documents=True,
             chain_type_kwargs={"prompt": prompt}
         )
