@@ -79,11 +79,7 @@ streamlit run navegation.py
 - Access quick reference for hardware requirements
 - Find links to essential documentation and resources
 
-<details>
-<summary>📸 View Home Page Template</summary>
-
 ![Home Page](https://github.com/TsLu1s/talknexus/blob/main/imgs/home_page.jpg)
-</details>
 
 ### Model Management
 1. Navigate to the "Language Models Management" section
@@ -91,11 +87,7 @@ streamlit run navegation.py
 3. Monitor installation progress and system requirements
 4. Manage installed models through the interface
 
-<details>
-<summary>📸 View Model Management Template</summary>
-
 ![Model Management](https://github.com/TsLu1s/talknexus/blob/main/imgs/models_page.jpg)
-</details>
 
 ### Chat Interface
 1. Select a model from the dropdown menu
@@ -103,11 +95,7 @@ streamlit run navegation.py
 3. View real-time responses in the chat window
 4. Switch between models as needed
 
-<details>
-<summary>📸 View Chat Interface Template</summary>
-
 ![Chat Interface](https://github.com/TsLu1s/talknexus/blob/main/imgs/chat_page.jpg)
-</details>
 
 ### RAG Chat Interface
 
@@ -116,12 +104,7 @@ streamlit run navegation.py
 3. Ask questions about your documents
 4. Receive context-aware responses based on document content
 
-<details>
-<summary>📸 View Chat Interface Template</summary>
-
 ![RAG Chat Interface](https://github.com/TsLu1s/talknexus/blob/main/imgs/rag_page.jpg)
-</details>
-
 
 ## 🤝 Contributing
 
