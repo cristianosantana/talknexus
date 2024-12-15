@@ -228,6 +228,15 @@ def init_session_state():
         st.session_state.last_experiment_name = None
     if 'processed_files' not in st.session_state:
         st.session_state.processed_files = False
+    # Add new state variables to track changes
+    if 'previous_model' not in st.session_state:
+        st.session_state.previous_model = None
+    if 'previous_embedding' not in st.session_state:
+        st.session_state.previous_embedding = None
+    if 'previous_files' not in st.session_state:
+        st.session_state.previous_files = None
+    if 'process_ready' not in st.session_state:
+        st.session_state.process_ready = False
 
 def render_header():
     """Render the application header."""
@@ -270,26 +279,49 @@ def setup_model_selection():
         if uploaded_files:
             st.markdown(f"*{len(uploaded_files)} files selected*")
 
+    # Check for changes in model, embedding, or files
+    if (st.session_state.previous_model != llm_model or 
+        st.session_state.previous_embedding != embedding_model or 
+        st.session_state.previous_files != uploaded_files):
+        # Reset the process_ready checkbox
+        st.session_state.process_ready = False
+        st.session_state.show_chat = False
+        st.session_state.processing_completed = False
+    
+    # Update previous states
+    st.session_state.previous_model = llm_model
+    st.session_state.previous_embedding = embedding_model
+    st.session_state.previous_files = uploaded_files
+
     return uploaded_files, embedding_model, llm_model
 
 def process_documents(experiment_name, uploaded_files, embedding_model):
     """Process uploaded documents if conditions are met."""
-    if experiment_name and uploaded_files and experiment_name != st.session_state.last_experiment_name:
-        with st.spinner("📚 Processing documents..."):
-            try:
-                st.session_state.rag_system.process_pdfs(
-                    uploaded_files,
-                    embedding_model=embedding_model
-                )
-                st.success(f"✅ Successfully processed documents for experiment: {experiment_name}!")
-                st.session_state.show_chat = True
-                st.session_state.messages = []
-                st.session_state.last_experiment_name = experiment_name
-                st.session_state.processed_files = True
-            except Exception as e:
-                st.error(f"❌ Error processing documents: {str(e)}")
-    elif experiment_name and not uploaded_files:
+    # First check if we have an experiment name
+    if not experiment_name:
+        st.error("Please enter an experiment name")
+        return False
+    
+    # Then check if we have uploaded files
+    if not uploaded_files:
         st.error("Please upload PDF files first")
+        return False
+        
+    # If we have both, proceed with processing
+    with st.spinner("📚 Processing documents..."):
+        try:
+            st.session_state.rag_system.process_pdfs(
+                uploaded_files,
+                embedding_model=embedding_model
+            )
+            st.session_state.show_chat = True
+            st.session_state.messages = []
+            st.session_state.last_experiment_name = experiment_name
+            st.session_state.processed_files = True
+            return True
+        except Exception as e:
+            st.error(f"❌ Error processing documents: {str(e)}")
+            return False
 
 def handle_chat_interaction(llm_model):
     """Handle chat interface and interactions."""
@@ -369,14 +401,31 @@ def run():
     experiment_name = st.text_input(
         "📝 Name your Experiment",
         key="experiment_name",
-        placeholder="Press Enter to Apply",
+        placeholder="Enter experiment name",
     )
     
-    # Process documents
-    process_documents(experiment_name, uploaded_files, embedding_model)
+    # Use checkbox with explicit state handling
+    process_ready = st.checkbox("Start RAG Analysis", 
+                                key="process_ready", 
+                                value=st.session_state.process_ready)
+    
+    # Only attempt processing if checkbox is checked
+    if process_ready:
+        # Store processing result
+        if 'processing_completed' not in st.session_state:
+            st.session_state.processing_completed = False
+            
+        # Only process if not already completed
+        if not st.session_state.processing_completed:
+            st.session_state.processing_completed = process_documents(
+                experiment_name, uploaded_files, embedding_model
+            )
+    else:
+        # Reset processing state when checkbox is unchecked
+        st.session_state.processing_completed = False
+        st.session_state.show_chat = False
     
     # Show chat interface
     if st.session_state.show_chat:
-        st.markdown("---")
         handle_chat_interaction(llm_model)
 
