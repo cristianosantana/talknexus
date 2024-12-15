@@ -6,11 +6,12 @@ from langchain.prompts import PromptTemplate
 from langchain_community.llms import Ollama
 from langchain.schema import Document
 from langchain.chains import RetrievalQA
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings, OllamaEmbeddings
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import FAISS
 import nltk
 from nltk.tokenize import sent_tokenize
+import torch
 import tempfile
 import os
 import logging
@@ -66,23 +67,33 @@ class RAGChat:
     EMBEDDING_MODELS = {
         "bge-small": {
             "name": "BAAI/bge-small-en-v1.5",
+            "type": "huggingface",
             "description": "Optimized for retrieval tasks, good balance of speed/quality"
         },
         "bge-large": {
             "name": "BAAI/bge-large-en-v1.5",
+            "type": "huggingface",
             "description": "Highest quality, but slower and more resource intensive"
         },
         "minilm": {
             "name": "sentence-transformers/all-MiniLM-L6-v2",
+            "type": "huggingface",
             "description": "Lightweight, fast, good general purpose model"
         },
         "mpnet": {
             "name": "sentence-transformers/all-mpnet-base-v2",
+            "type": "huggingface",
             "description": "Higher quality, slower than MiniLM"
         },
         "e5-small": {
             "name": "intfloat/e5-small-v2",
+            "type": "huggingface",
             "description": "Efficient model optimized for semantic search"
+        },
+        "snowflake-arctic-embed2:568m": {
+            "name": "snowflake-arctic-embed2:568m",
+            "type": "ollama",
+            "description": "Multilingual frontier model with strong performance [Ollama Embedding Model, Download it first]"
         }
     }
 
@@ -109,6 +120,7 @@ class RAGChat:
             windows.append(" ".join(window))
         
         return windows
+
     def process_pdfs(self, pdf_files, embedding_model="bge-small"):
         try:
             all_windows = []
@@ -127,11 +139,22 @@ class RAGChat:
                                    for window in self._create_sentence_windows(text=doc.page_content, 
                                                                                window_size=4)]
             
-            embeddings = HuggingFaceEmbeddings(
-                model_name=self.EMBEDDING_MODELS[embedding_model]["name"],
-                model_kwargs={'device': 'cpu'},
-                encode_kwargs={'normalize_embeddings': True}
-            )
+            # Relevant: Detect GPU availability
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+
+            # Choose embedding type based on model configuration
+            model_config = self.EMBEDDING_MODELS[embedding_model]
+            if model_config["type"] == "ollama":
+                embeddings = OllamaEmbeddings(
+                    model=model_config["name"],
+                    base_url="http://localhost:11434"
+                )
+            else:  # huggingface
+                embeddings = HuggingFaceEmbeddings(
+                    model_name=model_config["name"],
+                    model_kwargs={'device': device},
+                    encode_kwargs={'normalize_embeddings': True}
+                )
             
             self.vectorstore = FAISS.from_documents(documents=all_windows, embedding=embeddings)
             return len(all_windows)
@@ -184,7 +207,9 @@ def get_ollama_models() -> list:
         response = requests.get("http://localhost:11434/api/tags")
         if response.status_code == 200:
             models = response.json()
-            return [model['name'] for model in models['models'] if 'failed' not in model['name'].lower()]
+            return [model['name'] for model in models['models']
+                    if all(keyword not in model['name'].lower()
+                        for keyword in ('failed', 'embed', 'bge'))]
         return []
     except:
         return []
