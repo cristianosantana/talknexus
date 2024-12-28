@@ -1,0 +1,70 @@
+2024-12-23 18:14:54 - INFO - Objeto encontrado na string: {
+    "entidade": "cliente",
+    "acao": "criar", 
+    "dados": {
+        "nome": "Ted Filipes",
+        "telefone": "3199885566"
+    }
+}
+2024-12-23 18:14:54 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Ted Filipes', 'telefone': '3199885566'}}
+2024-12-23 20:32:23 - INFO - Objeto convertido para dicionário: {'entidade': 'fornecedor', 'acao': 'criar', 'dados': {'nome': 'Multaat', 'telefone': '3266559988', 'cnpj': '5556669998877'}}
+2024-12-23 20:45:47 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-23 20:47:39 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-23 20:48:41 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-23 20:49:53 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-23 20:52:08 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Claudio', 'RG': '5658965', 'telefone': '326588975'}}
+2024-12-24 05:11:57 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 05:12:22 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:19:59 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:24:05 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:26:15 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:27:40 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:29:25 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:33:15 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:34:23 - INFO - Objeto convertido para dicionário: {'entidade': 'Adriana Rodrigues', 'acao': 'criar', 'dados': {'nome': '', 'idade': '', 'telefone': ''}}
+2024-12-24 09:36:01 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:36:58 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:38:22 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:39:28 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 09:41:50 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 19:12:01 - ERROR - Nenhum objeto JSON encontrado na string.
+2024-12-24 19:18:33 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+2024-12-24 19:23:02 - INFO - Objeto: {
+  "entidade": "cliente",
+  "acao": "criar", 
+  "dados": {
+    "nome": "Adriana Rodrigues",
+    "idade": "23",
+    "endereco": {
+      "rua": "Castro de Alencar",
+      "numero": "809",
+      "bairro": "Fragmanto"
+    }
+  }
+2024-12-24 19:23:02 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+2024-12-24 19:51:08 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Adriana Rodrigues', 'idade': '23', 'endereco': {'rua': 'Castro de Alencar', 'numero': '809', 'bairro': 'Fragmanto'}}}
+2024-12-24 19:54:47 - ERROR - Nenhum objeto encontrado na string: Entendi as regras e instruções! Estou pronto para processar a mensagem do usuário. Qual é a mensagem que você gostaria de processar?
+2024-12-24 20:00:20 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': '', 'telefone': '31999220033', 'idade': '32'}}
+2024-12-24 20:01:30 - INFO - Objeto convertido para dicionário: {'entidade': None, 'acao': None, 'dados': {}}
+2024-12-24 20:02:01 - WARNING - Nenhum objeto encontrado na string: Estou pronto para processar sua mensagem! Qual é a sua versão? (ou seja, qual é o seu pedido ou solicitação?)
+2024-12-24 20:14:54 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Adriana Rodrigues', 'idade': '23', 'endereco': {'rua': 'Castro de Alencar', 'numero': '809', 'bairro': 'Fragmanto'}}}
+2024-12-24 20:51:32 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Adriana Rodrigues', 'idade': '23', 'endereco': {'rua': 'Castro de Alencar', 'numero': '809', 'bairro': 'Fragmanto'}}}
+2024-12-24 21:03:34 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Adriana Rodrigues', 'idade': '23', 'endereco': {'rua': 'Castro de Alencar', 'numero': '809', 'bairro': 'Fragmanto'}}}
+2024-12-24 21:09:32 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'criar', 'dados': {'nome': 'Adriana Rodrigues', 'idade': '23', 'endereco': {'rua': 'Castro de Alencar', 'numero': '809'}}}
+2024-12-24 22:16:59 - INFO - Objeto convertido para dicionário: {'entidade': 'carro', 'acao': 'criar', 'dados': {'modelo': 'ATSAA', 'ano': 2018}}
+2024-12-25 10:20:26 - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2024-12-25 10:20:26 - WARNING - No sentence-transformers model found with name BAAI/bge-large-en-v1.5. Creating a new one with mean pooling.
+2024-12-25 10:20:26 - ERROR - Error processing PDFs: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like BAAI/bge-large-en-v1.5 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2024-12-25 10:20:33 - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2024-12-25 10:20:33 - WARNING - No sentence-transformers model found with name BAAI/bge-large-en-v1.5. Creating a new one with mean pooling.
+2024-12-25 10:20:33 - ERROR - Error processing PDFs: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like BAAI/bge-large-en-v1.5 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2024-12-25 10:20:48 - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2024-12-25 10:20:48 - WARNING - No sentence-transformers model found with name BAAI/bge-large-en-v1.5. Creating a new one with mean pooling.
+2024-12-25 10:20:48 - ERROR - Error processing PDFs: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like BAAI/bge-large-en-v1.5 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2024-12-25 10:20:50 - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2024-12-25 10:20:50 - WARNING - No sentence-transformers model found with name BAAI/bge-large-en-v1.5. Creating a new one with mean pooling.
+2024-12-25 10:20:50 - ERROR - Error processing PDFs: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like BAAI/bge-large-en-v1.5 is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.

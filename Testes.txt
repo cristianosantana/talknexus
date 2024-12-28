@@ -1,0 +1,87 @@
+entities_columns_required = [
+    {
+        'entity': 'marca',
+        'action': '',
+        'route': '',
+        'routes': {
+            'criar': '/cliente/criar',
+            'atualizar': '/cliente/atualizar',
+            'delete': '/cliente/delete'
+        },
+        'table': 'carro_marcas',
+        'parameters': {
+            'nome': ""
+        }
+    },
+    {
+        'entity': 'carro',
+        'action': '',
+        'route': '',
+        'routes': {
+            'criar': '/cliente/criar',
+            'atualizar': '/cliente/atualizar',
+            'delete': '/cliente/delete'
+        },
+        'table': 'carro_modelos',
+        'parameters': {
+            'nome': "", 
+            'carro_marca_id': "",
+        }
+    },
+    {
+        'entity': 'cliente',
+        'action': '',
+        'route': '',
+        'routes': {
+            'criar': '/cliente/criar',
+            'atualizar': '/cliente/atualizar',
+            'delete': '/cliente/delete'
+        },
+        'table': 'clientes',
+        'parameters': {
+            'pf': "",
+            'nome': "", 
+            'cpf': "", 
+            'telefone1': "",
+            'telefone2': "",
+            'email': ""
+        }
+    },
+    {
+        'entity': 'fornecedor',
+        'action': '',
+        'route': '',
+        'routes': {
+            'criar': '/cliente/criar',
+            'atualizar': '/cliente/atualizar',
+            'delete': '/cliente/delete'
+        },
+        'table': 'clientes',
+        'parameters': {
+            'pj': "",
+            'nome': "", 
+            'cnpj': "", 
+            'telefone1': "",
+            'telefone2': "",
+            'email': ""
+        }
+    }
+]
+
+data = {
+    'entidade': 'cliente', 
+    'acao': 'atualizar', 
+    'dados': {
+        'pf': "1",
+        'nome': "carlos soares", 
+        'cpf': "321654987", 
+        'telefone1': "3322-5566",
+        'telefone2': "3322-5566",
+        'email': "carlos@gmail.com"
+    }
+}
+
+
+if __name__ == "__main__":
+    controller = SmartController()
+    controller.handler()
