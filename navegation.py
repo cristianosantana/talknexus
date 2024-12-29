@@ -2,7 +2,7 @@ import streamlit as st
 import st_pages # required modules
 
 # Set page config
-st.set_page_config(page_title="TalkNexus - Ollama Chatbot Multi-Model Interface", layout="wide", page_icon="🤖")
+st.set_page_config(page_title="TalkNexus - Interface multimodelo do chatbot Ollama", layout="wide", page_icon="🤖")
 
 # Load custom CSS from file
 def load_css(file_name):
@@ -13,35 +13,35 @@ load_css('styles.css')
 
 # Initialize session state
 if 'current_page' not in st.session_state:
-    st.session_state.current_page = "Home"
+    st.session_state.current_page = "AI Conversation"
 
 # Header
 st.markdown(f"""
 <div class="header">
     <div class="animated-bg"></div>
     <div class="header-content">
-        <h1 class="header-title">Ollama Chatbot Multi-Model Interface</h1> 
-        <p class="header-subtitle">Advanced Language Models & Intelligent Conversations</p>
+        <h1 class="header-title">Interface multimodelo do chatbot Ollama</h1> 
+        <p class="header-subtitle">Modelos de linguagem avançados e conversas inteligentes</p>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 # Enhanced pages definition
 PAGES = {
-    "Home": {
-        "icon": "house-door",
-        "func": st_pages.home,
-        "description": "Guidelines & Overview",
-        "badge": "Informative",
-        "color": "var(--primary-color)"
-    },
-    "Language Models Management": {
-        "icon": "gear",
-        "func": st_pages.model_management,
-        "description": "Download Models",
-        "badge": "Configurations",
-        "color": "var(--secondary-color)"
-    },
+    # "Home": {
+    #     "icon": "house-door",
+    #     "func": st_pages.home,
+    #     "description": "Guidelines & Overview",
+    #     "badge": "Informative",
+    #     "color": "var(--primary-color)"
+    # },
+    # "Language Models Management": {
+    #     "icon": "gear",
+    #     "func": st_pages.model_management,
+    #     "description": "Download Models",
+    #     "badge": "Configurations",
+    #     "color": "var(--secondary-color)"
+    # },
     "AI Conversation": {
         "icon": "chat-dots",
         "func": st_pages.ai_chatbot,
@@ -49,13 +49,13 @@ PAGES = {
         "badge": "Application",
         "color": "var(--highlight-color)"
     },
-    "RAG Conversation": {
-        "icon": "chat-dots",
-        "func": st_pages.rag_chat,
-        "description": "PDF AI Chat Assistant",
-        "badge": "Application",
-        "color": "var(--highlight-color)"
-    }
+    # "RAG Conversation": {
+    #     "icon": "chat-dots",
+    #     "func": st_pages.rag_chat,
+    #     "description": "PDF AI Chat Assistant",
+    #     "badge": "Application",
+    #     "color": "var(--highlight-color)"
+    # }
 }
 
 st.markdown("""
@@ -70,7 +70,7 @@ def navigate():
                 <div class="profile-section">
                     <div class="profile-info">
                         <h1 style="font-size: 32px;">TalkNexus</h1>
-                        <span class="active-badge" style="font-size: 16px;">AI Chatbot Multi-Model Application</span>
+                        <span class="active-badge" style="font-size: 16px;">Aplicativo multimodelo de chatbot de IA</span>
                     </div>
                 </div>
             </div>

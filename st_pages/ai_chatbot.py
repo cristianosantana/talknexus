@@ -1,7 +1,7 @@
 import streamlit as st
 import json, sys, os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+sys.path.append(os.path.join(os.path.dirname(__file__), './'))
 from tools.configuracao_logger import ConfiguracaoLogger
 from tools.ollama_api import OllamaAPI
 from tools.conversational_chain_factory import ConversationalChainFactory
@@ -10,7 +10,7 @@ from tools.global_variables import GlobalVariables
 from tools.smart_controller import SmartController
 
 logger = ConfiguracaoLogger
-logger.configure_logger
+logger.configure_logger()
 ollama_api = OllamaAPI
 global_variables = GlobalVariables
 smart_controller = SmartController
@@ -44,7 +44,7 @@ def run():
     """
     st.markdown('''
     <div class="header-container">
-        <p class="header-subtitle">🤖 Chat with State-of-the-Art Language Models</p>
+        <p class="header-subtitle">🤖 Converse com modelos de linguagem de última geração</p>
     </div>
     ''', unsafe_allow_html=True)
 
@@ -57,11 +57,11 @@ def run():
     # Get available models
     models = ollama_api.get_ollama_models()
     if not models:
-        st.warning(f"Ollama is not running. Make sure to have Ollama API installed")
+        st.warning(f"Ollama não está em execução. Certifique-se de ter Ollama API instalado")
         return
 
     # Model selection
-    st.subheader("Select a Language Model:")
+    st.subheader("Selecione o Modelo:")
     col1, _ = st.columns([2, 6])
     with col1:
         model_name = st.selectbox(

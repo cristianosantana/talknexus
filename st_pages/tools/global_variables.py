@@ -7,9 +7,9 @@ class GlobalVariables:
             'method': '',
             'route': '',
             'routes': {
-                'criar': 'vendas/cliente/criar',
-                'atualizar': 'suporte/cliente/atualizar',
-                'delete': 'vendas/cliente/delete'
+                'criar': 'v3/admin/vehicles/brands',
+                'atualizar': 'v3/admin/vehicles/brands',
+                'delete': '#'
             },
             'table': 'carro_marcas',
             'parameters': {
@@ -18,31 +18,14 @@ class GlobalVariables:
             }
         },
         {
-            'entity': 'carro',
-            'action': '',
-            'method': '',
-            'route': '',
-            'routes': {
-                'criar': 'vendas/cliente/criar',
-                'atualizar': 'suporte/cliente/atualizar',
-                'delete': 'vendas/cliente/delete'
-            },
-            'table': 'carro_modelos',
-            'parameters': {
-                'id': "",
-                'nome': "", 
-                'carro_marca_id': ""
-            }
-        },
-        {
             'entity': 'cliente',
             'action': '',
             'method': '',
             'route': '',
             'routes': {
-                'criar': 'vendas/cliente/criar',
+                'criar': '#',
                 'atualizar': 'suporte/cliente/atualizar',
-                'delete': 'vendas/cliente/delete'
+                'delete': '#'
             },
             'table': 'clientes',
             'parameters': {
@@ -50,33 +33,6 @@ class GlobalVariables:
                 'pf': "",
                 'nome': "", 
                 'cpf': "", 
-                'telefone1': "",
-                'telefone2': "",
-                'email': "",
-                'cep': "",
-                'logradouro': "",
-                'numero': "",
-                'bairro': "",
-                'localidade': "",
-                'uf': ""
-            }
-        },
-        {
-            'entity': 'fornecedor',
-            'action': '',
-            'method': '',
-            'route': '',
-            'routes': {
-                'criar': 'vendas/cliente/criar',
-                'atualizar': 'suporte/cliente/atualizar',
-                'delete': 'vendas/cliente/delete'
-            },
-            'table': 'clientes',
-            'parameters': {
-                'id': "",
-                'pj': "",
-                'nome': "", 
-                'cnpj': "", 
                 'telefone1': "",
                 'telefone2': "",
                 'email': "",

@@ -1,5 +1,6 @@
 from tools.global_variables import GlobalVariables
 from tools.smart_services import SmartServices
+from tools.configuracao_logger import ConfiguracaoLogger
 
 class SmartController:
     """
@@ -7,7 +8,9 @@ class SmartController:
     """
     global_variables = GlobalVariables
     smart_services = SmartServices()
-
+    logger = ConfiguracaoLogger
+    logger.configure_logger()
+    
     def __select_route(self, data):
         """
         Seleciona rota
@@ -22,7 +25,7 @@ class SmartController:
                     case 'apagar':
                         data['method'] = 'DELETE'
                 data['route'] = data.get("routes")[el]
-
+        self.logger.write_logger("info", "Seleciona rota")
         return data
 
     def __format_data(self, entities_columns_required, data):
@@ -31,12 +34,14 @@ class SmartController:
         """
         result = {}
         for value in entities_columns_required:
-            if value.get("entity") == data.get("entidade"): 
-                value["action"] = data.get("acao")
+            if value.get("entity") == data.get("entidade"): # verifica entidades
+                value["action"] = data.get("acao") # atribui ação
                 for el in value.get("parameters"):
-                    value.get("parameters")[el] = data.get("dados")[el]
-                    result = value
-        
+                    # verifica se atributo foi passado e atribui ao paramentros
+                    if el in data.get("dados"):
+                        value.get("parameters")[el] = data.get("dados")[el]
+                        result = value # salva o objeto pronto para requisição
+        self.logger.write_logger("info", "Prepara dados")
         return result
 
     def request_api_smart(self, route, method, data):
@@ -47,11 +52,9 @@ class SmartController:
             "Authorization": f"Bearer {self.global_variables.user_token}",
             "Content-Type": "application/json"
         }
-        if method == 'PUT':
-            self.smart_services.request_base_smart(route, method, data, headers)
-            self.smart_services.request_base_smart(route, 'POST', data, headers)
-        else:    
-            self.smart_services.request_base_smart(route, method, data, headers)
+        self.logger.write_logger("info", "Realisa a requisição")
+        print(route, method, data, headers)
+        self.smart_services.request_base_smart(route, method, data, headers)
 
     def verify_params_entity(entity, params):
         """
@@ -62,9 +65,7 @@ class SmartController:
         """
         Realiza a requisição
         """
-        print(data)
         result = self.__format_data(self, self.global_variables.entities_columns_required, data)
-        print(result)
         result1 = self.__select_route(self, result)
 
         self.request_api_smart(self, result1.get("route"), result1.get("method"), result1.get("parameters"))

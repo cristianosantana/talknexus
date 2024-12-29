@@ -1,8 +1,6 @@
 from langchain.callbacks.base import BaseCallbackHandler
 from tools.configuracao_logger import ConfiguracaoLogger
 
-logger = ConfiguracaoLogger
-
 class StreamHandler(BaseCallbackHandler):
     """
     Custom callback handler for streaming LLM responses token by token.
@@ -11,7 +9,9 @@ class StreamHandler(BaseCallbackHandler):
         container: Streamlit container object for displaying streamed tokens
         text (str): Accumulated response text
     """
-
+    logger = ConfiguracaoLogger
+    logger.configure_logger()
+    
     def __init__(self, container):
         self.container = container
         self.text = ""
@@ -51,6 +51,6 @@ class StreamHandler(BaseCallbackHandler):
             
         except Exception as e:
             # Log the error without disrupting the stream
-            logger.write_logger("error", f"Warning in StreamHandler: {str(e)}")
+            self.logger.write_logger("error", f"Warning in StreamHandler: {str(e)}")
             # Still try to display something to the user
             self.container.markdown(self.text)
