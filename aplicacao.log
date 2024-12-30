@@ -210,3 +210,412 @@ A ação solicitada pelo usuário é criar uma marca com o nome "Terere".
 2024-12-28 23:21:05 - INFO - Seleciona rota
 2024-12-28 23:21:05 - INFO - Realisa a requisição
 2024-12-28 23:21:05 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 07:19:42 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 07:23:14 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 07:28:50 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 07:57:49 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 07:58:13 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 07:59:11 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 08:30:00 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 08:30:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 08:32:32 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 08:36:32 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:08:31 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:09:04 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:12:05 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:13:12 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'criar', 'dados': {'nome': 'Gogo'}}
+2024-12-30 09:13:12 - INFO - Prepara dados
+2024-12-30 09:13:12 - INFO - Seleciona rota
+2024-12-30 09:13:12 - INFO - Realisa a requisição
+2024-12-30 09:13:12 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 09:15:15 - INFO - Objeto convertido para dicionário: {'entidade': None, 'acao': None, 'dados': {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}}
+2024-12-30 09:15:15 - INFO - Prepara dados
+2024-12-30 09:24:58 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:25:37 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 09:25:37 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 09:31:10 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:32:04 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:32:04 - ERROR - Erro ao processar solicitação: Nenhum parametro encontrado!
+2024-12-30 09:33:17 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:34:07 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:40:40 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:41:43 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:41:43 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 09:45:46 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:46:42 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:46:42 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 09:49:31 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:50:18 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:50:18 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 09:51:28 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:52:10 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:52:10 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 09:55:29 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 09:56:45 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': []}
+2024-12-30 09:56:45 - INFO - Prepara dados
+2024-12-30 09:56:45 - INFO - Seleciona rota
+2024-12-30 09:56:45 - INFO - Realisa a requisição
+2024-12-30 09:56:46 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 10:04:36 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 10:05:27 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 28, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 7 column 5 (char 93)
+2024-12-30 10:05:59 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o comando que você deseja executar?
+2024-12-30 10:09:11 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 10:10:22 - INFO - Objeto convertido para dicionário: {'entidade': 'Marca', 'acao': 'buscar', 'dados': [{'nome_da_marca': 'Nike', 'descricao_da_marca': 'Roupas esportivas', 'logotipo_da_marca': 'https://example.com/logotipo-nike.png'}, {'nome_da_marca': 'Adidas', 'descricao_da_marca': 'Roupas esportivas e de treino', 'logotipo_da_marca': 'https://example.com/logotipo-adidas.png'}]}
+2024-12-30 10:10:22 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 11:01:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:02:26 - INFO - Objeto convertido para dicionário: {'entidade': 'Marca', 'acao': 'buscar', 'dados': [{'nome_da_marca': 'Nike', 'descricao_da_marca': 'Roupas esportivas', 'logotipo_da_marca': 'https://example.com/logotipo-nike.png'}, {'nome_da_marca': 'Adidas', 'descricao_da_marca': 'Roupas esportivas e de treino', 'logotipo_da_marca': 'https://example.com/logotipo-adidas.png'}]}
+2024-12-30 11:02:26 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 11:03:21 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:04:34 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 11:04:34 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 11:04:54 - WARNING - Nenhum objeto encontrado na string: Para atender ao seu pedido, preciso saber mais sobre o que você está procurando. Você gostaria de buscar todas as marcas?
+2024-12-30 11:05:38 - INFO - Objeto convertido para dicionário: {'entidade': 'Marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca XYZ', 'descricao': 'Empresa de tecnologia'}]}
+2024-12-30 11:05:38 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 11:10:38 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:11:06 - INFO - Objeto convertido para dicionário: {'entidade': 'Marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca XYZ', 'descricao': 'Empresa de tecnologia'}]}
+2024-12-30 11:11:06 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 11:11:21 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:11:35 - WARNING - Nenhum objeto encontrado na string: Para atender ao seu pedido, preciso saber mais sobre o que você está procurando. Você gostaria de buscar todas as marcas?
+2024-12-30 11:12:05 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 28, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 8 column 1 (char 85)
+2024-12-30 11:13:28 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:13:48 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o comando que você deseja executar?
+2024-12-30 11:14:23 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:14:40 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o comando que você deseja executar?
+2024-12-30 11:15:26 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'nome': 'Marca XYZ', 'descrição': 'Empresa de tecnologia especializada em soluções inovadoras.', 'código': 'MAR-001'}}
+2024-12-30 11:15:26 - INFO - Prepara dados
+2024-12-30 11:15:26 - INFO - Seleciona rota
+2024-12-30 11:15:26 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NjgwNjIsImV4cCI6MTczNTYwNDA2MiwibmJmIjoxNzM1NTY4MDYyLCJqdGkiOiI0U3dWUjUyVWY0OWNQdnpjIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.V6-VebbJ9CvVxRaFiHMKK-fr-b-Brppnz37TCO6jZpU', 'Content-Type': 'application/json'}
+2024-12-30 11:15:26 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:16:27 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': ''}
+2024-12-30 11:16:27 - INFO - Prepara dados
+2024-12-30 11:16:27 - INFO - Seleciona rota
+2024-12-30 11:16:27 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NjgwNjIsImV4cCI6MTczNTYwNDA2MiwibmJmIjoxNzM1NTY4MDYyLCJqdGkiOiI0U3dWUjUyVWY0OWNQdnpjIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.V6-VebbJ9CvVxRaFiHMKK-fr-b-Brppnz37TCO6jZpU', 'Content-Type': 'application/json'}
+2024-12-30 11:16:27 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:17:58 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:18:36 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca 1', 'telefone': '1234567890', 'idade': '10'}, {'nome': 'Marca 2', 'telefone': '9876543210', 'idade': '20'}]}
+2024-12-30 11:18:36 - INFO - Prepara dados
+2024-12-30 11:18:36 - INFO - Seleciona rota
+2024-12-30 11:18:36 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NjgyNzgsImV4cCI6MTczNTYwNDI3OCwibmJmIjoxNzM1NTY4Mjc4LCJqdGkiOiJWMzFtWXNRMFAxVGlMbHB0Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.0MjgNbcfyIKJbjo4O7tSgoLjAxFyAmmYUEpPlBcfngA', 'Content-Type': 'application/json'}
+2024-12-30 11:18:36 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:20:25 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:20:50 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca 1', 'telefone': '1234567890', 'idade': '10'}, {'nome': 'Marca 2', 'telefone': '9876543210', 'idade': '20'}]}
+2024-12-30 11:20:50 - INFO - Prepara dados
+2024-12-30 11:20:50 - INFO - Seleciona rota
+2024-12-30 11:20:50 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Njg0MjUsImV4cCI6MTczNTYwNDQyNSwibmJmIjoxNzM1NTY4NDI1LCJqdGkiOiJXd3lBRTV0MjJ5R215dmJlIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.AQVf1IoCNruSuGeATPPRSBVxzCQKdC0ak4TelzAZzww', 'Content-Type': 'application/json'}
+2024-12-30 11:20:50 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:25:46 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 11:26:42 - WARNING - Nenhum objeto encontrado na string: **Lista de Marcas**
+
+Aqui está uma lista de marcas:
+
+1. Nike
+2. Adidas
+3. Puma
+4. Reebok
+5. Under Armour
+
+Essa lista foi gerada com base na sua solicitação, mas é importante notar que não há informações específicas sobre a entidade principal mencionada pelo usuário. Se você puder fornecer mais detalhes, posso ajudá-lo a extrair os dados desejados.
+
+**Entidade Principal:** (não identificada)
+**Atributos e Valores Associados:** (não identificados)
+**Ação Solicitada:** (não identificada)
+
+Se você puder fornecer mais informações, posso ajudá-lo a processar sua solicitação e gerar um objeto JSON com os dados desejados.
+2024-12-30 11:27:45 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Nike', 'descrição': 'Marca de roupas esportivas', 'preço': 100, 'localização': 'São Paulo'}, {'nome': 'Adidas', 'descrição': 'Marca de roupas esportivas', 'preço': 120, 'localização': 'Rio de Janeiro'}]}
+2024-12-30 11:27:45 - INFO - Prepara dados
+2024-12-30 11:27:45 - INFO - Seleciona rota
+2024-12-30 11:27:45 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Njg3NDUsImV4cCI6MTczNTYwNDc0NSwibmJmIjoxNzM1NTY4NzQ1LCJqdGkiOiJtMmg3NEN2QmNwdmR1SXVKIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.8O3YzquVKNMteIh48Va3wiYOFUrJA9quLmRCzvt345o', 'Content-Type': 'application/json'}
+2024-12-30 11:27:45 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:29:04 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Nike', 'descrição': 'Marca de roupas esportivas', 'preço': 100, 'localização': 'São Paulo'}, {'nome': 'Adidas', 'descrição': 'Marca de roupas esportivas', 'preço': 120, 'localização': 'Rio de Janeiro'}]}
+2024-12-30 11:29:04 - INFO - Prepara dados
+2024-12-30 11:29:04 - INFO - Seleciona rota
+2024-12-30 11:29:04 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Njg3NDUsImV4cCI6MTczNTYwNDc0NSwibmJmIjoxNzM1NTY4NzQ1LCJqdGkiOiJtMmg3NEN2QmNwdmR1SXVKIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.8O3YzquVKNMteIh48Va3wiYOFUrJA9quLmRCzvt345o', 'Content-Type': 'application/json'}
+2024-12-30 11:29:04 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:30:14 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Nike', 'descrição': 'Marca de roupas esportivas', 'preço': 100, 'localização': 'São Paulo'}, {'nome': 'Adidas', 'descrição': 'Marca de roupas esportivas', 'preço': 120, 'localização': 'Rio de Janeiro'}]}
+2024-12-30 11:30:14 - INFO - Prepara dados
+2024-12-30 11:30:14 - INFO - Seleciona rota
+2024-12-30 11:30:14 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Njg3NDUsImV4cCI6MTczNTYwNDc0NSwibmJmIjoxNzM1NTY4NzQ1LCJqdGkiOiJtMmg3NEN2QmNwdmR1SXVKIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.8O3YzquVKNMteIh48Va3wiYOFUrJA9quLmRCzvt345o', 'Content-Type': 'application/json'}
+2024-12-30 11:30:14 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 11:54:49 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:10:03 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:10:37 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:10:37 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:10:37 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:10:37 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:15:11 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:15:26 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:15:26 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:15:26 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:15:26 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:16:11 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:16:11 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:16:11 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:16:11 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:16:31 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:16:31 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:16:31 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:16:31 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:17:29 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o problema ou tarefa que você gostaria de realizar? Por favor, forneça as informações necessárias e eu farei o meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+2024-12-30 12:18:08 - WARNING - Nenhum objeto encontrado na string: Você está procurando por marcas, certo? Qual é o problema ou tarefa que você gostaria de realizar com relação às marcas? Por favor, forneça as informações necessárias e eu farei o meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+2024-12-30 12:18:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:18:56 - WARNING - Nenhum objeto encontrado na string: Você está procurando por marcas, certo? Qual é o problema ou tarefa que você gostaria de realizar com relação às marcas? Por favor, forneça as informações necessárias e eu farei o meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+2024-12-30 12:19:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:19:45 - WARNING - Nenhum objeto encontrado na string: Para começar a processar sua solicitação, preciso saber mais sobre o que você está procurando. Você gostaria de buscar uma marca?
+2024-12-30 12:21:25 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:21:25 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:21:25 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:21:25 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:21:42 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:21:42 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:21:42 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:21:42 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:22:11 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:22:11 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:22:11 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:22:11 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:22:53 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar marcas. Qual é a entidade principal mencionada (ex.: "cliente", "produto", "projeto")? E qual é a ação solicitada (ex.: "criar", "atualizar", "buscar", "apagar")?
+2024-12-30 12:23:29 - WARNING - Nenhum objeto encontrado na string: Você deseja buscar marcas. Qual é a entidade principal mencionada (ex.: "cliente", "produto", "projeto")? E qual é a ação solicitada (ex.: "criar", "atualizar", "buscar", "apagar")?
+2024-12-30 12:25:11 - WARNING - Nenhum objeto encontrado na string: Eu estou pronto para processar sua solicitação! Você deseja buscar marcas. Qual é a entidade principal mencionada (ex.: "cliente", "produto", "projeto")? E qual é a ação solicitada (ex.: "criar", "atualizar", "buscar", "apagar")?
+2024-12-30 12:28:04 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:28:45 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': '', 'descrição': ''}]}
+2024-12-30 12:28:45 - INFO - Prepara dados
+2024-12-30 12:28:45 - INFO - Seleciona rota
+2024-12-30 12:28:45 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NzI0ODQsImV4cCI6MTczNTYwODQ4NCwibmJmIjoxNzM1NTcyNDg0LCJqdGkiOiJPN0JSajJUR0FlWXdVUWZYIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.n8XvLNNn8Bn6Wf3ckxpOFZuqpuV3nbU_8w1a-1Te3CI', 'Content-Type': 'application/json'}
+2024-12-30 12:28:46 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 12:29:17 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': '', 'descrição': ''}]}
+2024-12-30 12:29:17 - INFO - Prepara dados
+2024-12-30 12:29:17 - INFO - Seleciona rota
+2024-12-30 12:29:17 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NzI0ODQsImV4cCI6MTczNTYwODQ4NCwibmJmIjoxNzM1NTcyNDg0LCJqdGkiOiJPN0JSajJUR0FlWXdVUWZYIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.n8XvLNNn8Bn6Wf3ckxpOFZuqpuV3nbU_8w1a-1Te3CI', 'Content-Type': 'application/json'}
+2024-12-30 12:29:17 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 12:31:55 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:32:25 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': '', 'descrição': ''}]}
+2024-12-30 12:32:25 - INFO - Prepara dados
+2024-12-30 12:32:25 - INFO - Seleciona rota
+2024-12-30 12:32:25 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NzI3MTQsImV4cCI6MTczNTYwODcxNCwibmJmIjoxNzM1NTcyNzE0LCJqdGkiOiJBNTdSOEFOSmEySDQwTURMIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.VOOTwAFc-zgF_NIUUHpuV5QGFYM7E0ei_WNg6mFw3XU', 'Content-Type': 'application/json'}
+2024-12-30 12:32:26 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 12:37:50 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:38:16 - WARNING - Nenhum objeto encontrado na string: Para processar sua solicitação, preciso saber mais sobre o que você está procurando. Você mencionou "busca marcas", mas não forneceu informações suficientes para identificar a entidade principal e os atributos associados.
+
+Por favor, forneça mais detalhes sobre as marcas que você está procurando, como nome, descrição ou qualquer outro atributo relevante. Isso me ajudará a extrair as informações necessárias e gerar uma resposta JSON conforme solicitado.
+2024-12-30 12:39:42 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:39:42 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:40:23 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:40:23 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 12:54:29 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 29, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2024-12-30 12:55:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 12:55:31 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 12:55:31 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 13:13:35 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:33:28 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:35:08 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome_marca': '', 'descricao_marca': '', 'codigo_marca': ''}]}
+2024-12-30 13:35:08 - INFO - Prepara dados
+2024-12-30 13:35:08 - INFO - Seleciona rota
+2024-12-30 13:35:08 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1NzY0MDgsImV4cCI6MTczNTYxMjQwOCwibmJmIjoxNzM1NTc2NDA4LCJqdGkiOiI3Mm5NeEprTVNoUDFwQ0NGIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.XQb0FYoeNlQ9iBFo25AMt_5ecM1yGhOXhSG_wF84p1o', 'Content-Type': 'application/json'}
+2024-12-30 13:35:08 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 13:45:41 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:47:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:47:15 - WARNING - Nenhum objeto encontrado na string: IA: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Quer buscar marcas?
+2024-12-30 13:48:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:48:47 - INFO - Objeto convertido para dicionário: {'entidade': 'marcas', 'acao': 'buscar', 'dados': ''}
+2024-12-30 13:48:47 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 13:52:49 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:54:15 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': ''}
+2024-12-30 13:54:15 - INFO - Prepara dados
+2024-12-30 13:54:15 - INFO - Seleciona rota
+2024-12-30 13:54:15 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Nzc1NjgsImV4cCI6MTczNTYxMzU2OCwibmJmIjoxNzM1NTc3NTY4LCJqdGkiOiJCQWh2bVFRNENPQjdvYWJMIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.koeYtKL-zfXhWKNK1uTA1k0BxR0xfPLPsnBlif9kdTE', 'Content-Type': 'application/json'}
+2024-12-30 13:54:15 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 13:55:49 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': ''}
+2024-12-30 13:55:49 - INFO - Prepara dados
+2024-12-30 13:55:49 - INFO - Seleciona rota
+2024-12-30 13:55:49 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Nzc1NjgsImV4cCI6MTczNTYxMzU2OCwibmJmIjoxNzM1NTc3NTY4LCJqdGkiOiJCQWh2bVFRNENPQjdvYWJMIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.koeYtKL-zfXhWKNK1uTA1k0BxR0xfPLPsnBlif9kdTE', 'Content-Type': 'application/json'}
+2024-12-30 13:55:49 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 13:58:53 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 13:59:17 - WARNING - Nenhum objeto encontrado na string: Para começar a processar sua solicitação, preciso saber mais sobre o que você está procurando. Você gostaria de criar, atualizar, buscar ou apagar algo? Por favor, forneça mais detalhes sobre a entidade e os atributos relevantes.
+2024-12-30 13:59:58 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 14:00:19 - WARNING - Nenhum objeto encontrado na string: Para começar a processar sua solicitação, preciso saber mais sobre o que você está procurando. Você gostaria de criar, atualizar, buscar ou apagar uma entidade? Por favor, forneça mais detalhes sobre a entidade e a ação solicitada.
+2024-12-30 14:00:55 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca 1', 'descricao': 'Descrição da marca 1', 'categoria': 'Categoria 1', 'anoLancamento': '2020'}, {'nome': 'Marca 2', 'descricao': 'Descrição da marca 2', 'categoria': 'Categoria 2', 'anoLancamento': '2019'}]}
+2024-12-30 14:00:55 - INFO - Prepara dados
+2024-12-30 14:00:55 - INFO - Seleciona rota
+2024-12-30 14:00:55 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Nzc5OTcsImV4cCI6MTczNTYxMzk5NywibmJmIjoxNzM1NTc3OTk3LCJqdGkiOiJOQmhMRURvcHdGbE02YjRjIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.11JKIPp26IDt0tyazjAFpB7I9YI4B-VgZFES2Kf4We8', 'Content-Type': 'application/json'}
+2024-12-30 14:00:55 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 14:01:41 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca 1', 'descricao': 'Descrição da marca 1', 'categoria': 'Categoria 1', 'anoLancamento': '2020'}, {'nome': 'Marca 2', 'descricao': 'Descrição da marca 2', 'categoria': 'Categoria 2', 'anoLancamento': '2019'}]}
+2024-12-30 14:01:41 - INFO - Prepara dados
+2024-12-30 14:01:41 - INFO - Seleciona rota
+2024-12-30 14:01:41 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1Nzc5OTcsImV4cCI6MTczNTYxMzk5NywibmJmIjoxNzM1NTc3OTk3LCJqdGkiOiJOQmhMRURvcHdGbE02YjRjIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.11JKIPp26IDt0tyazjAFpB7I9YI4B-VgZFES2Kf4We8', 'Content-Type': 'application/json'}
+2024-12-30 14:01:41 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 14:46:20 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 14:47:00 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 14:47:31 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Quer buscar marcas, certo? Vamos lá!
+2024-12-30 14:49:56 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 121 (char 120)
+2024-12-30 14:57:29 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 14:58:03 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Quer buscar as marcas, certo? Vamos lá!
+2024-12-30 15:01:24 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 7 column 9 (char 158)
+2024-12-30 15:01:50 - WARNING - Nenhum objeto encontrado na string: Para começar a processar sua solicitação, preciso saber mais sobre o que você está procurando. Você gostaria de criar, atualizar, buscar ou apagar uma entidade? Por favor, forneça mais detalhes sobre a entidade e a ação solicitada.
+2024-12-30 15:02:22 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca X', 'descrição': 'Marca de produtos de alta qualidade.', 'código': 'MX001', 'categoria': 'Eletrônicos'}]}
+2024-12-30 15:02:22 - INFO - Prepara dados
+2024-12-30 15:02:22 - INFO - Seleciona rota
+2024-12-30 15:02:22 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODE0NDgsImV4cCI6MTczNTYxNzQ0OCwibmJmIjoxNzM1NTgxNDQ4LCJqdGkiOiJPV0d5MExzeHRyS1BaS0tVIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.Jvl1KFPKxwJ9o8LamECXUfHF9fS3fYsym__tZlF7fOc', 'Content-Type': 'application/json'}
+2024-12-30 15:02:22 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 15:41:42 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 15:42:05 - INFO - Objeto convertido para dicionário: {'entidade': 'cliente', 'acao': 'buscar', 'dados': [{'nome': 'João Silva', 'telefone': '1199123456', 'idade': 30, 'endereço': 'Rua das Acácias, 123 - São Paulo, SP', 'data_nascimento': '1992-02-12'}]}
+2024-12-30 15:42:05 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 15:44:06 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 15:44:31 - INFO - Objeto convertido para dicionário: {'entidade': 'carro', 'acao': 'buscar', 'dados': [{'marca': 'Ford', 'modelo': 'Focus', 'ano': 2015, 'capacidade': 1200, 'tipo': 'hatchback'}, {'marca': 'Volkswagen', 'modelo': 'Gol', 'ano': 2018, 'capacidade': 1300, 'tipo': 'sedan'}]}
+2024-12-30 15:44:31 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 15:47:06 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 15:47:27 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca X', 'descrição': 'Marca de produtos de alta qualidade.', 'código': 'MX001', 'categoria': 'Eletrônicos'}]}
+2024-12-30 15:47:27 - INFO - Prepara dados
+2024-12-30 15:47:27 - INFO - Seleciona rota
+2024-12-30 15:47:27 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODQ0MjUsImV4cCI6MTczNTYyMDQyNSwibmJmIjoxNzM1NTg0NDI1LCJqdGkiOiJwa0E3eTI5S1Z6MWc4elcyIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.0h-SYSEb7xW0ePUeX4mLT8JS-F_ZfF39fdhtxn_Sz78', 'Content-Type': 'application/json'}
+2024-12-30 15:47:27 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 15:57:19 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 15:58:08 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o problema ou tarefa que você gostaria de realizar? Por favor, forneça mais informações sobre a entidade e a ação que você deseja executar. Eu farei meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+2024-12-30 15:58:57 - WARNING - Nenhum objeto encontrado na string: Você deseja buscar uma marca. Qual é o problema ou tarefa que você gostaria de realizar com relação à marca? Por favor, forneça mais informações sobre a entidade e a ação que você deseja executar. Eu farei meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+
+Você gostaria de buscar uma marca específica, criar uma nova marca, atualizar informações de uma marca existente ou apagar uma marca?
+2024-12-30 16:00:10 - WARNING - Nenhum objeto encontrado na string: Human: busca marca
+Assistant: Você deseja buscar uma marca. Qual é o problema ou tarefa que você gostaria de realizar com relação à marca? Por favor, forneça mais informações sobre a entidade e a ação que você deseja executar. Eu farei meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+
+ Qual é o problema ou tarefa que você gostaria de realizar com relação à marca? Por favor, forneça mais informações sobre a entidade e a ação que você deseja executar. Eu farei meu melhor para extrair as entidades e parâmetros relevantes e gerar um objeto JSON bem formatado com base nas regras fornecidas.
+
+O que você gostaria de fazer com a marca? Buscar uma marca específica, criar uma nova marca, atualizar informações de uma marca existente ou apagar uma marca?
+2024-12-30 16:00:51 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 16:00:51 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 16:02:54 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': ''}
+2024-12-30 16:02:54 - INFO - Prepara dados
+2024-12-30 16:02:54 - INFO - Seleciona rota
+2024-12-30 16:02:54 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODUwMzgsImV4cCI6MTczNTYyMTAzOCwibmJmIjoxNzM1NTg1MDM4LCJqdGkiOiJFajhnSlBWQ0ZsN1kzcEJqIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.WY0uLJ81asjqmeZ-CVMeYb2f5kn27EqCKHqd16Q9Sh0', 'Content-Type': 'application/json'}
+2024-12-30 16:02:54 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 16:04:19 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': ''}
+2024-12-30 16:04:19 - INFO - Prepara dados
+2024-12-30 16:04:19 - INFO - Seleciona rota
+2024-12-30 16:04:19 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODUwMzgsImV4cCI6MTczNTYyMTAzOCwibmJmIjoxNzM1NTg1MDM4LCJqdGkiOiJFajhnSlBWQ0ZsN1kzcEJqIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.WY0uLJ81asjqmeZ-CVMeYb2f5kn27EqCKHqd16Q9Sh0', 'Content-Type': 'application/json'}
+2024-12-30 16:04:19 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 16:07:10 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 16:07:58 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': '', 'telefone': '', 'idade': ''}]}
+2024-12-30 16:07:58 - INFO - Prepara dados
+2024-12-30 16:07:58 - INFO - Seleciona rota
+2024-12-30 16:07:58 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODU2MjksImV4cCI6MTczNTYyMTYyOSwibmJmIjoxNzM1NTg1NjI5LCJqdGkiOiIwUmtaQXNoMEFJQVNGSUVFIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.C5AROiMqanl1MWJUcSg_T82thgRuN9N07bHlup1BE44', 'Content-Type': 'application/json'}
+2024-12-30 16:07:58 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 16:09:04 - INFO - Objeto convertido para dicionário: {'entidade': 'TOYOTA', 'acao': 'buscar', 'dados': [{'ativo': True, 'created_at': None, 'updated_at': None, 'deleted_at': None}]}
+2024-12-30 16:09:04 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 16:19:12 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 16:19:46 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o problema ou tarefa que você gostaria de realizar? Por favor, forneça mais informações sobre a entidade e a ação que você deseja executar.
+2024-12-30 16:20:21 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': '', 'descrição': '', 'código': ''}]}
+2024-12-30 16:20:21 - INFO - Prepara dados
+2024-12-30 16:20:21 - INFO - Seleciona rota
+2024-12-30 16:20:21 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODYzNTEsImV4cCI6MTczNTYyMjM1MSwibmJmIjoxNzM1NTg2MzUxLCJqdGkiOiIwYjZoVktGaTBiSmo0Tlo5Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.UDJIO1z1AHQLMW9euiYa0X9dIfW-CgdQUhr-QI7XmVM', 'Content-Type': 'application/json'}
+2024-12-30 16:20:21 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 16:21:54 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-30 16:21:54 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 16:38:09 - INFO - Objeto convertido para dicionário: {'entidade': 'TOYOTA', 'acao': 'buscar', 'dados': [{'id': 52, 'nome': 'TREK', 'ativo': 1, 'created_at': '2024-10-21T12:51:31.000000Z', 'updated_at': '2024-10-21T12:51:31.000000Z', 'deleted_at': None}]}
+2024-12-30 16:38:09 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-30 16:39:57 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Você deseja criar, atualizar, buscar ou apagar algo? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+2024-12-30 16:47:52 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 16:48:28 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Você deseja criar, atualizar, buscar ou apagar algo? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+2024-12-30 16:49:14 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Você deseja criar, atualizar, buscar ou apagar algo? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+
+(Eu estou esperando por sua resposta para começar a extrair as entidades e parâmetros da mensagem!)
+2024-12-30 16:50:05 - WARNING - Nenhum objeto encontrado na string: Você deseja criar, atualizar, buscar ou apagar algo? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+
+(Por favor, responda com uma das opções: criar, atualizar, buscar ou apagar)
+2024-12-30 16:51:08 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Você deseja criar, atualizar, buscar ou apagar algo? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+
+(Por favor, responda com uma das opções: criar, atualizar, buscar ou apagar)
+2024-12-30 16:52:02 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'X', 'telefone': 'Y'}]}
+2024-12-30 16:52:02 - INFO - Prepara dados
+2024-12-30 16:52:02 - INFO - Seleciona rota
+2024-12-30 16:52:02 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODgwNzEsImV4cCI6MTczNTYyNDA3MSwibmJmIjoxNzM1NTg4MDcxLCJqdGkiOiJQa2Ezak5XTFhudVRidEFHIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.pxX8lUqE0aJaCcvgeLrLLYzUjVc5-iJUotAxI5OmAKg', 'Content-Type': 'application/json'}
+2024-12-30 16:52:03 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-30 17:07:25 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 17:08:49 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 2 column 5 (char 7)
+2024-12-30 17:12:54 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-30 17:13:21 - WARNING - Nenhum objeto encontrado na string: Para processar sua solicitação, preciso saber mais sobre o que você está procurando. Você mencionou "busca marca", mas não especificou qual tipo de marca ou entidade está envolvida. Por favor, forneça mais detalhes sobre a entidade principal e os atributos relevantes associados à mesma.
+
+Além disso, gostaria de saber qual é a ação solicitada pelo usuário. Você mencionou "busca", mas não especificou se é uma busca por marca, produto ou algo relacionado.
+
+Por favor, forneça mais informações para que eu possa ajudá-lo melhor.
+2024-12-30 17:13:52 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o problema ou tarefa que você gostaria de realizar?
+2024-12-30 17:15:16 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': [{'nome': 'Marca X', 'descricao': 'Uma marca de produtos de beleza.', 'codigos_barras': ['1234567890', '9876543210']}]}
+2024-12-30 17:15:16 - INFO - Prepara dados
+2024-12-30 17:15:16 - INFO - Seleciona rota
+2024-12-30 17:15:16 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODk1NzMsImV4cCI6MTczNTYyNTU3MywibmJmIjoxNzM1NTg5NTczLCJqdGkiOiJxQ1RPa25ERVZKaHFTcDRBIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.MNFVEZwcInqFKWIOa8Ee621CMwA7qW7fkI07ROpMPB4', 'Content-Type': 'application/json'}
+2024-12-30 17:15:16 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands

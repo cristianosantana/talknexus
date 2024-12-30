@@ -1,7 +1,6 @@
 import streamlit as st
 import json, sys, os
-
-sys.path.append(os.path.join(os.path.dirname(__file__), './'))
+sys.path.append(os.path.join(os.path.dirname(__file__)))
 from tools.configuracao_logger import ConfiguracaoLogger
 from tools.ollama_api import OllamaAPI
 from tools.conversational_chain_factory import ConversationalChainFactory
@@ -100,7 +99,7 @@ def run():
                 
                 # Temporarily add stream handler to the conversation
                 st.session_state.conversation.llm.callbacks = [stream_handler]
-                
+
                 # Generate response
                 response = st.session_state.conversation.run(prompt)
                 
@@ -116,3 +115,27 @@ def run():
                 error_message = f"Error generating response: {str(e)}"
                 response_placeholder.error(error_message)
                 st.session_state.messages.append({"role": "assistant", "content": error_message})
+
+        with st.chat_message("assistant"):
+            response_placeholder1 = st.empty()
+            
+            try:
+                # Create a new stream handler for this response
+                stream_handler1 = StreamHandler(response_placeholder1)
+                
+                # Temporarily add stream handler to the conversation
+                st.session_state.conversation.llm.callbacks = [stream_handler1]
+
+                # Generate response
+                response1 = st.session_state.conversation.run(f" Faça uma lista com os dados do objeto a seguir: {global_variables.response}")
+                
+                # Clear the stream handler after generation
+                st.session_state.conversation.llm.callbacks = []
+                
+                # Add response to message history
+                st.session_state.messages.append({"role": "assistant", "content": response1})
+            
+            except Exception as e:
+                error_message1 = f"Error generating response: {str(e)}"
+                response_placeholder1.error(error_message1)
+                st.session_state.messages.append({"role": "assistant", "content": error_message1})

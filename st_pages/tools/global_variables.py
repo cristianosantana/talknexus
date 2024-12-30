@@ -1,5 +1,6 @@
 class GlobalVariables:
     user_token = ""
+    response = []
     entities_columns_required = [
         {
             'entity': 'marca',
@@ -9,6 +10,7 @@ class GlobalVariables:
             'routes': {
                 'criar': 'v3/admin/vehicles/brands',
                 'atualizar': 'v3/admin/vehicles/brands',
+                'buscar': 'v3/admin/vehicles/brands',
                 'delete': '#'
             },
             'table': 'carro_marcas',
