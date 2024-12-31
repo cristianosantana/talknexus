@@ -619,3 +619,121 @@ Por favor, forneça mais informações para que eu possa ajudá-lo melhor.
 2024-12-30 17:15:16 - INFO - Seleciona rota
 2024-12-30 17:15:16 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU1ODk1NzMsImV4cCI6MTczNTYyNTU3MywibmJmIjoxNzM1NTg5NTczLCJqdGkiOiJxQ1RPa25ERVZKaHFTcDRBIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.MNFVEZwcInqFKWIOa8Ee621CMwA7qW7fkI07ROpMPB4', 'Content-Type': 'application/json'}
 2024-12-30 17:15:16 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-31 13:12:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:13:05 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o problema que você gostaria de resolver? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar.
+2024-12-31 13:13:51 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 9 column 1 (char 115)
+2024-12-31 13:17:39 - INFO - Objeto convertido para dicionário: {'erro': 'Não foram encontradas informações suficientes para buscar a marca.'}
+2024-12-31 13:17:39 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-31 13:22:28 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:23:05 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação e gerar um objeto JSON estruturado com base nas regras fornecidas.
+
+Você deseja buscar marcas, certo? Qual é a entidade principal mencionada (cliente, produto, projeto)? E qual é a ação solicitada (criar, atualizar, buscar, apagar)?
+2024-12-31 13:23:51 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação e gerar um objeto JSON estruturado com base nas regras fornecidas.
+
+Você deseja buscar marcas, certo? Qual é a entidade principal mencionada (cliente, produto, projeto)? E qual é a ação solicitada (criar, atualizar, buscar, apagar)?
+
+Por favor, forneça mais informações para que eu possa processar sua solicitação corretamente.
+2024-12-31 13:24:34 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 10 column 1 (char 148)
+2024-12-31 13:25:17 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 123 (char 122)
+2024-12-31 13:26:34 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:27:28 - ERROR - Erro ao decodificar o JSON. O objeto pode não ser válido.
+Traceback (most recent call last):
+  File "/home/lenovo/code/talknexus/st_pages/ai_chatbot.py", line 27, in search_for_object_in_string
+    dictionary = json.loads(string)
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 123 (char 122)
+2024-12-31 13:31:55 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:32:22 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu pedido? Quer buscar marcas?
+2024-12-31 13:33:48 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:34:09 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação e gerar um objeto JSON estruturado.
+
+Qual é a solicitação do usuário? Qual é a entidade principal mencionada (ex.: "cliente", "produto", "projeto")?
+2024-12-31 13:38:00 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:38:50 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação.
+
+Você mencionou "busca marcas". Vamos começar a identificar a entidade principal e extrair atributos relevantes.
+
+**Entidade Principal:** Marca
+**Atributos Relevantes:**
+
+* Nenhum atributo específico foi mencionado, mas podemos inferir que você está procurando por informações sobre marcas em geral.
+* Se você puder fornecer mais contexto ou especificar quaisquer atributos relevantes (como "nome", "categoria" etc.), ficarei feliz em ajudar a extrair essas informações.
+
+Qual é o próximo passo? Você gostaria de buscar informações específicas sobre marcas, como suas características ou categorias? Ou talvez você queira criar uma nova marca e precisa de ajuda para fornecer os dados necessários?
+2024-12-31 13:39:52 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:40:41 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação e gerar um objeto JSON estruturado.
+
+Por favor, forneça a mensagem do usuário que você deseja processar. Eu farei o meu melhor para identificar a entidade principal, extrair atributos e valores associados, identificar a ação solicitada e adaptar o formato da resposta de acordo com as regras estabelecidas.
+
+Lembre-se de que eu sou uma IA especializada em extrair entidades e parâmetros de mensagens do usuário e gerar objetos estruturados em formato JSON. Meu objetivo é fornecer um objeto JSON bem formatado, conforme as regras estabelecidas.
+
+Vamos começar! Qual é a mensagem do usuário que você deseja processar?
+2024-12-31 13:41:46 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:42:05 - WARNING - Nenhum objeto encontrado na string: Eu estou pronto para processar sua solicitação! Qual é o texto da mensagem que você gostaria que eu processe? Lembre-se de que meu objetivo é extrair entidades e parâmetros, identificar a ação solicitada e retornar um objeto JSON bem formatado.
+2024-12-31 13:47:08 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 13:48:17 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2024-12-31 13:48:17 - INFO - Prepara dados
+2024-12-31 13:48:17 - INFO - Seleciona rota
+2024-12-31 13:48:17 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU2NjM2MjgsImV4cCI6MTczNTY5OTYyOCwibmJmIjoxNzM1NjYzNjI4LCJqdGkiOiJ1VVllQ1dZV2pJc00xUTJ0Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.ZmUavClgAgsUW8mOz8Ot3jzcRexFjS0OZGPxxgaq0pM', 'Content-Type': 'application/json'}
+2024-12-31 13:48:18 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-31 14:01:48 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 14:02:26 - WARNING - Nenhum objeto encontrado na string: Olá! Estou pronto para processar sua solicitação. Qual é o seu objetivo? Você deseja criar, atualizar, buscar ou apagar uma entidade? Por favor, forneça mais informações sobre a entidade e a ação que você deseja realizar. Eu estarei aqui para ajudar!
+2024-12-31 14:03:21 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 14:04:19 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2024-12-31 14:04:19 - INFO - Prepara dados
+2024-12-31 14:04:19 - INFO - Seleciona rota
+2024-12-31 14:04:19 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU2NjQ2MDEsImV4cCI6MTczNTcwMDYwMSwibmJmIjoxNzM1NjY0NjAxLCJqdGkiOiJXVlRJT0hyOWl6bXlVOWk4Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.Z5yBR652lIXnUBsWCavtcwKqqhCwySmok0or4gTHFCY', 'Content-Type': 'application/json'}
+2024-12-31 14:04:19 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-31 14:10:27 - INFO - response success API SMART, url: http://smart.local/api/auth
+2024-12-31 14:10:43 - INFO - Objeto convertido para dicionário: {'erro': 'Não foi possível identificar a entidade ou ação na solicitação.'}
+2024-12-31 14:10:43 - ERROR - Erro ao processar solicitação: Nenhuma entidade encontrada!
+2024-12-31 14:11:47 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2024-12-31 14:11:47 - INFO - Prepara dados
+2024-12-31 14:11:47 - INFO - Seleciona rota
+2024-12-31 14:11:47 - INFO - Realisa a requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU2NjUwMjYsImV4cCI6MTczNTcwMTAyNiwibmJmIjoxNzM1NjY1MDI2LCJqdGkiOiJKazJha05mclc3OW16amt6Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.XA3ZKOo3F29ZP-gtYh8x4Lbr_IOSEuaI962JO02Kixg', 'Content-Type': 'application/json'}
+2024-12-31 14:11:47 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2024-12-31 14:19:34 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'criar', 'dados': {'nome': 'marca de eletrônicos', 'tipo': 'produtos', 'categoria': 'eletrônico', 'preço': 500.0, 'disponibilidade': True}}
+2024-12-31 14:19:34 - ERROR - Erro ao processar solicitação: Nenhum parametro encontrado!

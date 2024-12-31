@@ -75,7 +75,7 @@ def run():
     # Initialize conversation if needed
     if st.session_state.conversation is None:
         conversational_chain_factory = ConversationalChainFactory
-        st.session_state.conversation = conversational_chain_factory.get_conversation_chain(model_name)
+        st.session_state.conversation = conversational_chain_factory.get_conversation_chain(model_name, global_variables.prompt_create_update_delete)
 
     # Display chat history
     for message in st.session_state.messages:
@@ -120,6 +120,10 @@ def run():
             response_placeholder1 = st.empty()
             
             try:
+                # Nova instancia de IA
+                conversational_chain_factory = ConversationalChainFactory
+                st.session_state.conversation = conversational_chain_factory.get_conversation_chain(model_name, global_variables.prompt_format_response)
+                
                 # Create a new stream handler for this response
                 stream_handler1 = StreamHandler(response_placeholder1)
                 

@@ -41,7 +41,7 @@ class SmartController:
                 if data.get("acao") != 'buscar':
                     for el in value.get("parameters"):
                         # verifica se atributo foi passado e atribui ao paramentros
-                        if value["action"] == 'buscar' or el in data.get("dados"):
+                        if el in data.get("dados"):
                             value.get("parameters")[el] = data.get("dados")[el]
                             result = value # salva o objeto pronto para requisição
                         else: 

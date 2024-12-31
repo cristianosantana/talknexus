@@ -28,13 +28,13 @@ st.markdown(f"""
 
 # Enhanced pages definition
 PAGES = {
-    # "Home": {
-    #     "icon": "house-door",
-    #     "func": st_pages.home,
-    #     "description": "Guidelines & Overview",
-    #     "badge": "Informative",
-    #     "color": "var(--primary-color)"
-    # },
+    "Home": {
+        "icon": "house-door",
+        "func": st_pages.home,
+        "description": "Guidelines & Overview",
+        "badge": "Informative",
+        "color": "var(--primary-color)"
+    },
     # "Language Models Management": {
     #     "icon": "gear",
     #     "func": st_pages.model_management,
@@ -125,7 +125,7 @@ try:
     page_function()
 except Exception as e:
     st.error(f"Error loading page: {str(e)}")
-    st_pages.home.run()
+    st_pages.home()
 
 # Display the footer
 st.markdown("""
