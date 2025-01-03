@@ -1,6 +1,7 @@
-import requests
 from tools.global_variables import GlobalVariables
 from tools.configuracao_logger import ConfiguracaoLogger
+import requests
+import streamlit as st
 
 global_variables = GlobalVariables
 
@@ -14,7 +15,7 @@ class SmartServices:
     def __init__(self):
         self.auth()
 
-    def request_base_smart(self, route, method, payload, headers):
+    def request_base_smart(self, route, method, payload, headers,  show_message = 1):
         """
         Monta a requisição
         """
@@ -35,11 +36,14 @@ class SmartServices:
         
         if response.status_code >= 200 and response.status_code <= 299:
             self.logger.write_logger("info", f"response success API SMART, url: {url}")
+            if show_message:
+                st.info(f"response success API SMART, url: {url}")
             return response.json()
         else:
             self.logger.write_logger("warning", f"response error API SMART: {response}")
+            if show_message:
+                st.warning(f"response error API SMART: {response}")
             return response
-            
 
     def auth(self):
         """
@@ -53,8 +57,7 @@ class SmartServices:
             "login": "cristiano.santana",
             "password": "29102018"
         }
-        
-        response = self.request_base_smart("auth", "POST", payload, headers)
+        show_message = 0
+        response = self.request_base_smart("auth", "POST", payload, headers, show_message)
 
         global_variables.user_token = response.get("token")
-        

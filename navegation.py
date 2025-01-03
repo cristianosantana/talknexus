@@ -35,13 +35,13 @@ PAGES = {
         "badge": "Informative",
         "color": "var(--primary-color)"
     },
-    # "Language Models Management": {
-    #     "icon": "gear",
-    #     "func": st_pages.model_management,
-    #     "description": "Download Models",
-    #     "badge": "Configurations",
-    #     "color": "var(--secondary-color)"
-    # },
+    "Language Models Management": {
+        "icon": "gear",
+        "func": st_pages.model_management,
+        "description": "Download Models",
+        "badge": "Configurations",
+        "color": "var(--secondary-color)"
+    },
     "AI Conversation": {
         "icon": "chat-dots",
         "func": st_pages.ai_chatbot,
