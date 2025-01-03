@@ -1924,3 +1924,194 @@ Agora, precisamos extrair atributos e valores associados à entidade "marca". Vo
 2025-01-03 08:08:05 - INFO - Rota: v3/admin/vehicles/brands selecionada!
 2025-01-03 08:08:05 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MDI0MTEsImV4cCI6MTczNTkzODQxMSwibmJmIjoxNzM1OTAyNDExLCJqdGkiOiJKbWp5TEQ1NHdkNlB5a0N6Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.dz99vteC40CjqZ4GzSLmuxCx7iiftgmCtKCCBJ8e-gY', 'Content-Type': 'application/json'}
 2025-01-03 08:08:05 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 08:17:05 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:40:13 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:41:36 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:42:33 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:42:59 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:44:14 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:44:22 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:44:30 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:45:49 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:46:53 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar"
+}
+2025-01-03 08:46:53 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2025-01-03 08:46:53 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 08:46:53 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 08:46:53 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MDQ3NDksImV4cCI6MTczNTk0MDc0OSwibmJmIjoxNzM1OTA0NzQ5LCJqdGkiOiJqRXRPWE1XOWt6UjBxZ0pOIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.DtCKJNrMElu51dzpqekg1FnUTT4J_DGKHubVdE552Tc', 'Content-Type': 'application/json'}
+2025-01-03 08:46:54 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 08:47:31 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 08:47:58 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação. Qual é o comando que você deseja executar?
+2025-01-03 12:34:40 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 12:35:22 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar",
+  "dados": {
+    "nome": "marca",
+    "descrição": "Não está claro o que é a marca, mas parece ser um produto ou serviço.",
+    "categoria": "Não está claro qual é a categoria da marca."
+  }
+}
+2025-01-03 12:35:22 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'nome': 'marca', 'descrição': 'Não está claro o que é a marca, mas parece ser um produto ou serviço.', 'categoria': 'Não está claro qual é a categoria da marca.'}}
+2025-01-03 12:35:22 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 12:35:22 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 12:35:22 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MTg0NzksImV4cCI6MTczNTk1NDQ3OSwibmJmIjoxNzM1OTE4NDc5LCJqdGkiOiJRcEIxdjBJQWVydDZKTW9uIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.Ux4kPzCMuwrZEUZTDspSpSXMU5E1pfXK1VVh40IzMPs', 'Content-Type': 'application/json'}
+2025-01-03 12:35:22 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 12:40:33 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:12:23 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:12:57 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar uma marca. Qual é a entidade principal mencionada? É um cliente, produto ou projeto? E qual é a ação solicitada (criar, atualizar, buscar ou apagar)?
+2025-01-03 14:15:18 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar",
+  "dados": {
+    "nome": "marca",
+    "descricao": "",
+    "categoria": ""
+  }
+}
+2025-01-03 14:15:18 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'nome': 'marca', 'descricao': '', 'categoria': ''}}
+2025-01-03 14:15:18 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:15:18 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:15:18 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjQzNDIsImV4cCI6MTczNTk2MDM0MiwibmJmIjoxNzM1OTI0MzQyLCJqdGkiOiJsT3N5cXVvems2SHE4MEdPIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.gOTsefO3-eSZW9TeYfFu4ejcwPPjh0S8hNm6mj8x8fg', 'Content-Type': 'application/json'}
+2025-01-03 14:15:18 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 14:32:21 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:33:13 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar"
+}
+2025-01-03 14:33:13 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2025-01-03 14:33:13 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:33:13 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:33:13 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjU1NDEsImV4cCI6MTczNTk2MTU0MSwibmJmIjoxNzM1OTI1NTQxLCJqdGkiOiJBeHVrS29sS25LajQyZmx4Iiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.m8s4ThOgiGxnoO1j1ULRgzs-ZMBJXempswahcAVE1FY', 'Content-Type': 'application/json'}
+2025-01-03 14:33:13 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 14:36:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:36:33 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você mencionou "buscar marca". Vamos identificar a entidade principal e extrair atributos relevantes.
+
+**Entidade Principal:** Marca
+**Atributos Relevantes:** (ainda não foram extraídos)
+
+Qual é o próximo passo? Você gostaria de buscar mais informações sobre a marca ou especificar algum atributo específico?
+2025-01-03 14:37:08 - INFO - String a ser convertido em dicionário: {
+    "entidade": "marca",
+    "acao": "buscar",
+    "dados": {
+        "nome": "",
+        "descrição": "",
+        "código": ""
+    }
+}
+2025-01-03 14:37:08 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'nome': '', 'descrição': '', 'código': ''}}
+2025-01-03 14:37:08 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:37:08 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:37:08 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjU3NjEsImV4cCI6MTczNTk2MTc2MSwibmJmIjoxNzM1OTI1NzYxLCJqdGkiOiJWUTBYRXlFUEwxYlNaV3dOIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.JCQ1YB-hi8DnsbcD6gmOON2xQ-NZmTT3PU3XkzsV-9w', 'Content-Type': 'application/json'}
+2025-01-03 14:37:08 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 14:42:26 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:43:06 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você mencionou "buscar marca". Vamos identificar a entidade principal e extrair atributos relevantes.
+
+**Entidade Principal:** Marca
+**Atributos Relevantes:** (ainda não foram extraídos)
+
+Qual é o próximo passo? Você deseja buscar informações específicas sobre a marca ou realizar outra ação?
+2025-01-03 14:43:56 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você mencionou "buscar marcas". Vamos identificar a entidade principal e extrair atributos relevantes.
+
+**Entidade Principal:** Marca
+**Atributos Relevantes:** (ainda não foram extraídos)
+
+Qual é o próximo passo? Você deseja buscar informações específicas sobre a marca ou realizar outra ação?
+
+(Por favor, responda com uma das opções abaixo: "buscar informações", "criar marca", "atualizar marca", "apagar marca")
+2025-01-03 14:44:27 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar",
+  "dados": {
+    "marca": "",
+    "descrição": "",
+    "valor": ""
+  }
+}
+2025-01-03 14:44:27 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'marca': '', 'descrição': '', 'valor': ''}}
+2025-01-03 14:44:27 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:44:27 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:44:27 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjYxNDYsImV4cCI6MTczNTk2MjE0NiwibmJmIjoxNzM1OTI2MTQ2LCJqdGkiOiJzTFpNSm92ZEF2aUVnSmhXIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.c9mu9xhNeOM6gjbIsurdhG6xZNPyCtm2wEe-ivYm1yM', 'Content-Type': 'application/json'}
+2025-01-03 14:44:27 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 14:50:29 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:51:26 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar"
+}
+2025-01-03 14:51:26 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2025-01-03 14:51:26 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:51:26 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:51:26 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjY2MjgsImV4cCI6MTczNTk2MjYyOCwibmJmIjoxNzM1OTI2NjI4LCJqdGkiOiJuWEd1bnJOT1FWR0FYaFhuIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.tZtRIKaJNXltOJrt8dhep_EfjPTT0GRRyuQvLe0JS4U', 'Content-Type': 'application/json'}
+2025-01-03 14:51:26 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 14:54:13 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 14:55:02 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar marcas. Qual é o objetivo específico? Quer criar, atualizar ou apenas buscar informações sobre marcas?
+2025-01-03 14:55:33 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar marcas. Qual é o objetivo específico? Quer criar, atualizar ou apenas buscar informações sobre marcas?
+
+(Por favor, responda com uma das opções acima)
+2025-01-03 14:56:11 - INFO - String a ser convertido em dicionário: {
+    "entidade": "marca",
+    "acao": "buscar",
+    "dados": {
+        "nome": "marca de teste",
+        "descricao": "uma marca de produtos"
+    }
+}
+2025-01-03 14:56:11 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {'nome': 'marca de teste', 'descricao': 'uma marca de produtos'}}
+2025-01-03 14:56:11 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 14:56:11 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 14:56:11 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5MjY4NTMsImV4cCI6MTczNTk2Mjg1MywibmJmIjoxNzM1OTI2ODUzLCJqdGkiOiJqOHRNeld4dkg2Q2pyU3NxIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.gFvELnMxZVtMTGS2Dl9JcpSxkIHt6Cu9Vc8k30RP4dU', 'Content-Type': 'application/json'}
+2025-01-03 14:56:11 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 15:35:26 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 15:35:56 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Você está procurando por uma marca específica? Qual é o nome da marca que você está procurando?
+2025-01-03 15:36:44 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Você está procurando por uma marca específica? Qual é o nome da marca que você está procurando?
+2025-01-03 15:38:10 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 15:38:34 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação. Qual é a marca que você gostaria de buscar?
+2025-01-03 15:39:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 15:41:41 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 15:42:32 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar marcas. Vamos começar a identificar a entidade principal mencionada (ex.: "cliente", "produto", "projeto").
+
+A entidade principal mencionada é... **marca**!
+
+Agora, precisamos extrair atributos e valores associados à entidade. Você deseja buscar marcas específicas? Se sim, por favor forneça mais informações sobre as marcas que você deseja buscar.
+
+Se não houver mais informações, podemos considerar a solicitação como um "buscar" padrão e retornar apenas a entidade e ação encontradas.
+
+O que você gostaria de fazer em seguida?
+2025-01-03 15:43:24 - WARNING - Nenhum objeto encontrado na resposta do modelo! RESPOSTA: Olá! Estou pronto para processar sua solicitação.
+
+Você deseja buscar marcas. Vamos começar a identificar a entidade principal mencionada (ex.: "cliente", "produto", "projeto").
+
+A entidade principal mencionada é... **marca**!
+
+Agora, precisamos extrair atributos e valores associados à entidade. Você deseja buscar marcas específicas? Se sim, por favor forneça mais informações sobre as marcas que você deseja buscar.
+
+Se não houver mais informações, podemos considerar a solicitação como um "buscar" padrão e retornar apenas a entidade e ação encontradas.
+
+O que você gostaria de fazer em seguida?
+2025-01-03 15:43:58 - INFO - String a ser convertido em dicionário: {
+    "entidade": "marca",
+    "acao": "buscar",
+    "dados": {}
+}
+2025-01-03 15:43:58 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar', 'dados': {}}
+2025-01-03 15:43:58 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 15:43:58 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 15:43:58 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5Mjk3MDEsImV4cCI6MTczNTk2NTcwMSwibmJmIjoxNzM1OTI5NzAxLCJqdGkiOiJtbXU0bWZqZ0lLdVFPU1hCIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.HEf1xoLLEnOIBucj3Ld3I1XMtHC87N3zx690IINZwAA', 'Content-Type': 'application/json'}
+2025-01-03 15:43:58 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands

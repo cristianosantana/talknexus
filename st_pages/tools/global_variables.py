@@ -1,6 +1,6 @@
 class GlobalVariables:
     
-    prompt_create_update_delete = """Current conversation:
+    prompt_select_create_update_delete = """Current conversation:
         {history}
         Human: {input}
         Assistant: Você é uma IA especializada em **extrair entidades e parâmetros** de mensagens do usuário e gerar 
@@ -80,6 +80,7 @@ class GlobalVariables:
     user_token = ""
     response = None
     object_found = None
+    model_name = None
     entities_columns_required = [
         {
             'entity': 'marca',

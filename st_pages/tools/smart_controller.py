@@ -6,7 +6,7 @@ import json
 
 class SmartController:
     """
-    Prepara dados e seleciona rota a ser chamada
+    Responsavel por preparar dados, selecionar/executar rota a SMART_API
     """
     global_variables = GlobalVariables
     smart_services = SmartServices()
@@ -85,8 +85,8 @@ class SmartController:
             "Content-Type": "application/json"
         }
         show_message = 1
-        self.logger.write_logger("info", f"Dados da requisição route: {route}, method: {method}, data: {data}, headers: {headers}")
-        st.info(f"Dados da requisição route: {route}, method: {method}, data: {data}, headers: {headers}")
+        self.logger.write_logger("info", f"Dados da requisição route: {route}, method: {method}, data: {data}")
+        st.info(f"Dados da requisição route: {route}, method: {method}")
     
         return self.smart_services.request_base_smart(route, method, data, headers, show_message)
 

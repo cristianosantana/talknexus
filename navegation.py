@@ -2,7 +2,7 @@ import streamlit as st
 import st_pages # required modules
 
 # Set page config
-st.set_page_config(page_title="TalkNexus - Interface multimodelo do chatbot Ollama", layout="wide", page_icon="🤖")
+st.set_page_config(page_title="TalkNexus", layout="wide", page_icon="🤖")
 
 # Load custom CSS from file
 def load_css(file_name):
@@ -20,8 +20,8 @@ st.markdown(f"""
 <div class="header">
     <div class="animated-bg"></div>
     <div class="header-content">
-        <h1 class="header-title">Interface multimodelo do chatbot Ollama</h1> 
-        <p class="header-subtitle">Modelos de linguagem avançados e conversas inteligentes</p>
+        <h1 class="header-title">Chatbot Inteligente</h1> 
+        <p class="header-subtitle">Modelos de linguagem inteligentes</p>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -70,7 +70,7 @@ def navigate():
                 <div class="profile-section">
                     <div class="profile-info">
                         <h1 style="font-size: 32px;">TalkNexus</h1>
-                        <span class="active-badge" style="font-size: 16px;">Aplicativo multimodelo de chatbot de IA</span>
+                        <span class="active-badge" style="font-size: 16px;">Chatbot Inteligente</span>
                     </div>
                 </div>
             </div>

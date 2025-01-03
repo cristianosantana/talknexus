@@ -60,7 +60,7 @@ def run():
     # Initialize conversation if needed
     if st.session_state.conversation is None:
         conversational_chain_factory = ConversationalChainFactory
-        st.session_state.conversation = conversational_chain_factory.get_conversation_chain(model_name, global_variables.prompt_create_update_delete)
+        st.session_state.conversation = conversational_chain_factory.get_conversation_chain(model_name, global_variables.prompt_select_create_update_delete)
 
     # Display chat history
     for message in st.session_state.messages:
