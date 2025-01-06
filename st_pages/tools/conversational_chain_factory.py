@@ -21,8 +21,15 @@ class ConversationalChainFactory:
         # Set up Ollama LLM
         llm = Ollama(
             model=model_name,
-            temperature=0.2,
-            base_url="http://localhost:11434"
+            temperature=0.6,
+            base_url="http://localhost:11434",
+            tfs_z=2.0,
+            top_k=10,
+            top_p=0.5,
+            mirostat=2,
+            mirostat_tau=0.2,
+            mirostat_eta=0.3,
+            num_ctx=40960
         )
 
         prompt = PromptTemplate(

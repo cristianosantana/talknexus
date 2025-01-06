@@ -2115,3 +2115,63 @@ O que você gostaria de fazer em seguida?
 2025-01-03 15:43:58 - INFO - Rota: v3/admin/vehicles/brands selecionada!
 2025-01-03 15:43:58 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}, headers: {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc21hcnQubG9jYWwvYXBpL2F1dGgiLCJpYXQiOjE3MzU5Mjk3MDEsImV4cCI6MTczNTk2NTcwMSwibmJmIjoxNzM1OTI5NzAxLCJqdGkiOiJtbXU0bWZqZ0lLdVFPU1hCIiwic3ViIjoiMjYwIiwicHJ2IjoiNTg3MDg2M2Q0YTYyZDc5MTQ0M2ZhZjkzNmZjMzY4MDMxZDExMGM0ZiJ9.HEf1xoLLEnOIBucj3Ld3I1XMtHC87N3zx690IINZwAA', 'Content-Type': 'application/json'}
 2025-01-03 15:43:58 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-03 16:14:51 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-03 16:15:24 - INFO - String a ser convertido em dicionário: {
+  "entidade": "marca",
+  "acao": "buscar"
+}
+2025-01-03 16:15:24 - INFO - Objeto convertido para dicionário: {'entidade': 'marca', 'acao': 'buscar'}
+2025-01-03 16:15:24 - INFO - Dados preparados! Result: {'entity': 'marca', 'action': 'buscar', 'method': '', 'route': '', 'routes': {'criar': 'v3/admin/vehicles/brands', 'atualizar': 'v3/admin/vehicles/brands', 'buscar': 'v3/admin/vehicles/brands', 'delete': '#'}, 'table': 'carro_marcas', 'parameters': {'id': '', 'nome': ''}}
+2025-01-03 16:15:24 - INFO - Rota: v3/admin/vehicles/brands selecionada!
+2025-01-03 16:15:24 - INFO - Dados da requisição route: v3/admin/vehicles/brands, method: GET, data: {'id': '', 'nome': ''}
+2025-01-03 16:15:25 - INFO - response success API SMART, url: http://smart.local/api/v3/admin/vehicles/brands
+2025-01-04 16:13:59 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 16:22:52 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 16:51:38 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 16:54:42 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 16:59:32 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 17:03:15 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-04 17:03:24 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 07:45:26 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:02:03 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:07:20 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:12:06 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:21:25 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:22:43 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:29:01 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 09:50:45 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 10:10:22 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 10:24:54 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 10:30:46 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 10:31:40 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 10:34:45 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 11:38:16 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 11:40:03 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 11:44:50 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 11:46:50 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 11:49:19 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:06:09 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:11:35 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:12:05 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:14:50 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:15:11 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:16:00 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:17:12 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:38:09 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:38:45 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:47:44 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:49:35 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:49:54 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 20:52:54 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 21:44:42 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 21:51:47 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:03:42 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:17:17 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:22:11 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:30:02 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:45:17 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:49:35 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-05 22:54:29 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-06 06:32:31 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-06 06:43:19 - INFO - response success API SMART, url: http://smart.local/api/auth
+2025-01-06 07:50:07 - INFO - response success API SMART, url: http://smart.local/api/auth

@@ -40,9 +40,9 @@ class AiChatbot:
             st.session_state.messages = []
         if 'conversation' not in st.session_state:
             st.session_state.conversation = None
-
+        
         self.global_variables.model_name = self.model_selection()
-        self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_select_create_update_delete)
+        self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_create_query)
         
         # Display chat history
         for message in st.session_state.messages:
@@ -52,22 +52,22 @@ class AiChatbot:
         # Handle new user input
         if prompt := st.chat_input(f"Fale com {self.global_variables.model_name}"):
             # Add user message to history
-            st.session_state.messages.append({"role": "user", "content": prompt})
+            self.add_message_history(st.session_state.messages, "user", prompt)
             with st.chat_message("user"):
                 st.markdown(prompt)
 
             # Generate and display assistant response
             with st.chat_message("assistant"):
-                self.generate_display_assistant_response(prompt, True)
-                if self.global_variables.response != None:
-                    st.session_state.messages = []
-                    st.session_state.conversation = None
-                    self.global_variables.model_name = "llama3.2:3b"
-                    self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
-                    prompt_response_llm = f"Faça uma tabela com os dados do objeto a seguir: {self.global_variables.response}"
-                    self.generate_display_assistant_response(prompt_response_llm, False)
+                self.generate_display_assistant_response(st.session_state.messages, prompt)
+                # if self.global_variables.response != None:
+                #     st.session_state.messages = []
+                #     st.session_state.conversation = None
+                #     self.global_variables.model_name = "llama3.2:3b"
+                #     self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
+                #     prompt_response_llm = f"Faça uma tabela com os dados do objeto a seguir: {self.global_variables.response}"
+                #     self.generate_display_assistant_response(prompt_response_llm)
 
-    def generate_display_assistant_response(self, prompt, run_smart_api = True):
+    def generate_display_assistant_response(self, messages, message, run_smart_api = False):
         """ Generate and display assistant response """
         # clear to response_placeholder
         response_placeholder = st.empty()
@@ -82,7 +82,7 @@ class AiChatbot:
             st.session_state.conversation.llm.callbacks = [stream_handler]
 
             # Generate response
-            response = st.session_state.conversation.run(prompt)
+            response = st.session_state.conversation.run(message)
             
             if run_smart_api:
                 self.smart_controller.handler(self.smart_controller, response)
@@ -90,18 +90,18 @@ class AiChatbot:
             # Clear the stream handler after generation
             st.session_state.conversation.llm.callbacks = []
             
-            self.add_message_history("assistant", response)
+            self.add_message_history(messages, "assistant", response)
         
         except Exception as e:
             error_message = f"Error generating response: {str(e)}"
             response_placeholder.error(error_message)
-            self.add_message_history("assistant", error_message)
+            self.add_message_history(messages, "assistant", error_message)
 
-    def add_message_history(self, user, menssage):
+    def add_message_history(self, messages, user, menssage):
         """
         Add message to history
         """
-        st.session_state.messages.append({"role": user, "content": menssage})
+        messages.append({"role": user, "content": menssage})
 
     def initialize_conversation(self, model_name, prompt):
         """ Initialize conversation if needed """
