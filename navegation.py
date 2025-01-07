@@ -1,4 +1,6 @@
 import streamlit as st
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), './st_pages'))
 import st_pages # required modules
 
 # Set page config
@@ -125,7 +127,7 @@ try:
     page_function()
 except Exception as e:
     st.error(f"Error loading page: {str(e)}")
-    st_pages.home()
+    st_pages.ai_chatbot()
 
 # Display the footer
 st.markdown("""

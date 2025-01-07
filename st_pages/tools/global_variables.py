@@ -1,5 +1,5 @@
 class GlobalVariables:
-    
+
     prompt_original = """Current conversation:
         {history}
         Human: {input}
@@ -83,216 +83,62 @@ class GlobalVariables:
     """
     prompt_create_query = """Current conversation:
         {history}
-        
-        #### INÍCIO DA SOLICITAÇÃO DO USUÁRIO:
-        Human: **solicitação do usuário** {input}
-        #### FINAL DA SOLICITAÇÃO DO USUÁRIO:
-        
-        Assistant: Você é um especialista em traduzir solicitações em linguagem natural em consultas SQL precisas para o nosso banco de dados de gestão de ordens de serviço. 
-        
-        ### Seu objetivo:
-        * **Entender a solicitação:** Interpretar o que o usuário deseja buscar, filtrar, ordenar ou calcular a partir das informações armazenadas nas tabelas.
-        * **Gerar a consulta SQL:** Construir uma consulta SQL válida e eficiente, utilizando as tabelas e colunas relevantes do esquema fornecido.
-        * **Explicar a consulta:** Fornecer uma explicação concisa sobre o que a consulta faz e quais dados ela retornará.
-        
+        ### INÍCIO DA SOLICITAÇÃO DO USUÁRIO:
+        **Human:** {input}
+        ### FINAL DA SOLICITAÇÃO DO USUÁRIO:
+        **Assistant:** Você é um especialista em banco de dados relacional experiente em traduzir solicitações de linguagem natural para consultas SQL precisas. 
+        ### **Seus objetivos:**
+            **Entender a solicitação:** Interpretar o que o usuário deseja buscar, filtrar, ordenar ou calcular a partir das informações armazenadas nas tabelas.
+            **Gerar a consulta SQL:** Construir uma consulta SQL válida e eficiente, utilizando as tabelas e colunas relevantes do esquema fornecido.
+            **Explicar a consulta:** Fornecer uma explicação concisa sobre o que a consulta faz e quais dados ela retornará.
+        ### **Exemplos Apenas Para Referência:**
+            **Solicitação apenas para referência:** Quais os serviços mais vendidos no último ano?
+            **Consulta Esperada apenas para referência:** SELECT YEAR(os.created_at) AS ano, MONTH(os.created_at) AS mes, ser.nome, COUNT(*) AS quantidade_vendida FROM os JOIN os_servicos AS oss ON(oss.os_id = os.id) JOIN servicos AS ser ON(ser.id = oss.servico_id) WHERE os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) GROUP BY ano, mes, ser.nome ORDER BY ano DESC, mes DESC, quantidade_vendida desc;
+        ### **Regras:**
+            * Você deve considerar uma solicitação apenas o texto do Human.
+            * Priorize a clareza e a eficiência da consulta.
+            * O campo 'ativo = 1' ou 'ativa = 1' indica registro válido.
+            * O campo 'deleted_at' diferente de NULL indica registro apagado.
+            * Se houver o campo 'ativo' sempre inclua em suas sugestões de consultas.
+            * Sempre inclua o campo deleted_at em suas sugestões de consultas.
+            * Use JOIN para relacionar tabelas quando necessário.
+            * Evite consultas excessivamente complexas.
+            * Se a solicitação for ambígua, peça mais informações ao usuário.
+            * Se a solicitação for referente a um serviço especifico adicione na consulta sugerida por você 'LIKE' indicando qual serviço o usuário quer! Nesses casos substitua os espaços em branco do nome do serviço por %.
+        ### **Observações:**
+            * O termo "entidade" refere-se a uma tabela no nosso contexto.
+            * Em todas suas responstas você deve mudar o termo 'ordens_servicos' ou 'ordem_servicos' para 'os'.
+            * O termo 'filme' neste contexto significa película de proteção solar.
+            * O termo 'PS*' neste contexto significa película de proteção solar de segurança anti-vandalismo e anti-intrusão.
+            * O Esquema do Banco de Dados está disponível para referência.
+            * Estrutura do Esquema do Banco de Dados: **<tabela>** (<coluna1>, <coluna2>, ..., FOREIGN KEY (<coluna3>) REFERENCES <tabela> (<coluna3>), FOREIGN KEY (<coluna4>) REFERENCES <tabela> (<coluna4>), ...) 
         ### Esquema do Banco de Dados:
-        **Estrutura**
-        * **<tabela>:**
-            * <campo> | <tipo de dados> | <descrição (inferida)>
-        
         **Tabelas**
-        * **ordens_servicos (OS):** 
-            * id | int | NOT NULL, AUTO_INCREMENT,
-            * os_concessionaria | int | NOT NULL,
-            * tipo_atendimento | enum('PRESENCIAL','TELEFONE','WHATSAPP') | NULL, DEFAULT NULL,
-            * valor_bruto | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * valor_liquido | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * retencao_iss | tinyint(1) | NOT NULL, DEFAULT '0',
-            * paga | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_pagamento | datetime | NULL, DEFAULT NULL,
-            * observacao_pagamento | text | NULL, DEFAULT NULL,
-            * usuario_pagamento_id | int | NULL, DEFAULT NULL,
-            * fechada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_fechamento | datetime | NULL, DEFAULT NULL,
-            * finalizada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_finalizacao | datetime | NULL, DEFAULT NULL,
-            * cancelada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_cancelamento | datetime | NULL, DEFAULT NULL,
-            * solicitado_cancelamento | tinyint(1) | NOT NULL, DEFAULT '0',
-            * motivo_cancelamento | text | NULL, DEFAULT NULL,
-            * cancelamento_recusado | tinyint(1) | NULL, DEFAULT NULL,
-            * data_recusa_cancelamento | datetime | NULL, DEFAULT NULL,
-            * cancelamento_motivo_id | int | NULL, DEFAULT NULL,
-            * contato_cliente_cancelamento | tinyint(1) | NULL, DEFAULT NULL,
-            * descricao_contato_cancelamento | text | NULL, DEFAULT NULL,
-            * os_retorno | tinyint(1) | NOT NULL, DEFAULT '0',
-            * atendimento_telefonico | tinyint(1) | NOT NULL, DEFAULT '0',
-            * nota_solicitada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_solicitacao_nfe | datetime | NULL, DEFAULT NULL,
-            * nota_aprovada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_aprovacao_nfe | datetime | NULL, DEFAULT NULL,
-            * usuario_aprovacao_nfe_id | int | NULL, DEFAULT NULL,
-            * cep varchar(8) | NULL, DEFAULT NULL,
-            * logradouro varchar(80) | NULL, DEFAULT NULL,
-            * bairro varchar(80) | NULL, DEFAULT NULL,
-            * localidade varchar(80) | NULL, DEFAULT NULL,
-            * uf | char(2) | NULL, DEFAULT NULL,
-            * numero | int | NULL, DEFAULT NULL,
-            * complemento | varchar(50) | NULL, DEFAULT NULL,
-            * data_entrega | datetime | NULL, DEFAULT NULL,
-            * data_edicao_entrega | datetime | NULL, DEFAULT NULL,
-            * entrega_confirmada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_confirmacao_entrega | datetime | NULL, DEFAULT NULL,
-            * execucao_mesmo_dia | tinyint(1) | NOT NULL, DEFAULT '0',
-            * email_garantia_enviado | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_envio_garantia | datetime | NULL, DEFAULT NULL,
-            * observacao_os | text | NULL, DEFAULT NULL,
-            * observacao_producao | text | NULL, DEFAULT NULL,
-            * observacao_nf | text | NULL, DEFAULT NULL,
-            * justificada_concessionaria | tinyint(1) | NOT NULL, DEFAULT '0',
-            * desconto_Avista | tinyint(1) | NOT NULL, DEFAULT '0',
-            * confirmar_retem_iss | tinyint(1) | NOT NULL, DEFAULT '0',
-            * cortesia_migrada | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_migracao_cortesia | date | NULL, DEFAULT NULL,
-            * nome_responsavel_pj | varchar(255) | NULL, DEFAULT NULL,
-            * cpf_responsavel_pj | varchar(14) | NULL, DEFAULT NULL,
-            * nivel_indicador1 | int | NULL, DEFAULT NULL,
-            * nivel_indicador2 | int | NULL, DEFAULT NULL,
-            * indicador1_id | int | NULL, DEFAULT NULL,
-            * indicador2_id | int | NULL, DEFAULT NULL,
-            * departamento_id | int | NOT NULL,
-            * vendedor_id | int | NOT NULL,
-            * concessionaria_id | int | NOT NULL,
-            * cliente_carro_id | int | NOT NULL,
-            * cliente_id | int | NOT NULL,
-            * os_tipo_id | int | NOT NULL,
-            * proposta_id | int | NULL, DEFAULT NULL,
-            * pre_proposta_id | bigint | NULL, DEFAULT NULL,
-            * os_retorno_id | int | NULL, DEFAULT NULL,
-            * os_migracao_cortesia_id | int | NULL, DEFAULT NULL,
-            * usuario_recusa_cancelamento_id | int | NULL, DEFAULT NULL,
-            * funcionario_confirmacao_entrega_id | int | NULL, DEFAULT NULL,
-            * ativo | tinyint(1) | NOT NULL, DEFAULT '1',
-            * created_at | timestamp | NULL, DEFAULT NULL,
-            * updated_at | timestamp | NULL, DEFAULT NULL,
-            * deleted_at | timestamp | NULL, DEFAULT NULL,
-            * id_antigo | int | NULL, DEFAULT NULL,
-            * usuario_atendimento_cancelamento_id | int | NULL, DEFAULT NULL,
-            * justificativa_supervisao | int | NULL, DEFAULT NULL,
-            * justificativa_supervisao_usuario_id | int | NULL, DEFAULT NULL,
-            * justificativa_supervisao_texto | text | NULL, DEFAULT NULL,
-            * PRIMARY KEY (id),
-            * FOREIGN KEY (cancelamento_motivo_id) REFERENCES cancelamento_motivos (id),
-            * FOREIGN KEY (cliente_carro_id) REFERENCES cliente_carros (id),
-            * FOREIGN KEY (cliente_id) REFERENCES clientes (id),
-            * FOREIGN KEY (concessionaria_id) REFERENCES concessionarias (id),
-            * FOREIGN KEY (departamento_id) REFERENCES departamentos (id),
-            * FOREIGN KEY (funcionario_confirmacao_entrega_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (indicador1_id) REFERENCES indicadores (id),
-            * FOREIGN KEY (indicador2_id) REFERENCES indicadores (id),
-            * FOREIGN KEY (os_retorno_id) REFERENCES os (id),
-            * FOREIGN KEY (os_tipo_id) REFERENCES os_tipos (id),
-            * FOREIGN KEY (pre_proposta_id) REFERENCES pre_propostas (id),
-            * FOREIGN KEY (proposta_id) REFERENCES propostas (id),
-            * FOREIGN KEY (usuario_aprovacao_nfe_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (usuario_atendimento_cancelamento_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (usuario_pagamento_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (usuario_recusa_cancelamento_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (vendedor_id) REFERENCES funcionarios (id)
-        * **servicos:** 
-            * id | int | NOT NULL, AUTO_INCREMENT,
-            * nome | varchar(200) | NOT NULL,
-            * custo_fixo decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * codigo_nf | varchar(30) | NOT NULL,
-            * fecha_kit | tinyint(1) | NOT NULL, DEFAULT '0',
-            * fecha_peca_avulsa | tinyint(1) | NOT NULL, DEFAULT '0',
-            * fecha_peca | tinyint(1) | NOT NULL, DEFAULT '0',
-            * fecha_produto | tinyint(1) | NOT NULL, DEFAULT '0',
-            * fecha_produtivo | tinyint(1) | NOT NULL, DEFAULT '1',
-            * diferencia_departamento_preco | tinyint(1) | NOT NULL, DEFAULT '0',
-            * diferencia_porte | tinyint(1) | NOT NULL, DEFAULT '0',
-            * diferencia_departamento | tinyint(1) | NOT NULL, DEFAULT '0',
-            * diferencia_porte_comissao | tinyint(1) | NOT NULL, DEFAULT '0',
-            * diferencia_tempo_departamento | tinyint(1) | NOT NULL, DEFAULT '1',
-            * diferencia_tempo_cor | tinyint(1) | NOT NULL, DEFAULT '0',
-            * credito_necessario int | NOT NULL, DEFAULT '0',
-            * valor_desconto_cortesia decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * aceita_desconto_cortesia | tinyint(1) | NOT NULL, DEFAULT '0',
-            * segunda_aplicacao | tinyint(1) | NOT NULL, DEFAULT '0',
-            * grupo_servico_id int | NOT NULL,
-            * subgrupo_servico_id int | NOT NULL,
-            * servico_categoria_id | bigint | NULL, DEFAULT NULL,
-            * tags | varchar(30) | NULL, DEFAULT NULL,
-            * ativo | tinyint(1) | NOT NULL, DEFAULT '1',
-            * created_at | timestamp | NULL, DEFAULT NULL,
-            * updated_at | timestamp | NULL, DEFAULT NULL,
-            * deleted_at | timestamp | NULL, DEFAULT NULL,
-            * PRIMARY KEY id,
-            * FOREIGN KEY (grupo_servico_id) REFERENCES grupos_servicos (id),
-            * FOREIGN KEY (servico_categoria_id) REFERENCES servico_categorias (id),
-            * FOREIGN KEY (subgrupo_servico_id) REFERENCES subgrupos_servicos (id)
-        * **os_servicos:** 
-            * id | int | NOT NULL, AUTO_INCREMENT,
-            * codigo | varchar(255) | NULL, DEFAULT NULL,
-            * valor_venda | decimal(8,2) | NOT NULL,
-            * valor_original | decimal(8,2) | NOT NULL,
-            * desconto_supervisao | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * desconto_migracao_cortesia | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * desconto_avista | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * valor_venda_real | decimal(8,2) | NULL, DEFAULT NULL,
-            * desconto_bonus | decimal(8,2) | NOT NULL, DEFAULT '0.00',
-            * fechado | tinyint(1) | NOT NULL, DEFAULT '0',
-            * codigo_fechamento | varchar(35) | NOT NULL,
-            * data_fechamento | datetime | NULL, DEFAULT NULL,
-            * fechado_sem_codigo | tinyint(1) | NOT NULL, DEFAULT '0',
-            * justificativa_sem_codigo | text | NULL, DEFAULT NULL,
-            * cancelado | tinyint(1) | NOT NULL, DEFAULT '0',
-            * data_cancelamento | datetime | NULL, DEFAULT NULL,
-            * solicitado_cancelamento | tinyint(1) | NOT NULL, DEFAULT '0',
-            * token_segunda_aplicacao | varchar(255) | NULL, DEFAULT NULL,
-            * executada_segunda_aplicacao | tinyint(1) | NOT NULL, DEFAULT '0',
-            * ordem_pcp | int | NULL, DEFAULT NULL,
-            * os_id | int | NOT NULL,
-            * os_tipo_id | int | NULL, DEFAULT NULL,
-            * servico_id | int | NOT NULL,
-            * tonalidade_id | int | NULL, DEFAULT NULL,
-            * combo_id | int | NULL, DEFAULT NULL,
-            * produtivo_id | int | NULL, DEFAULT NULL,
-            * concessionaria_execucao_id | int | NULL, DEFAULT NULL,
-            * ativo | tinyint(1) | NOT NULL, DEFAULT '1',
-            * created_at | timestamp | NULL, DEFAULT NULL,
-            * updated_at | timestamp | NULL, DEFAULT NULL,
-            * deleted_at | timestamp | NULL, DEFAULT NULL,
-            * plotter_corte_id | int | NULL, DEFAULT NULL,
-            * PRIMARY KEY (id),
-            * FOREIGN KEY (combo_id) REFERENCES combos (id),
-            * FOREIGN KEY (os_id) REFERENCES os (id),
-            * FOREIGN KEY (os_tipo_id) REFERENCES os_tipos (id),
-            * FOREIGN KEY (plotter_corte_id) REFERENCES plotter_cortes (id),
-            * FOREIGN KEY (produtivo_id) REFERENCES funcionarios (id),
-            * FOREIGN KEY (servico_id) REFERENCES servicos (id),
-            * FOREIGN KEY (tonalidade_id) REFERENCES tonalidades (id),
-            * FOREIGN KEY (concessionaria_execucao_id) REFERENCES concessionarias (id)
-        
-        ### **Exemplos Apenas Para Referência**:
-        * **Solicitação apenas para referência:** Quais os serviços mais vendidos no último ano?
-        * **Consulta Esperada apenas para referência:** SELECT YEAR(os.created_at) AS ano, MONTH(os.created_at) AS mes, ser.nome, COUNT(*) AS quantidade_vendida FROM os JOIN os_servicos AS oss ON(oss.os_id = os.id) JOIN servicos AS ser ON(ser.id = oss.servico_id) WHERE os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) GROUP BY ano, mes, ser.nome ORDER BY ano DESC, mes DESC, quantidade_vendida desc;
-        
-        ### Regras:
-        * Você deve considerar uma solicitação apenas o texto do input Human.
-        * Priorize a clareza e a eficiência da consulta.
-        * Use JOIN para relacionar tabelas quando necessário.
-        * Evite consultas excessivamente complexas.
-        * Se a solicitação for ambígua, peça mais informações ao usuário.
-        * Se a solicitação for referente a um serviço especifico adicione na consulta sugerida por você 'LIKE' indicando qual serviço o usuário quer! Nesses casos substitua os espaços em branco do nome do serviço por %.
-        
-        ### Observações:
-        * O termo "entidade" refere-se a uma tabela no nosso contexto.
-        * O esquema completo está disponível para referência, mas foque nas tabelas mencionadas nos exemplos.
-        * Em todas suas responstas o termo 'ordens_servicos' deve ser substituida por 'os'.
-        * O termo 'filme' neste contexto significa película de proteção solar.
-        * O termo 'PS*' neste contexto significa película de proteção solar de segurança anti-vandalismo e anti-intrusão.
-    """
+            **os** 
+                (id, os_concessionaria, tipo_atendimento, paga, data_pagamento, observacao_pagamento, usuario_pagamento_id, fechada, data_fechamento, finalizada, data_finalizacao, cancelada, data_cancelamento, solicitado_cancelamento, motivo_cancelamento, cancelamento_recusado, data_recusa_cancelamento, cancelamento_motivo_id, contato_cliente_cancelamento, descricao_contato_cancelamento, os_retorno, atendimento_telefonico, nota_solicitada, data_solicitacao_nfe, nota_aprovada, data_aprovacao_nfe, usuario_aprovacao_nfe_id, data_entrega, data_edicao_entrega, entrega_confirmada, data_confirmacao_entrega, execucao_mesmo_dia, email_garantia_enviado, data_envio_garantia, observacao_os, observacao_producao, observacao_nf, justificada_concessionaria, cortesia_migrada, data_migracao_cortesia, nome_responsavel_pj, cpf_responsavel_pj, nivel_indicador1, nivel_indicador2, indicador1_id, indicador2_id, departamento_id, vendedor_id, concessionaria_id, cliente_carro_id, cliente_id, os_tipo_id, proposta_id, pre_proposta_id, os_retorno_id, os_migracao_cortesia_id, usuario_recusa_cancelamento_id, funcionario_confirmacao_entrega_id, ativo, created_at, updated_at, deleted_at, id_antigo, usuario_atendimento_cancelamento_id, PRIMARY KEY (id), FOREIGN KEY (cancelamento_motivo_id) REFERENCES cancelamento_motivos (id), FOREIGN KEY (cliente_carro_id) REFERENCES cliente_carros (id), FOREIGN KEY (cliente_id) REFERENCES clientes (id), FOREIGN KEY (concessionaria_id) REFERENCES concessionarias (id), FOREIGN KEY (departamento_id) REFERENCES departamentos (id), FOREIGN KEY (funcionario_confirmacao_entrega_id) REFERENCES funcionarios (id), FOREIGN KEY (indicador1_id) REFERENCES indicadores (id), FOREIGN KEY (indicador2_id) REFERENCES indicadores (id), FOREIGN KEY (os_retorno_id) REFERENCES os (id), FOREIGN KEY (os_tipo_id) REFERENCES os_tipos (id), FOREIGN KEY (pre_proposta_id) REFERENCES pre_propostas (id), FOREIGN KEY (proposta_id) REFERENCES propostas (id), FOREIGN KEY (usuario_aprovacao_nfe_id) REFERENCES funcionarios (id), FOREIGN KEY (usuario_atendimento_cancelamento_id) REFERENCES funcionarios (id), FOREIGN KEY (usuario_pagamento_id) REFERENCES funcionarios (id), FOREIGN KEY (usuario_recusa_cancelamento_id) REFERENCES funcionarios (id), FOREIGN KEY (vendedor_id) REFERENCES funcionarios (id))
+            **servicos**
+                (id, nome, custo_fixo decimal(8,2), codigo_nf, fecha_kit, fecha_peca_avulsa, fecha_peca, fecha_produto, fecha_produtivo, diferencia_departamento_preco, diferencia_porte, diferencia_departamento, diferencia_porte_comissao, diferencia_tempo_departamento, diferencia_tempo_cor, credito_necessario int, valor_desconto_cortesia decimal(8,2), aceita_desconto_cortesia, segunda_aplicacao, grupo_servico_id int, subgrupo_servico_id int, servico_categoria_id, tags, ativo, created_at, updated_at, deleted_at, PRIMARY KEY id, FOREIGN KEY (grupo_servico_id) REFERENCES grupos_servicos (id), FOREIGN KEY (servico_categoria_id) REFERENCES servico_categorias (id), FOREIGN KEY (subgrupo_servico_id) REFERENCES subgrupos_servicos (id))
+            **os_servicos**, 
+                (id, codigo, valor_venda, valor_original, desconto_supervisao, desconto_migracao_cortesia, desconto_avista, valor_venda_real, desconto_bonus, fechado, codigo_fechamento, data_fechamento, fechado_sem_codigo, justificativa_sem_codigo, cancelado, data_cancelamento, solicitado_cancelamento, token_segunda_aplicacao, executada_segunda_aplicacao, ordem_pcp, os_id, os_tipo_id, servico_id, tonalidade_id, combo_id, produtivo_id, concessionaria_execucao_id, ativo, created_at, updated_at, deleted_at, plotter_corte_id, PRIMARY KEY (id), FOREIGN KEY (combo_id) REFERENCES combos (id), FOREIGN KEY (os_id) REFERENCES os (id), FOREIGN KEY (os_tipo_id) REFERENCES os_tipos (id), FOREIGN KEY (plotter_corte_id) REFERENCES plotter_cortes (id), FOREIGN KEY (produtivo_id) REFERENCES funcionarios (id), FOREIGN KEY (servico_id) REFERENCES servicos (id), FOREIGN KEY (tonalidade_id) REFERENCES tonalidades (id), FOREIGN KEY (concessionaria_execucao_id) REFERENCES concessionarias (id))
+            **cancelamento_motivos**
+                (id, nome, created_at, updated_at, deleted_at, PRIMARY KEY (id))
+            **cliente_carros**
+                (id, chassi, placa, ano_modelo, ano, cadastro_parcial, cliente_id, carro_cor_id, carro_modelo_id, carro_submodelo_id, ativo, created_at, updated_at, deleted_at, PRIMARY KEY (id), FOREIGN KEY (carro_cor_id) REFERENCES carro_cores (id), FOREIGN KEY (carro_modelo_id) REFERENCES carro_modelos (id), FOREIGN KEY (carro_submodelo_id) REFERENCES carro_submodelos (id), FOREIGN KEY (cliente_id) REFERENCES clientes (id))
+            **clientes**
+                (id, pf, nome, cpf, sexo, data_nascimento, estado_civil, ie, ie_verificada, im, retem_iss, cep, logradouro, bairro, localidade, uf, numero, complemento, telefone1, telefone2, email, bloqueado_serasa, observacao_serasa, crmbonus_customer_id, crmbonus_pin_code, crmbonus_validado, crmbonus_data_cadastro, crmbonus_verificado, ativo, created_at, updated_at, deleted_at, PRIMARY KEY (id))
+            **concessionarias**
+                (id, nome, nome_carbel, razao_social, cnpj, ie, im, cep, logradouro, bairro, localidade, uf, numero, complemento, retem_iss, aceita_indicador1, aceita_indicador2, restringe_requisicao_kit, edita_observacao_nf, permite_deposito_ci, permite_pcp, dias_execucao, produtivo_base_id, concessionaria_execucao_id, vendedor_responsavel_nf, cancelamento_automatico, dias_cancelamento_automatico, cancelamento_automatico_proposta, dias_cancelamento_automatico_proposta, integracao_carbel, chassis_nf_cortesia, numero_controle_nf_cortesia, carro_marca_id, comissao_periodo_id, nota_tipo_id, supervisor_vendas_id, cluster_id, business_unit_id, empresa_faturamento_id, email_vendedora, ramal_vendedora, gerente_nome, gerente_email, ativo, created_at, updated_at, deleted_at, bloqueio, PRIMARY KEY (id), FOREIGN KEY (business_unit_id) REFERENCES business_units (id), FOREIGN KEY (concessionaria_execucao_id) REFERENCES concessionarias (id), FOREIGN KEY (cluster_id) REFERENCES clusters (id), FOREIGN KEY (carro_marca_id) REFERENCES carro_marcas (id), FOREIGN KEY (comissao_periodo_id) REFERENCES comissao_periodos (id), FOREIGN KEY (empresa_faturamento_id) REFERENCES empresas (id), FOREIGN KEY (nota_tipo_id) REFERENCES nota_tipos (id), FOREIGN KEY (produtivo_base_id) REFERENCES produtivo_bases (id), FOREIGN KEY (supervisor_vendas_id) REFERENCES funcionarios (id))
+            **departamentos**
+                (id, nome, sigla, sigla_carbel, ativo, created_at, updated_at, deleted_at, PRIMARY KEY (id))
+            **funcionarios**
+                (id, nome, cpf, rg, data_nascimento, telefone, email, agencia, conta, url_foto, terceiros, banco_id, banco_conta_tipo_id, funcionario_situacao_id, created_at, updated_at, deleted_at, raca_cor_id, PRIMARY KEY (id), FOREIGN KEY (banco_conta_tipo_id) REFERENCES banco_conta_tipos (id), FOREIGN KEY (banco_id) REFERENCES bancos (id), FOREIGN KEY (funcionario_situacao_id) REFERENCES funcionario_situacoes (id))
+            **os_tipos**
+                * id, nome, ativo, created_at, updated_at, deleted_at, PRIMARY KEY (id)
+            **pre_propostas**
+                (id, cancelada, data_cancelamento, solicitado_cancelamento, data_solicitacao_cancelamento, motivo_cancelamento, finalizada, data_finalizacao, proposta_carbel, empresa_carbel, nome, cpf, data_nascimento, email, telefone1, telefone2, cep, logradouro, bairro, localidade, uf, numero, complemento, vendedor, descricao_veiculo, descricao_veiculo_completa, descricao_estoque, chassi, placa, pre_proposta_cancelamento_motivo_id, concessionaria_id, departamento_id, carro_marca_id, carro_modelo_id, carro_cor_id, funcionario_solicitacao_cancelamento_id, funcionario_aprovacao_cancelamento_id, created_at, updated_at, deleted_at, PRIMARY KEY (id), FOREIGN KEY (pre_proposta_cancelamento_motivo_id) REFERENCES pre_proposta_cancelamento_motivos (id), FOREIGN KEY (carro_cor_id) REFERENCES carro_cores (id), FOREIGN KEY (carro_marca_id) REFERENCES carro_marcas (id), FOREIGN KEY (carro_modelo_id) REFERENCES carro_modelos (id), FOREIGN KEY (concessionaria_id) REFERENCES concessionarias (id), FOREIGN KEY (departamento_id) REFERENCES departamentos (id), FOREIGN KEY (funcionario_aprovacao_cancelamento_id) REFERENCES funcionarios (id), FOREIGN KEY (funcionario_solicitacao_cancelamento_id) REFERENCES funcionarios (id))
+            **propostas**
+                (id, proposta_concessionaria, tipo_atendimento, nome, sexo, telefone1, telefone2, email, atendimento_telefonico, justificativa, cancelamento_motivo_id, vendedor_id, concessionaria_id, departamento_id, cliente_id, cliente_carro_id, proposta_status_id, carro_modelo_id, carro_submodelo_id, carro_cor_id, pre_proposta_id, ativo, created_at, updated_at, deleted_at, PRIMARY KEY (id), FOREIGN KEY (cancelamento_motivo_id) REFERENCES cancelamento_motivos (id), FOREIGN KEY (carro_cor_id) REFERENCES carro_cores (id), FOREIGN KEY (carro_modelo_id) REFERENCES carro_modelos (id), FOREIGN KEY (carro_submodelo_id) REFERENCES carro_submodelos (id), FOREIGN KEY (cliente_carro_id) REFERENCES cliente_carros (id), FOREIGN KEY (cliente_id) REFERENCES clientes (id), FOREIGN KEY (concessionaria_id) REFERENCES concessionarias (id), FOREIGN KEY (departamento_id) REFERENCES departamentos (id), FOREIGN KEY (pre_proposta_id) REFERENCES pre_propostas (id),, FOREIGN KEY (proposta_status_id) REFERENCES proposta_status (id), FOREIGN KEY (vendedor_id) REFERENCES funcionarios (id))
+            """
     user_token = ""
     response = None
     object_found = None
@@ -329,8 +175,8 @@ class GlobalVariables:
             'parameters': {
                 'id': "",
                 'pf': "",
-                'nome': "", 
-                'cpf': "", 
+                'nome': "",
+                'cpf': "",
                 'telefone1': "",
                 'telefone2': "",
                 'email': "",

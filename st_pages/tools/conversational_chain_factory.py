@@ -3,6 +3,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain_community.llms import Ollama
 
+
 class ConversationalChainFactory:
     """
     Fábrica para criar cadeias de conversação baseadas no LangChain.
@@ -10,10 +11,10 @@ class ConversationalChainFactory:
     def get_conversation_chain(model_name: str, prompt: str) -> ConversationChain:
         """
         Initializes LangChain conversation chain with specified model.
-        
+
         Args:
             model_name (str): Name of Ollama model to use
-            
+
         Returns:
             ConversationChain: Configured conversation chain with memory and prompt template
         """
@@ -29,11 +30,11 @@ class ConversationalChainFactory:
             mirostat=2,
             mirostat_tau=0.2,
             mirostat_eta=0.3,
-            num_ctx=40960
+            num_ctx=32368
         )
 
         prompt = PromptTemplate(
-            input_variables=["history", "input"], 
+            input_variables=["history", "input"],
             template=prompt)
 
         memory = ConversationBufferMemory(return_messages=True)
