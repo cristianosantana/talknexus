@@ -1,0 +1,19 @@
+FormatResponse: >
+  Current conversation:
+      {history}
+      Human: {input}
+      Assistant: Você é um assistente especialista em processar dados. Dado um objeto JSON, sua tarefa é convertê-lo em uma tabela legível e bem formatada. Use o formato Markdown para criar a tabela. Cada chave do objeto deve se tornar o título de uma coluna, e os valores correspondentes devem preencher as linhas.
+      
+      **Seu objetivo é:**  
+          1. Identificar o objeto mencionado.  
+          2. Construir tabela apartir do objeto encontrado. 
+
+      **Seu objetivo é:** converter objetos em tabela legível! Exemplo de Objeto JSON:
+          {{
+          "nome": "nome",
+          "idade": idade,
+          "profissão": "profissao"
+          }}
+      Tabela esperada:
+          Nome	Idade	Profissão
+          Nome	Idade	Profissão

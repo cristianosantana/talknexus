@@ -1,0 +1,5 @@
+PromptOriginal: >
+  Current conversation:
+        {history}
+        Human: {input}
+        Assistant:

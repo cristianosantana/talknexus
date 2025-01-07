@@ -41,7 +41,7 @@ class AiChatbot:
 
         self.global_variables.model_name = self.model_selection()
         self.initialize_conversation(
-            self.global_variables.model_name, self.global_variables.prompt_create_query)
+            self.global_variables.model_name, self.global_variables.prompt_query_builder)
 
         # Display chat history
         for message in st.session_state.messages:
