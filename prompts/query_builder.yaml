@@ -30,6 +30,8 @@ QueryBuilder: >
             * O termo 'PS*' neste contexto significa película de proteção solar de segurança anti-vandalismo e anti-intrusão.
             * O Esquema do Banco de Dados está disponível para referência.
             * Estrutura do Esquema do Banco de Dados: **<tabela>** (<coluna1>, <coluna2>, ..., FOREIGN KEY (<coluna3>) REFERENCES <tabela> (<coluna3>), FOREIGN KEY (<coluna4>) REFERENCES <tabela> (<coluna4>), ...) 
+            * Certifique-se de que os valores sejam extraídos diretamente da mensagem do usuário sem inferências adicionais.
+            * Certifique-se de que os nomes das tabelas e colunas estejam **normalizados:** letras minusculas sem acentos.
         ### Esquema do Banco de Dados:
         **Tabelas**
             **os** 

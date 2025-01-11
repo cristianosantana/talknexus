@@ -1,6 +1,7 @@
 from tools.global_variables import GlobalVariables
 from tools.smart_services import SmartServices
 from tools.configuracao_logger import ConfiguracaoLogger
+from tools.database_manager import DatabaseManager
 import streamlit as st
 import json 
 
@@ -12,10 +13,42 @@ class SmartController:
     smart_services = SmartServices()
     logger = ConfiguracaoLogger
     logger.configure_logger()
+    connection_db = DatabaseManager({'host': "127.0.0.1", 'port': "3306", 'user': "root", 'password': "secret", 'database': "smart"})
 
     def handler(self, response_ia):
+        """
+        Porta de entrada dessa classe: extrai um objeto de uma string e chama funções para acesso a api_rest ou banco de dados.
+        Parâmentros: response_ia (string): contém um objeto gerado pelo modelo de linguagem.
+        Retorno: True ou False que indica sucesso ou fracasso.
+        """
+        usar_api_rest = False
+
+        if usar_api_rest:
+            self.request_handler(self, response_ia)
+        else: 
+            self.database_access_handler(self, response_ia)
+    
+    def database_access_handler(self, response_ia):
+        """
+        Conecta a um banco de dados, executa consultas e retorna resultados.
+        Parâmetros: query (string): consulta em MySql.
+        Retorno: Resultado da consulta.
+        """
+
+        self.logger.write_logger("info", "Executar search_for_query_in_string()")
+        query = self.search_for_query_in_string(self, response_ia)
+        self.logger.write_logger("info", "Executar run_mysql_query()")
+        self.run_mysql_query(self, query)
+
+    def run_mysql_query(self, query):
+        """Conecta e executa queries"""
+        self.global_variables.response = self.connection_db.run_mysql_query(query)
+        
+    def request_handler(self, response_ia):
             """
-            Realiza a requisição
+            Executa rota a API_REST.
+            Parâmetros: response (object): contém rota e dados a serem usado para chamar a rotas.
+            Retorno: Resultado da API_REST.
             """
             try:
                 self.global_variables.object_found = self.search_for_object_in_string(self, response_ia)
@@ -109,6 +142,25 @@ class SmartController:
         except json.JSONDecodeError as e:
             self.logger.write_logger("exception", f"Erro ao decodificar o JSON. Error: {e}.")
             st.warning(f"Erro ao decodificar o JSON. Error: {e}.")
+    
+    def search_for_query_in_string(self, response):
+        """
+        Extrai query da resposta do llm
+        """
+        try:  
+            self.logger.write_logger("info", f"String que contem a query: {response}")
+            start = response.find('sql')
+            end = response.rfind('```')
+            if start != -1 and end != -1:
+                query = response[start+3:end]
+                self.logger.write_logger("info", f"Query extraida da resposta: {query.strip()}")
+                return query.strip()
+            else:
+                self.logger.write_logger("warning", f"Erro ao estrai query da resposta do modelo! RESPOSTA: {response}")        
+                st.warning(f"Erro ao estrai query da resposta do modelo! RESPOSTA: {response}")
+        except json.JSONDecodeError as e:
+            self.logger.write_logger("exception", f"Erro ao estrai query da resposta do modelo. Error: {e}.")
+            st.warning(f"Erro ao estrai query da resposta do modelo. Error: {e}.")
 
     def verify_params_entity(entity, params):
         """

@@ -51,6 +51,5 @@ SelectCreateUpdateDelete: >
                 }}
 
     **Pontos Adicionais:**  
-        - Seja consistente na estrutura do JSON e evite informações desnecessárias.  
-        - Se a mensagem contiver várias entidades ou ações, processe apenas uma de cada vez.  
+        - Seja consistente na estrutura do JSON.
         - Certifique-se de que os valores sejam extraídos diretamente da mensagem do usuário sem inferências adicionais.

@@ -13,7 +13,8 @@ class SmartServices:
     logger.configure_logger()
 
     def __init__(self):
-        self.auth()
+        # self.auth()
+        print("Não estou autenticando!")
 
     def request_base_smart(self, route, method, payload, headers,  show_message = 1):
         """

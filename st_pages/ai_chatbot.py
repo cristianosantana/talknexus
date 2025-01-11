@@ -57,15 +57,14 @@ class AiChatbot:
 
             # Generate and display assistant response
             with st.chat_message("assistant"):
-                self.generate_display_assistant_response(
-                    st.session_state.messages, prompt)
-                # if self.global_variables.response != None:
-                #     st.session_state.messages = []
-                #     st.session_state.conversation = None
-                #     self.global_variables.model_name = "llama3.2:3b"
-                #     self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
-                #     prompt_response_llm = f"Faça uma tabela com os dados do objeto a seguir: {self.global_variables.response}"
-                #     self.generate_display_assistant_response(prompt_response_llm)
+                self.generate_display_assistant_response(st.session_state.messages, prompt, True)
+                if self.global_variables.response != None:
+                    st.session_state.messages = []
+                    st.session_state.conversation = None
+                    self.global_variables.model_name = "deepseek-coder-v2:16b"
+                    self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
+                    prompt_response_llm = f"Faça uma tabela com os dados a seguir: {self.global_variables.response}"
+                    self.generate_display_assistant_response(st.session_state.messages, prompt_response_llm)
 
     def generate_display_assistant_response(self, messages, message, run_smart_api=False):
         """ Generate and display assistant response """
