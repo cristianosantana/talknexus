@@ -2,3 +2,4 @@
 /st_pages/__pycache__
 /st_pages/tools/__pycache__
 .venv
+.env

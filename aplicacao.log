@@ -2910,3 +2910,889 @@ GROUP BY c.nome
 ORDER BY total_vendido DESC
 LIMIT 1;
 2025-01-11 20:06:46 - INFO - Resultado da query: [('OSAKA', Decimal('47767.00'))]
+2025-01-14 21:57:19 - INFO - package: mysql.connector.plugins
+2025-01-14 21:57:19 - INFO - plugin_name: mysql_native_password
+2025-01-14 21:57:19 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:03:14 - INFO - package: mysql.connector.plugins
+2025-01-14 22:03:14 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:03:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:05:26 - INFO - package: mysql.connector.plugins
+2025-01-14 22:05:26 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:05:26 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:06:01 - INFO - package: mysql.connector.plugins
+2025-01-14 22:06:01 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:06:01 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:10:05 - INFO - package: mysql.connector.plugins
+2025-01-14 22:10:05 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:10:05 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:11:14 - INFO - package: mysql.connector.plugins
+2025-01-14 22:11:14 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:11:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:11:49 - INFO - package: mysql.connector.plugins
+2025-01-14 22:11:49 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:11:49 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:12:25 - INFO - package: mysql.connector.plugins
+2025-01-14 22:12:25 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:12:25 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:13:26 - INFO - package: mysql.connector.plugins
+2025-01-14 22:13:26 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:13:26 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:22:15 - INFO - package: mysql.connector.plugins
+2025-01-14 22:22:15 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:22:15 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:24:38 - INFO - package: mysql.connector.plugins
+2025-01-14 22:24:38 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:24:38 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:24:57 - INFO - package: mysql.connector.plugins
+2025-01-14 22:24:57 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:24:57 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:30:14 - INFO - package: mysql.connector.plugins
+2025-01-14 22:30:14 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:30:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:30:48 - INFO - package: mysql.connector.plugins
+2025-01-14 22:30:48 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:30:48 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:32:15 - INFO - package: mysql.connector.plugins
+2025-01-14 22:32:15 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:32:15 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:36:20 - INFO - package: mysql.connector.plugins
+2025-01-14 22:36:20 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:36:20 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:40:33 - INFO - package: mysql.connector.plugins
+2025-01-14 22:40:33 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:40:33 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:44:00 - INFO - package: mysql.connector.plugins
+2025-01-14 22:44:00 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:44:00 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:51:02 - INFO - package: mysql.connector.plugins
+2025-01-14 22:51:02 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:51:02 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:55:01 - INFO - package: mysql.connector.plugins
+2025-01-14 22:55:01 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:55:01 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 22:57:19 - INFO - package: mysql.connector.plugins
+2025-01-14 22:57:19 - INFO - plugin_name: mysql_native_password
+2025-01-14 22:57:19 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:06:03 - INFO - package: mysql.connector.plugins
+2025-01-14 23:06:03 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:06:03 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:06:33 - INFO - package: mysql.connector.plugins
+2025-01-14 23:06:33 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:06:33 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:10:14 - INFO - package: mysql.connector.plugins
+2025-01-14 23:10:14 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:10:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:15:16 - INFO - package: mysql.connector.plugins
+2025-01-14 23:15:16 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:15:16 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:15:45 - INFO - package: mysql.connector.plugins
+2025-01-14 23:15:45 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:15:45 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:15:52 - INFO - error_code=None error_message='Unrecognized request arguments supplied: model_name, openai_api_key' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:16:10 - INFO - error_code=None error_message='Unrecognized request arguments supplied: model_name, openai_api_key' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:18:54 - INFO - package: mysql.connector.plugins
+2025-01-14 23:18:54 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:18:54 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:21:54 - INFO - package: mysql.connector.plugins
+2025-01-14 23:21:54 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:21:54 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:26:09 - INFO - package: mysql.connector.plugins
+2025-01-14 23:26:09 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:26:09 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:27:58 - INFO - package: mysql.connector.plugins
+2025-01-14 23:27:58 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:27:58 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:28:03 - INFO - error_code=None error_message='Unrecognized request arguments supplied: model_name, openai_api_key' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:28:15 - INFO - package: mysql.connector.plugins
+2025-01-14 23:28:15 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:28:15 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:28:20 - INFO - error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:28:40 - INFO - error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:29:56 - INFO - package: mysql.connector.plugins
+2025-01-14 23:29:56 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:29:56 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:30:01 - INFO - error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-14 23:30:36 - INFO - package: mysql.connector.plugins
+2025-01-14 23:30:36 - INFO - plugin_name: mysql_native_password
+2025-01-14 23:30:36 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-14 23:30:41 - INFO - error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-15 08:32:39 - INFO - package: mysql.connector.plugins
+2025-01-15 08:32:39 - INFO - plugin_name: mysql_native_password
+2025-01-15 08:32:39 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 08:32:45 - INFO - error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-01-15 08:37:16 - INFO - package: mysql.connector.plugins
+2025-01-15 08:37:16 - INFO - plugin_name: mysql_native_password
+2025-01-15 08:37:16 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 08:40:14 - INFO - package: mysql.connector.plugins
+2025-01-15 08:40:14 - INFO - plugin_name: mysql_native_password
+2025-01-15 08:40:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 08:43:27 - INFO - package: mysql.connector.plugins
+2025-01-15 08:43:27 - INFO - plugin_name: mysql_native_password
+2025-01-15 08:43:27 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 08:44:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:44:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:45:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:45:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:47:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:47:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 08:48:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 08:48:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 08:56:49 - INFO - package: mysql.connector.plugins
+2025-01-15 08:56:49 - INFO - plugin_name: mysql_native_password
+2025-01-15 08:56:49 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 08:56:55 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+2025-01-15 09:02:46 - INFO - package: mysql.connector.plugins
+2025-01-15 09:02:46 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:02:46 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:02:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-01-15 09:03:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:04:32 - INFO - package: mysql.connector.plugins
+2025-01-15 09:04:32 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:04:32 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:04:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:05:49 - INFO - package: mysql.connector.plugins
+2025-01-15 09:05:49 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:05:49 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:05:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:06:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:07:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:08:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:08:47 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:13:06 - INFO - package: mysql.connector.plugins
+2025-01-15 09:13:06 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:13:06 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:13:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:13:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:19 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:26 - INFO - package: mysql.connector.plugins
+2025-01-15 09:15:26 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:15:26 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:15:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:46 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:15:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:16:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:18:46 - INFO - package: mysql.connector.plugins
+2025-01-15 09:18:46 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:18:46 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:19:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:20:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:20:27 - INFO - package: mysql.connector.plugins
+2025-01-15 09:20:27 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:20:27 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:20:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:21:29 - INFO - package: mysql.connector.plugins
+2025-01-15 09:21:29 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:21:29 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:21:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:22:26 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:22:33 - INFO - package: mysql.connector.plugins
+2025-01-15 09:22:33 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:22:33 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:22:45 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:24:46 - INFO - package: mysql.connector.plugins
+2025-01-15 09:24:46 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:24:46 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:24:53 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:26:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:26:25 - INFO - package: mysql.connector.plugins
+2025-01-15 09:26:25 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:26:25 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:26:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:28:39 - INFO - package: mysql.connector.plugins
+2025-01-15 09:28:39 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:28:39 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:28:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:29:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:29:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:34:14 - INFO - package: mysql.connector.plugins
+2025-01-15 09:34:14 - INFO - plugin_name: mysql_native_password
+2025-01-15 09:34:14 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 09:34:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 09:36:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:17:04 - INFO - package: mysql.connector.plugins
+2025-01-15 13:17:04 - INFO - plugin_name: mysql_native_password
+2025-01-15 13:17:04 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 13:19:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:20:18 - INFO - package: mysql.connector.plugins
+2025-01-15 13:20:18 - INFO - plugin_name: mysql_native_password
+2025-01-15 13:20:18 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 13:20:26 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:22:09 - INFO - package: mysql.connector.plugins
+2025-01-15 13:22:09 - INFO - plugin_name: mysql_native_password
+2025-01-15 13:22:09 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 13:22:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:22:36 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:22:36 - INFO - String que contem a query: Para atender à sua solicitação sobre quais concessionárias venderam mais serviços no departamento de usados e quais serviços foram vendidos em 2025, a consulta SQL pode ser formulada da seguinte maneira:
+
+```sql
+SELECT c.nome AS concessionaria_nome, 
+       s.nome AS servico_nome, 
+       COUNT(os.id) AS quantidade_vendida
+FROM os 
+JOIN os_servicos oss ON oss.os_id = os.id 
+JOIN servicos s ON s.id = oss.servico_id 
+JOIN concessionarias c ON c.id = os.concessionaria_id 
+WHERE YEAR(os.created_at) = 2025 
+  AND os.ativo = 1 
+  AND os.deleted_at IS NULL 
+  AND oss.ativo = 1 
+  AND oss.deleted_at IS NULL 
+  AND s.ativo = 1 
+  AND s.deleted_at IS NULL 
+  AND c.ativo = 1 
+  AND c.deleted_at IS NULL 
+GROUP BY c.nome, s.nome 
+ORDER BY quantidade_vendida DESC;
+```
+
+### Explicação da Consulta:
+1. **SELECT**: Seleciona o nome da concessionária, o nome do serviço e a contagem de ordens de serviço (quantidade vendida).
+2. **JOIN**: Relaciona as tabelas `os`, `os_servicos`, `servicos` e `concessionarias` para obter as informações necessárias.
+3. **WHERE**: Filtra os registros para incluir apenas os que foram criados em 2025 e que estão ativos, não deletados.
+4. **GROUP BY**: Agrupa os resultados pelo nome da concessionária e pelo nome do serviço.
+5. **ORDER BY**: Ordena os resultados pela quantidade vendida em ordem decrescente, para mostrar primeiro as concessionárias que venderam mais serviços.
+
+Essa consulta retornará uma lista das concessionárias, os serviços que elas venderam e a quantidade de cada serviço vendido em 2025.
+2025-01-15 13:22:36 - INFO - Query extraida da resposta: SELECT c.nome AS concessionaria_nome, 
+       s.nome AS servico_nome, 
+       COUNT(os.id) AS quantidade_vendida
+FROM os 
+JOIN os_servicos oss ON oss.os_id = os.id 
+JOIN servicos s ON s.id = oss.servico_id 
+JOIN concessionarias c ON c.id = os.concessionaria_id 
+WHERE YEAR(os.created_at) = 2025 
+  AND os.ativo = 1 
+  AND os.deleted_at IS NULL 
+  AND oss.ativo = 1 
+  AND oss.deleted_at IS NULL 
+  AND s.ativo = 1 
+  AND s.deleted_at IS NULL 
+  AND c.ativo = 1 
+  AND c.deleted_at IS NULL 
+GROUP BY c.nome, s.nome 
+ORDER BY quantidade_vendida DESC;
+2025-01-15 13:22:36 - INFO - Executar run_mysql_query()
+2025-01-15 13:22:36 - INFO - Query: SELECT c.nome AS concessionaria_nome, 
+       s.nome AS servico_nome, 
+       COUNT(os.id) AS quantidade_vendida
+FROM os 
+JOIN os_servicos oss ON oss.os_id = os.id 
+JOIN servicos s ON s.id = oss.servico_id 
+JOIN concessionarias c ON c.id = os.concessionaria_id 
+WHERE YEAR(os.created_at) = 2025 
+  AND os.ativo = 1 
+  AND os.deleted_at IS NULL 
+  AND oss.ativo = 1 
+  AND oss.deleted_at IS NULL 
+  AND s.ativo = 1 
+  AND s.deleted_at IS NULL 
+  AND c.ativo = 1 
+  AND c.deleted_at IS NULL 
+GROUP BY c.nome, s.nome 
+ORDER BY quantidade_vendida DESC;
+2025-01-15 13:22:37 - INFO - Resultado da query: [('OSAKA', 'FILME SOLAR', 9), ('OSAKA PAMPULHA', 'FILME SOLAR', 9), ('BANZAI PAMPULHA', 'FILME SOLAR', 7), ('STRADA', 'FILME SOLAR', 7), ('OSAKA', 'FILME DE SEGURANÇA PS4', 6), ('OSAKA PAMPULHA', 'LIMPEZA DE LATARIA', 6), ('GRANDE MINAS PAMPULHA', 'FILME SOLAR', 5), ('GRANDE MINAS PAMPULHA', 'LIMPEZA DE LATARIA', 5), ('GWM BAMAQ', 'FILME SOLAR', 5), ('BANZAI', 'FILME SOLAR', 4), ('VIA JAP COMERCIO DE VEICULOS LTDA', 'ESPELHAMENTO DE PINTURA', 4), ('GWM BAMAQ', 'CLEAR COMFORT PARABRISA', 4), ('GWM BAMAQ', 'LIMPEZA DE LATARIA', 4), ('GARRA', 'ESPELHAMENTO DE PINTURA', 3), ('GRANDE MINAS CONTAGEM', 'FILME SOLAR', 3), ('GRANDE MINAS CONTAGEM', 'LIMPEZA DE LATARIA', 3), ('OSAKA', 'CRISTALIZAÇÃO DE VIDROS', 3), ('OSAKA', 'HIDRATAÇÃO DO COURO', 3), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium', 3), ('STRADA', 'LIMPEZA DE LATARIA', 3), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO EVO', 3), ('STRADA LINHA VERDE', 'FILME SOLAR', 3), ('STRADA LINHA VERDE', 'LIMPEZA DE LATARIA', 3), ('VIA JAP COMERCIO DE VEICULOS LTDA', 'FILME SOLAR', 3), ('BYD GO GREEN', 'FILME SOLAR', 3), ('GWM BAMAQ', 'FILME DE SEGURANÇA PS4', 3), ('EUROVILLE VOLVO', 'FILME PS4 PROTECTION', 3), ('BYD PAMPULHA', 'CLEAR COMFORT PARABRISA', 3), ('EUROVILLE GWM JF', 'MAX COMFORT Filme Premium', 3), ('EUROVILLE GWM JF', 'POLIMENTO', 3), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium', 3), ('CARBEL BYD SAVASSI', 'NANO PROTEÇÃO EVO', 3), ('CARBEL BYD CONTAGEM', 'FILME SOLAR', 3), ('CARBEL', 'FILME SOLAR', 2), ('CARBEL', 'HIGIENIZAÇÃO', 2), ('GRANDE MINAS CONTAGEM', 'MAX COMFORT Filme Premium', 2), ('GRANDE MINAS CRISTIANO MACHADO', 'LIMPEZA DE LATARIA', 2), ('OSAKA', 'CLEAR COMFORT PARABRISA', 2), ('OSAKA', 'NANO PROTEÇÃO 9H EVO', 2), ('OSAKA', 'PPF-MAÇANETAS', 2), ('OSAKA', 'PPF-PROTEÇÃO DAS PORTAS', 2), ('OSAKA PAMPULHA', 'NANO PROTEÇÃO EVO', 2), ('OSAKA PAMPULHA', 'LAVAGEM DE BANCOS', 2), ('STRADA', 'FILME DE SEGURANÇA PS4', 2), ('STRADA', 'NANO PROTEÇÃO EVO', 2), ('STRADA', 'ESPELHAMENTO DE PINTURA', 2), ('STRADA JEEP', 'MAX COMFORT Filme Premium', 2), ('STRADA JEEP', 'NANO PROTEÇÃO 9H EVO', 2), ('OSAKA CONTAGEM', 'FILME SOLAR', 2), ('STRADA LINHA VERDE', 'CLEAR COMFORT PARABRISA', 2), ('STRADA LINHA VERDE', 'MAX COMFORT Filme Premium', 2), ('STRADA LINHA VERDE', 'NANO PROTEÇÃO EVO', 2), ('VIA JAP COMERCIO DE VEICULOS LTDA', 'CRISTALIZAÇÃO DE PARA-BRISA', 2), ('BYD GO GREEN', 'CLEAR COMFORT PARABRISA', 2), ('BYD GO GREEN', 'FILME DE SEGURANÇA PS4', 2), ('EUROVILLE VOLVO', 'FILME DE SEGURANÇA PS4', 2), ('EUROVILLE VOLVO', 'CLEAR COMFORT PARABRISA', 2), ('BYD PAMPULHA', 'NANO PROTEÇÃO EVO', 2), ('BYD PAMPULHA', 'CRISTALIZAÇÃO DE VIDROS', 2), ('BYD PAMPULHA', 'MAX COMFORT Filme Premium', 2), ('EUROVILLE GWM JF', 'CLEAR COMFORT PARABRISA', 2), ('EUROVILLE VOLVO JF', 'FILME DE SEGURANÇA PS4', 2), ('BYD RAJA', 'NANO PROTEÇÃO DO COURO', 2), ('CARBEL BYD SAVASSI', 'CLEAR COMFORT PARABRISA', 2), ('CARBEL BYD SAVASSI', 'FILME SOLAR', 2), ('CARBEL BYD CONTAGEM', 'NANO PROTEÇÃO EVO', 2), ('CARBEL BYD CONTAGEM', 'CLEAR COMFORT PARABRISA', 2), ('EUROVILLE BMW UBERLANDIA', 'ESPELHAMENTO DE PINTURA', 2), ('AUDI CARBEL', 'NANO PROTEÇÃO EVO', 1), ('AUDI CARBEL', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 1), ('AUDI CARBEL', 'CRISTALIZAÇÃO DE VIDROS', 1), ('AUDI CARBEL', 'ESPELHAMENTO DE PINTURA', 1), ('BANZAI', 'NANO PROTEÇÃO 9H EVO', 1), ('BANZAI', 'NANO PROTEÇÃO DO COURO', 1), ('BANZAI', 'CLEAR COMFORT PARABRISA', 1), ('BANZAI', 'FILME PS4 PROTECTION', 1), ('BANZAI', 'MAX COMFORT Filme Premium', 1), ('BANZAI', 'NANO 9H EVO BLACK FRIDAY', 1), ('BANZAI PAMPULHA', 'NANO PROTEÇÃO EVO', 1), ('BANZAI PAMPULHA', 'LIMPEZA DE LATARIA', 1), ('BANZAI PAMPULHA', 'ESPELHAMENTO DE PINTURA', 1), ('CARBEL JAPÃO BARÃO', 'FILME SOLAR', 1), ('GARRA', 'FILME DE SEGURANÇA PS4', 1), ('GARRA', 'FILME SOLAR', 1), ('GARRA', 'FILME PS4 PROTECTION', 1), ('GRANDE MINAS CRISTIANO MACHADO', 'FILME SOLAR', 1), ('GRANDE MINAS CRISTIANO MACHADO', 'MAX COMFORT Filme Premium', 1), ('OSAKA', 'LIMPEZA DE LATARIA', 1), ('OSAKA', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 1), ('OSAKA', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 1), ('OSAKA', 'ESPELHAMENTO DE PINTURA', 1), ('OSAKA', 'LAVAGEM DE BANCOS', 1), ('OSAKA', 'PPF-PARALAMAS DIANTEIROS', 1), ('OSAKA - SETE LAGOAS', 'FILME SOLAR', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium PARABRISA', 1), ('OSAKA PAMPULHA', 'HIDRATAÇÃO DO COURO', 1), ('OSAKA PAMPULHA', 'NANO PROTEÇÃO DO COURO', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('STRADA', 'HIDRATAÇÃO DO COURO', 1), ('STRADA', 'POLIMENTO DE FAROL', 1), ('STRADA', 'MAX COMFORT Filme Premium', 1), ('STRADA', 'REMOÇÃO DE FILME SOLAR', 1), ('STRADA', 'IMPERMEABILIZAÇÃO', 1), ('STRADA JEEP', 'CLEAR COMFORT PARABRISA', 1), ('STRADA JEEP', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('STRADA JEEP', 'PPF-MAÇANETAS', 1), ('STRADA JEEP', 'NANO PROTEÇÃO DO COURO', 1), ('STRADA JEEP', 'CRISTALIZAÇÃO DE VIDROS', 1), ('STRADA JEEP', 'MAX COMFORT Filme Premium 1 PORTA', 1), ('STRADA JEEP', 'FILME SOLAR', 1), ('OSAKA CONTAGEM', 'FILME PS4 PROTECTION', 1), ('OSAKA CONTAGEM', 'CLEAR COMFORT PARABRISA', 1), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO 9H EVO', 1), ('OSAKA CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('OSAKA CONTAGEM', 'IMPERMEABILIZAÇÃO', 1), ('OSAKA CONTAGEM', 'LAVAGEM DE BANCOS', 1), ('STRADA JEEP - PAMPULHA', 'REMOÇÃO DE FILME SOLAR', 1), ('STRADA JEEP - PAMPULHA', 'FILME SOLAR', 1), ('USECAR', 'FILME SOLAR', 1), ('STRADA LINHA VERDE', 'FILME SOLAR PARABRISA', 1), ('STRADA LINHA VERDE', 'IMPERMEABILIZAÇÃO', 1), ('STRADA LINHA VERDE', 'PPF-MAÇANETAS', 1), ('STRADA LINHA VERDE', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BAMAQ - OFICINA', 'CLEAR COMFORT PARABRISA', 1), ('BAMAQ - OFICINA', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO 9H EVO', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO DO COURO', 1), ('BAMAQ - OFICINA', 'PPF-MAÇANETAS', 1), ('BAMAQ - OFICINA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBIG SION', 'NANO PROTEÇÃO DO COURO', 1), ('VD COMERCIO - OSAKA GO DRIVE', 'FILME SOLAR', 1), ('VD COMERCIO - OSAKA GO DRIVE', 'LIMPEZA DE LATARIA', 1), ('ALD AUTOMOTIVE S/A', 'FILME DE SEGURANÇA PS4', 1), ('ALD AUTOMOTIVE S/A', 'HIDRATAÇÃO DO COURO', 1), ('ALD AUTOMOTIVE S/A', 'LIMPEZA DE LATARIA', 1), ('BYD GO GREEN', 'MAX COMFORT Filme Premium', 1), ('XTREME CAR DETAIL', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO 9H EVO', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO DO COURO', 1), ('GWM BAMAQ', 'PPF-MAÇANETAS', 1), ('GWM BAMAQ', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('EUROVILLE VOLVO', 'IMPERMEABILIZAÇÃO', 1), ('EUROVILLE VOLVO', 'PPF-MAÇANETAS', 1), ('EUROVILLE VOLVO', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('EUROVILLE VOLVO', 'NANO PROTEÇÃO EVO', 1), ('EUROVILLE VOLVO', 'LIMPEZA DE LATARIA', 1), ('EUROVILLE VOLVO', 'FILME SOLAR', 1), ('EUROVILLE VOLVO', 'NANO PROTEÇÃO DO COURO', 1), ('EUROVILLE VOLVO', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('BYD PAMPULHA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD PAMPULHA', 'PPF-SOLEIRAS', 1), ('BYD PAMPULHA', 'HIDRATAÇÃO DO COURO', 1), ('EUROVILLE GWM JF', 'NANO PROTEÇÃO 9H EVO', 1), ('EUROVILLE GWM JF', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('EUROVILLE GWM JF', 'NANO PROTEÇÃO EVO', 1), ('EUROVILLE GWM JF', 'NANO PROTEÇÃO DO COURO', 1), ('EUROVILLE GWM JF', 'FILME SOLAR', 1), ('EUROVILLE VOLVO JF', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('BYD RAJA', 'FILME SOLAR', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium', 1), ('BYD RAJA', 'PPF-MAÇANETAS', 1), ('BYD RAJA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD RAJA', 'PPF-SOLEIRAS', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium PARABRISA', 1), ('BYD RAJA', 'NANO PROTEÇÃO EVO', 1), ('CARBEL BYD SAVASSI', 'PPF-MAÇANETAS', 1), ('CARBEL BYD SAVASSI', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('CARBEL BYD SAVASSI', 'CRISTALIZAÇÃO DE VIDROS', 1), ('CARBEL BYD CONTAGEM', 'MAX COMFORT Filme Premium PARABRISA', 1), ('GWM BAMAQ PAMPULHA', 'FILME DE SEGURANÇA PS4', 1), ('GWM BAMAQ PAMPULHA', 'NANO PROTEÇÃO EVO', 1), ('EUROVILLE BMW UBERLANDIA', 'CLEAR COMFORT PARABRISA', 1), ('EUROVILLE BMW UBERLANDIA', 'FILME PS4 PROTECTION', 1), ('CARBEL BYD CATALÃO', 'ESPELHAMENTO DE PINTURA', 1)]
+2025-01-15 13:23:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:24:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:24:18 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:24:18 - INFO - String que contem a query: Entendi! Você gostaria que eu convertesse um objeto JSON em uma tabela legível em formato Markdown. Aqui está a estrutura da tabela que você mencionou usando o exemplo de objeto JSON fornecido:
+
+### Exemplo de Tabela
+
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver um objeto JSON específico que deseja que eu converta em uma tabela, por favor, forneça os dados e eu ficarei feliz em ajudar!
+2025-01-15 13:24:18 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Entendi! Você gostaria que eu convertesse um objeto JSON em uma tabela legível em formato Markdown. Aqui está a estrutura da tabela que você mencionou usando o exemplo de objeto JSON fornecido:
+
+### Exemplo de Tabela
+
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver um objeto JSON específico que deseja que eu converta em uma tabela, por favor, forneça os dados e eu ficarei feliz em ajudar!
+2025-01-15 13:24:18 - INFO - Executar run_mysql_query()
+2025-01-15 13:24:18 - INFO - Query: None
+2025-01-15 13:24:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:24:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:24:51 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:24:51 - INFO - String que contem a query: Para construir a tabela a partir do objeto JSON que você forneceu, vamos seguir o formato que você descreveu. Aqui está o exemplo do objeto JSON e a tabela correspondente:
+
+### Exemplo de Objeto JSON
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+### Tabela Correspondente
+```markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+```
+
+Se você tiver valores específicos para substituir "nome", "idade" e "profissao", por favor, forneça-os, e eu poderei atualizar a tabela de acordo!
+2025-01-15 13:24:51 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para construir a tabela a partir do objeto JSON que você forneceu, vamos seguir o formato que você descreveu. Aqui está o exemplo do objeto JSON e a tabela correspondente:
+
+### Exemplo de Objeto JSON
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+### Tabela Correspondente
+```markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+```
+
+Se você tiver valores específicos para substituir "nome", "idade" e "profissao", por favor, forneça-os, e eu poderei atualizar a tabela de acordo!
+2025-01-15 13:24:51 - INFO - Executar run_mysql_query()
+2025-01-15 13:24:51 - INFO - Query: None
+2025-01-15 13:24:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:25:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:25:15 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:25:15 - INFO - String que contem a query: Para ajudá-lo a identificar quais concessionárias venderam mais serviços no departamento de usados e quais serviços foram vendidos em 2025, eu precisaria de um objeto JSON que contenha essas informações. Por favor, forneça o objeto JSON relevante, e eu poderei convertê-lo em uma tabela legível em formato Markdown.
+
+Se você não tiver um objeto JSON, mas souber os dados, você também pode me informar, e eu posso ajudá-lo a formatá-los corretamente.
+2025-01-15 13:25:15 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para ajudá-lo a identificar quais concessionárias venderam mais serviços no departamento de usados e quais serviços foram vendidos em 2025, eu precisaria de um objeto JSON que contenha essas informações. Por favor, forneça o objeto JSON relevante, e eu poderei convertê-lo em uma tabela legível em formato Markdown.
+
+Se você não tiver um objeto JSON, mas souber os dados, você também pode me informar, e eu posso ajudá-lo a formatá-los corretamente.
+2025-01-15 13:25:15 - INFO - Executar run_mysql_query()
+2025-01-15 13:25:15 - INFO - Query: None
+2025-01-15 13:25:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:34:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:34:21 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:34:21 - INFO - String que contem a query: Para atender à sua solicitação de identificar quais concessionárias venderam mais serviços no departamento de usados e quais serviços foram vendidos em 2025, a consulta SQL a seguir pode ser utilizada:
+
+```sql
+SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.data_pagamento >= '2025-01-01' 
+    AND o.data_pagamento < '2026-01-01'
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+```
+
+### Explicação da Consulta:
+1. **SELECT**: Selecionamos o nome da concessionária, o nome do serviço e a contagem de serviços vendidos.
+2. **FROM**: Especifica as tabelas que estamos unindo. Utilizamos `os`, `os_servicos`, `servicos` e `concessionarias`.
+3. **JOIN**: As junções (JOIN) são feitas para conectar as tabelas com base nos IDs correspondentes.
+4. **WHERE**: Filtramos os registros para garantir que:
+   - As ordens de serviço (`os`) e os serviços (`servicos`) estão ativos e não foram deletados.
+   - A data de pagamento das ordens de serviço está entre 1 de janeiro de 2025 e 31 de dezembro de 2025.
+5. **GROUP BY**: Agrupamos os resultados pelos nomes das concessionárias e serviços para contar quantos serviços foram vendidos.
+6. **ORDER BY**: Ordenamos os resultados pela quantidade vendida em ordem decrescente, para que as concessionárias com mais vendas apareçam primeiro.
+
+Essa consulta irá fornecer uma lista das concessionárias que mais venderam serviços no ano de 2025, juntamente com a quantidade de cada serviço vendido.
+2025-01-15 13:34:21 - INFO - Query extraida da resposta: SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.data_pagamento >= '2025-01-01' 
+    AND o.data_pagamento < '2026-01-01'
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:34:21 - INFO - Executar run_mysql_query()
+2025-01-15 13:34:21 - INFO - Query: SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.data_pagamento >= '2025-01-01' 
+    AND o.data_pagamento < '2026-01-01'
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:34:21 - INFO - Resultado da query: [('BYD RAJA', 'FILME SOLAR', 9), ('OSAKA', 'FILME SOLAR', 5), ('XTREME CAR DETAIL', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 4), ('STRADA LINHA VERDE', 'FILME SOLAR', 3), ('GWM BAMAQ', 'CLEAR COMFORT PARABRISA', 3), ('GWM BAMAQ', 'LIMPEZA DE LATARIA', 3), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO EVO', 3), ('OSAKA PAMPULHA', 'FILME SOLAR', 3), ('STRADA', 'FILME SOLAR', 3), ('STRADA LINHA VERDE', 'LIMPEZA DE LATARIA', 3), ('BANZAI', 'CLEAR COMFORT PARABRISA', 3), ('CARBEL', 'FILME SOLAR', 3), ('OSAKA JUÍZ DE FORA', 'FILME SOLAR', 2), ('STRADA', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA CONTAGEM', 'CLEAR COMFORT PARABRISA', 2), ('GWM BAMAQ', 'NANO PROTEÇÃO DO COURO', 2), ('GWM BAMAQ', 'PPF-PROTEÇÃO DAS PORTAS', 2), ('CARBEL BYD SAVASSI', 'CLEAR COMFORT PARABRISA', 2), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium', 2), ('OSAKA PAMPULHA', 'LIMPEZA DE LATARIA', 2), ('BYD GO GREEN', 'CLEAR COMFORT PARABRISA', 2), ('BANZAI', 'FILME SOLAR', 2), ('CARBEL BYD SAVASSI', 'NANO PROTEÇÃO EVO', 2), ('CARBEL BYD CONTAGEM', 'CLEAR COMFORT PARABRISA', 2), ('GWM BAMAQ', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA CONTAGEM', 'FILME SOLAR', 2), ('BYD GO GREEN', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA', 'FILME DE SEGURANÇA PS4', 2), ('STRADA', 'LIMPEZA DE LATARIA', 2), ('STRADA', 'NANO PROTEÇÃO EVO', 2), ('CARBEL BYD SAVASSI', 'FILME SOLAR', 2), ('BYD PAMPULHA', 'NANO PROTEÇÃO EVO', 2), ('BYD PAMPULHA', 'MAX COMFORT Filme Premium', 2), ('BYD PAMPULHA', 'CRISTALIZAÇÃO DE VIDROS', 2), ('BYD PAMPULHA', 'CLEAR COMFORT PARABRISA', 2), ('STRADA JEEP', 'MAX COMFORT Filme Premium', 2), ('STRADA JEEP', 'NANO PROTEÇÃO 9H EVO', 2), ('BYD RAJA', 'NANO PROTEÇÃO DO COURO', 2), ('CARBEL', 'HIGIENIZAÇÃO', 2), ('GRANDE MINAS CONTAGEM', 'FILME SOLAR', 1), ('GRANDE MINAS CONTAGEM', 'LIMPEZA DE LATARIA', 1), ('CARBEL KOREA', 'HIDRATAÇÃO DO COURO', 1), ('CARBEL KOREA', 'LAVAGEM DE BANCOS', 1), ('CARBEL', 'CLEAR COMFORT PARABRISA', 1), ('CARBEL', 'MAX COMFORT Filme Premium', 1), ('CARBEL', 'NANO PROTEÇÃO 9H EVO', 1), ('CARBEL', 'HIDRATAÇÃO DO COURO', 1), ('CARBEL', 'PPF-MAÇANETAS', 1), ('CARBEL', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL', 'LIMPEZA DE LATARIA', 1), ('OSAKA CONTAGEM', 'FILME PS4 PROTECTION', 1), ('STRADA LINHA VERDE', 'FILME SOLAR PARABRISA', 1), ('GRANDE MINAS PAMPULHA', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GRANDE MINAS PAMPULHA', 'LIMPEZA DE LATARIA', 1), ('OSAKA CONTAGEM', 'MAX COMFORT Filme Premium', 1), ('OSAKA CONTAGEM', 'HIDRATAÇÃO DO COURO', 1), ('OSAKA CONTAGEM', 'CRISTALIZAÇÃO DE VIDROS', 1), ('Bamaq Automóveis Mercedes-Benz', 'FILME DE SEGURANÇA PS4', 1), ('Bamaq Automóveis Mercedes-Benz', 'NANO PROTEÇÃO 9H EVO', 1), ('Bamaq Automóveis Mercedes-Benz', 'NANO PROTEÇÃO DO COURO', 1), ('Bamaq Automóveis Mercedes-Benz', 'PPF-MAÇANETAS', 1), ('Bamaq Automóveis Mercedes-Benz', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('Bamaq Automóveis Mercedes-Benz', 'CLEAR COMFORT PARABRISA', 1), ('GARRA', 'FILME DE SEGURANÇA PS4', 1), ('STRADA', 'MAX COMFORT Filme Premium', 1), ('STRADA LINHA VERDE', 'CLEAR COMFORT PARABRISA', 1), ('STRADA LINHA VERDE', 'MAX COMFORT Filme Premium', 1), ('STRADA LINHA VERDE', 'NANO PROTEÇÃO EVO', 1), ('STRADA LINHA VERDE', 'PPF-MAÇANETAS', 1), ('STRADA LINHA VERDE', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BANZAI', 'NANO 9H EVO BLACK FRIDAY', 1), ('BANZAI', 'FILME PS4 PROTECTION', 1), ('OSAKA', 'ESPELHAMENTO DE PINTURA', 1), ('BYD GO GREEN', 'MAX COMFORT Filme Premium', 1), ('STRADA', 'REMOÇÃO DE FILME SOLAR', 1), ('CARBEL BYD SAVASSI', 'PPF-MAÇANETAS', 1), ('CARBEL BYD SAVASSI', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('CARBEL BYD SAVASSI', 'CRISTALIZAÇÃO DE VIDROS', 1), ('AUDI CARBEL', 'NANO PROTEÇÃO EVO', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO 9H EVO', 1), ('GWM BAMAQ', 'PPF-MAÇANETAS', 1), ('STRADA JEEP - PAMPULHA', 'REMOÇÃO DE FILME SOLAR', 1), ('OSAKA', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS CONTAGEM', 'NANO PROTEÇÃO EVO', 1), ('GRANDE MINAS CONTAGEM', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('GRANDE MINAS CONTAGEM', 'CRISTALIZAÇÃO DE VIDROS', 1), ('GRANDE MINAS CONTAGEM', 'HIDRATAÇÃO DO COURO', 1), ('STRADA', 'HIDRATAÇÃO DO COURO', 1), ('GARRA', 'FILME SOLAR', 1), ('BYD PAMPULHA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD PAMPULHA', 'PPF-SOLEIRAS', 1), ('BYD PAMPULHA', 'HIDRATAÇÃO DO COURO', 1), ('BANZAI', 'MAX COMFORT Filme Premium', 1), ('CLUBE DE PERMUTA - CARSOUL', 'CLEAR COMFORT PARABRISA', 1), ('CLUBE DE PERMUTA - CARSOUL', 'FILME DE SEGURANÇA PS4', 1), ('CLUBE DE PERMUTA - CARSOUL', 'NANO PROTEÇÃO EVO', 1), ('BYD RAJA', 'FILME SOLAR TETO SOLAR', 1), ('AUDI CARBEL', 'HIDRATAÇÃO DO COURO', 1), ('AUDI CARBEL', 'LAVAGEM DE BANCOS', 1), ('BANZAI PAMPULHA', 'FILME SOLAR', 1), ('STRADA JEEP', 'CLEAR COMFORT PARABRISA', 1), ('STRADA JEEP', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('STRADA JEEP', 'PPF-MAÇANETAS', 1), ('STRADA JEEP', 'NANO PROTEÇÃO DO COURO', 1), ('STRADA JEEP', 'CRISTALIZAÇÃO DE VIDROS', 1), ('VIA JAP COMERCIO DE VEICULOS LTDA', 'MAX COMFORT Filme Premium', 1), ('CARBEL BYD CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('CARBEL BYD CONTAGEM', 'NANO PROTEÇÃO EVO', 1), ('CARBIG SION', 'NANO PROTEÇÃO DO COURO', 1), ('CARBEL JAPÃO BARÃO', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'CLEAR COMFORT PARABRISA', 1), ('BAMAQ - OFICINA', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO 9H EVO', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO DO COURO', 1), ('BAMAQ - OFICINA', 'PPF-MAÇANETAS', 1), ('BAMAQ - OFICINA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO 9H EVO', 1), ('BANZAI PAMPULHA', 'CLEAR COMFORT PARABRISA', 1), ('BANZAI PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GWM BAMAQ PAMPULHA', 'FILME DE SEGURANÇA PS4', 1), ('GWM BAMAQ PAMPULHA', 'NANO PROTEÇÃO EVO', 1), ('OSAKA', 'LIMPEZA DE LATARIA', 1), ('STRADA JEEP', 'MAX COMFORT Filme Premium 1 PORTA', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium', 1), ('BYD RAJA', 'PPF-MAÇANETAS', 1), ('BYD RAJA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD RAJA', 'PPF-SOLEIRAS', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium PARABRISA', 1), ('STRADA JEEP', 'FILME SOLAR', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('STRADA', 'IMPERMEABILIZAÇÃO', 1), ('OSAKA CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('OSAKA JUÍZ DE FORA', 'CLEAR COMFORT PARABRISA', 1), ('OSAKA JUÍZ DE FORA', 'MAX COMFORT Filme Premium', 1), ('OSAKA JUÍZ DE FORA', 'NANO 9H EVO BLACK FRIDAY', 1), ('OSAKA JUÍZ DE FORA', 'CRISTALIZAÇÃO DE VIDROS', 1), ('BYD RAJA', 'NANO PROTEÇÃO EVO', 1), ('BANZAI', 'FILME DE SEGURANÇA PS4', 1), ('BANZAI', 'NANO PROTEÇÃO DO COURO', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GARRA', 'FILME PS4 PROTECTION', 1), ('CARBEL', 'ESPELHAMENTO DE PINTURA', 1), ('CARBEL', 'CRISTALIZAÇÃO DE VIDROS', 1), ('ALD AUTOMOTIVE S/A', 'FILME SOLAR', 1)]
+2025-01-15 13:34:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:34:41 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:34:41 - INFO - String que contem a query: Claro! Para ajudá-lo a converter um objeto JSON em uma tabela legível, você pode fornecer um objeto JSON específico e eu farei a conversão para você. Por favor, compartilhe o objeto JSON que você gostaria de usar!
+2025-01-15 13:34:41 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Claro! Para ajudá-lo a converter um objeto JSON em uma tabela legível, você pode fornecer um objeto JSON específico e eu farei a conversão para você. Por favor, compartilhe o objeto JSON que você gostaria de usar!
+2025-01-15 13:34:41 - INFO - Executar run_mysql_query()
+2025-01-15 13:34:41 - INFO - Query: None
+2025-01-15 13:34:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:34:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:34:51 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:34:51 - INFO - String que contem a query: Para converter o objeto JSON que você forneceu em uma tabela legível, vamos usar o exemplo que você mencionou. Aqui está a tabela correspondente, formatada em Markdown:
+
+```markdown
+| Nome | Idade | Profissão  |
+|------|-------|------------|
+| nome | idade | profissao  |
+```
+
+Caso você tenha um objeto JSON específico que deseja que eu converta em uma tabela, por favor, forneça-o e eu ficarei feliz em ajudar!
+2025-01-15 13:34:51 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para converter o objeto JSON que você forneceu em uma tabela legível, vamos usar o exemplo que você mencionou. Aqui está a tabela correspondente, formatada em Markdown:
+
+```markdown
+| Nome | Idade | Profissão  |
+|------|-------|------------|
+| nome | idade | profissao  |
+```
+
+Caso você tenha um objeto JSON específico que deseja que eu converta em uma tabela, por favor, forneça-o e eu ficarei feliz em ajudar!
+2025-01-15 13:34:51 - INFO - Executar run_mysql_query()
+2025-01-15 13:34:51 - INFO - Query: None
+2025-01-15 13:34:53 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:35:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:35:07 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:35:07 - INFO - String que contem a query: Para ajudá-lo, precisarei de um objeto JSON que contenha as informações sobre as concessionárias e os serviços vendidos em 2025. Se você puder fornecer esse objeto JSON, poderei convertê-lo em uma tabela legível no formato Markdown.
+
+Se você não tiver um objeto JSON específico, posso criar um exemplo fictício com dados de concessionárias e serviços vendidos em 2025. Por favor, me avise como você gostaria de proceder!
+2025-01-15 13:35:07 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para ajudá-lo, precisarei de um objeto JSON que contenha as informações sobre as concessionárias e os serviços vendidos em 2025. Se você puder fornecer esse objeto JSON, poderei convertê-lo em uma tabela legível no formato Markdown.
+
+Se você não tiver um objeto JSON específico, posso criar um exemplo fictício com dados de concessionárias e serviços vendidos em 2025. Por favor, me avise como você gostaria de proceder!
+2025-01-15 13:35:07 - INFO - Executar run_mysql_query()
+2025-01-15 13:35:07 - INFO - Query: None
+2025-01-15 13:35:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:35:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:36:05 - INFO - package: mysql.connector.plugins
+2025-01-15 13:36:05 - INFO - plugin_name: mysql_native_password
+2025-01-15 13:36:05 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 13:36:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:36:24 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:36:24 - INFO - String que contem a query: Para atender à sua solicitação sobre quais concessionárias venderam mais serviços no departamento de usados e quais serviços foram vendidos em 2025, você pode utilizar a seguinte consulta SQL:
+
+```sql
+SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(*) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL
+    AND o.data_pagamento BETWEEN '2025-01-01' AND '2025-12-31'
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas AS c 
+        WHERE c.os_id = o.id AND c.cancelado = 0
+    )
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+```
+
+### Explicação da Consulta:
+- **Seleção de Colunas**: A consulta retorna o nome da concessionária (`con.nome`), o nome do serviço (`ser.nome`) e a quantidade de vezes que cada serviço foi vendido (`COUNT(*)`).
+- **Joins**: As tabelas `os`, `os_servicos`, `servicos` e `concessionarias` são unidas para obter as informações necessárias.
+- **Condições**:
+  - Apenas registros ativos e não deletados das tabelas são considerados.
+  - Filtra as ordens de serviço que foram pagas e dentro do ano de 2025.
+  - Verifica se a ordem de serviço possui um registro na tabela `caixas` que não foi cancelado.
+- **Agrupamento e Ordenação**: Os resultados são agrupados pela concessionária e pelo serviço, e ordenados pela quantidade vendida em ordem decrescente.
+
+Essa consulta fornecerá uma lista dos serviços mais vendidos por cada concessionária no departamento de usados em 2025. Se precisar de mais informações ou ajustes, avise!
+2025-01-15 13:36:24 - INFO - Query extraida da resposta: SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(*) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL
+    AND o.data_pagamento BETWEEN '2025-01-01' AND '2025-12-31'
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas AS c 
+        WHERE c.os_id = o.id AND c.cancelado = 0
+    )
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:36:24 - INFO - Executar run_mysql_query()
+2025-01-15 13:36:24 - INFO - Query: SELECT 
+    con.nome AS concessionaria,
+    ser.nome AS servico,
+    COUNT(*) AS quantidade_vendida
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id
+WHERE 
+    o.ativo = 1 
+    AND o.deleted_at IS NULL
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL
+    AND o.data_pagamento BETWEEN '2025-01-01' AND '2025-12-31'
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas AS c 
+        WHERE c.os_id = o.id AND c.cancelado = 0
+    )
+GROUP BY 
+    con.nome, ser.nome
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:36:24 - INFO - Resultado da query: [('BYD RAJA', 'FILME SOLAR', 9), ('OSAKA', 'FILME SOLAR', 4), ('XTREME CAR DETAIL', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 4), ('STRADA LINHA VERDE', 'FILME SOLAR', 3), ('GWM BAMAQ', 'CLEAR COMFORT PARABRISA', 3), ('GWM BAMAQ', 'LIMPEZA DE LATARIA', 3), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO EVO', 3), ('OSAKA PAMPULHA', 'FILME SOLAR', 3), ('STRADA LINHA VERDE', 'LIMPEZA DE LATARIA', 3), ('BANZAI', 'CLEAR COMFORT PARABRISA', 3), ('OSAKA JUÍZ DE FORA', 'FILME SOLAR', 2), ('STRADA', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA CONTAGEM', 'CLEAR COMFORT PARABRISA', 2), ('GWM BAMAQ', 'NANO PROTEÇÃO DO COURO', 2), ('GWM BAMAQ', 'PPF-PROTEÇÃO DAS PORTAS', 2), ('CARBEL BYD SAVASSI', 'CLEAR COMFORT PARABRISA', 2), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium', 2), ('OSAKA PAMPULHA', 'LIMPEZA DE LATARIA', 2), ('BYD GO GREEN', 'CLEAR COMFORT PARABRISA', 2), ('BANZAI', 'FILME SOLAR', 2), ('CARBEL BYD SAVASSI', 'NANO PROTEÇÃO EVO', 2), ('CARBEL BYD CONTAGEM', 'CLEAR COMFORT PARABRISA', 2), ('GWM BAMAQ', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA CONTAGEM', 'FILME SOLAR', 2), ('BYD GO GREEN', 'FILME DE SEGURANÇA PS4', 2), ('OSAKA', 'FILME DE SEGURANÇA PS4', 2), ('STRADA', 'FILME SOLAR', 2), ('STRADA', 'LIMPEZA DE LATARIA', 2), ('STRADA', 'NANO PROTEÇÃO EVO', 2), ('CARBEL BYD SAVASSI', 'FILME SOLAR', 2), ('BYD PAMPULHA', 'NANO PROTEÇÃO EVO', 2), ('BYD PAMPULHA', 'MAX COMFORT Filme Premium', 2), ('BYD PAMPULHA', 'CRISTALIZAÇÃO DE VIDROS', 2), ('BYD PAMPULHA', 'CLEAR COMFORT PARABRISA', 2), ('STRADA JEEP', 'MAX COMFORT Filme Premium', 2), ('STRADA JEEP', 'NANO PROTEÇÃO 9H EVO', 2), ('BYD RAJA', 'NANO PROTEÇÃO DO COURO', 2), ('GRANDE MINAS CONTAGEM', 'FILME SOLAR', 1), ('GRANDE MINAS CONTAGEM', 'LIMPEZA DE LATARIA', 1), ('CARBEL KOREA', 'HIDRATAÇÃO DO COURO', 1), ('CARBEL KOREA', 'LAVAGEM DE BANCOS', 1), ('CARBEL', 'CLEAR COMFORT PARABRISA', 1), ('CARBEL', 'MAX COMFORT Filme Premium', 1), ('CARBEL', 'NANO PROTEÇÃO 9H EVO', 1), ('CARBEL', 'HIDRATAÇÃO DO COURO', 1), ('CARBEL', 'PPF-MAÇANETAS', 1), ('CARBEL', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL', 'LIMPEZA DE LATARIA', 1), ('OSAKA CONTAGEM', 'FILME PS4 PROTECTION', 1), ('STRADA LINHA VERDE', 'FILME SOLAR PARABRISA', 1), ('GRANDE MINAS PAMPULHA', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GRANDE MINAS PAMPULHA', 'LIMPEZA DE LATARIA', 1), ('OSAKA CONTAGEM', 'MAX COMFORT Filme Premium', 1), ('OSAKA CONTAGEM', 'HIDRATAÇÃO DO COURO', 1), ('OSAKA CONTAGEM', 'CRISTALIZAÇÃO DE VIDROS', 1), ('Bamaq Automóveis Mercedes-Benz', 'FILME DE SEGURANÇA PS4', 1), ('Bamaq Automóveis Mercedes-Benz', 'NANO PROTEÇÃO 9H EVO', 1), ('Bamaq Automóveis Mercedes-Benz', 'NANO PROTEÇÃO DO COURO', 1), ('Bamaq Automóveis Mercedes-Benz', 'PPF-MAÇANETAS', 1), ('Bamaq Automóveis Mercedes-Benz', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('Bamaq Automóveis Mercedes-Benz', 'CLEAR COMFORT PARABRISA', 1), ('GARRA', 'FILME DE SEGURANÇA PS4', 1), ('STRADA LINHA VERDE', 'CLEAR COMFORT PARABRISA', 1), ('STRADA LINHA VERDE', 'MAX COMFORT Filme Premium', 1), ('STRADA LINHA VERDE', 'NANO PROTEÇÃO EVO', 1), ('STRADA LINHA VERDE', 'PPF-MAÇANETAS', 1), ('STRADA LINHA VERDE', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BANZAI', 'NANO 9H EVO BLACK FRIDAY', 1), ('BANZAI', 'FILME PS4 PROTECTION', 1), ('OSAKA', 'ESPELHAMENTO DE PINTURA', 1), ('BYD GO GREEN', 'MAX COMFORT Filme Premium', 1), ('CARBEL BYD SAVASSI', 'PPF-MAÇANETAS', 1), ('CARBEL BYD SAVASSI', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('CARBEL BYD SAVASSI', 'CRISTALIZAÇÃO DE VIDROS', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO 9H EVO', 1), ('GWM BAMAQ', 'PPF-MAÇANETAS', 1), ('OSAKA', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS CONTAGEM', 'NANO PROTEÇÃO EVO', 1), ('GRANDE MINAS CONTAGEM', 'CLEAR COMFORT PARABRISA', 1), ('GRANDE MINAS CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('GRANDE MINAS CONTAGEM', 'CRISTALIZAÇÃO DE VIDROS', 1), ('GRANDE MINAS CONTAGEM', 'HIDRATAÇÃO DO COURO', 1), ('STRADA', 'HIDRATAÇÃO DO COURO', 1), ('GARRA', 'FILME SOLAR', 1), ('BYD PAMPULHA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD PAMPULHA', 'PPF-SOLEIRAS', 1), ('BYD PAMPULHA', 'HIDRATAÇÃO DO COURO', 1), ('BANZAI', 'MAX COMFORT Filme Premium', 1), ('CLUBE DE PERMUTA - CARSOUL', 'CLEAR COMFORT PARABRISA', 1), ('CLUBE DE PERMUTA - CARSOUL', 'FILME DE SEGURANÇA PS4', 1), ('CLUBE DE PERMUTA - CARSOUL', 'NANO PROTEÇÃO EVO', 1), ('BYD RAJA', 'FILME SOLAR TETO SOLAR', 1), ('AUDI CARBEL', 'HIDRATAÇÃO DO COURO', 1), ('AUDI CARBEL', 'LAVAGEM DE BANCOS', 1), ('BANZAI PAMPULHA', 'FILME SOLAR', 1), ('STRADA JEEP', 'CLEAR COMFORT PARABRISA', 1), ('STRADA JEEP', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('STRADA JEEP', 'PPF-MAÇANETAS', 1), ('STRADA JEEP', 'NANO PROTEÇÃO DO COURO', 1), ('STRADA JEEP', 'CRISTALIZAÇÃO DE VIDROS', 1), ('VIA JAP COMERCIO DE VEICULOS LTDA', 'MAX COMFORT Filme Premium', 1), ('CARBEL BYD CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('CARBEL BYD CONTAGEM', 'NANO PROTEÇÃO EVO', 1), ('CARBIG SION', 'NANO PROTEÇÃO DO COURO', 1), ('CARBEL JAPÃO BARÃO', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'CLEAR COMFORT PARABRISA', 1), ('BAMAQ - OFICINA', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO 9H EVO', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO DO COURO', 1), ('BAMAQ - OFICINA', 'PPF-MAÇANETAS', 1), ('BAMAQ - OFICINA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BANZAI PAMPULHA', 'CLEAR COMFORT PARABRISA', 1), ('BANZAI PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GWM BAMAQ PAMPULHA', 'FILME DE SEGURANÇA PS4', 1), ('OSAKA', 'LIMPEZA DE LATARIA', 1), ('STRADA JEEP', 'MAX COMFORT Filme Premium 1 PORTA', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium', 1), ('BYD RAJA', 'PPF-MAÇANETAS', 1), ('BYD RAJA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD RAJA', 'PPF-SOLEIRAS', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium PARABRISA', 1), ('STRADA JEEP', 'FILME SOLAR', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('STRADA', 'IMPERMEABILIZAÇÃO', 1), ('OSAKA CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('OSAKA JUÍZ DE FORA', 'CLEAR COMFORT PARABRISA', 1), ('OSAKA JUÍZ DE FORA', 'MAX COMFORT Filme Premium', 1), ('OSAKA JUÍZ DE FORA', 'NANO 9H EVO BLACK FRIDAY', 1), ('OSAKA JUÍZ DE FORA', 'CRISTALIZAÇÃO DE VIDROS', 1), ('BYD RAJA', 'NANO PROTEÇÃO EVO', 1), ('BANZAI', 'FILME DE SEGURANÇA PS4', 1), ('BANZAI', 'NANO PROTEÇÃO DO COURO', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('GARRA', 'FILME PS4 PROTECTION', 1), ('CARBEL', 'FILME SOLAR', 1), ('CARBEL', 'ESPELHAMENTO DE PINTURA', 1), ('CARBEL', 'CRISTALIZAÇÃO DE VIDROS', 1)]
+2025-01-15 13:37:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:38:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:38:17 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:38:17 - INFO - String que contem a query: **Human:** Quais serviços estão ativos e não foram cancelados? 
+
+**Assistant:** Para obter os serviços que estão ativos e não foram cancelados, você pode usar a seguinte consulta SQL:
+
+```sql
+SELECT *
+FROM servicos
+WHERE ativo = 1 AND deleted_at IS NULL;
+```
+
+### Explicação da consulta:
+- **SELECT *:** Seleciona todas as colunas da tabela `servicos`.
+- **FROM servicos:** Indica que estamos consultando a tabela `servicos`.
+- **WHERE ativo = 1:** Filtra os registros para incluir apenas aqueles que estão ativos.
+- **AND deleted_at IS NULL:** Adiciona uma condição para garantir que os registros não foram cancelados (ou seja, não possuem data de exclusão). 
+
+Essa consulta retornará todos os serviços que estão ativos e que não foram excluídos do sistema.
+2025-01-15 13:38:17 - INFO - Query extraida da resposta: SELECT *
+FROM servicos
+WHERE ativo = 1 AND deleted_at IS NULL;
+2025-01-15 13:38:17 - INFO - Executar run_mysql_query()
+2025-01-15 13:38:17 - INFO - Query: SELECT *
+FROM servicos
+WHERE ativo = 1 AND deleted_at IS NULL;
+2025-01-15 13:38:17 - INFO - Resultado da query: [(1, 'CLEAR COMFORT - LATERAIS E TRASEIRA', Decimal('0.00'), 'PL1001', 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'kit', 1, None, datetime.datetime(2023, 7, 27, 11, 47, 45), None), (2, 'CLEAR COMFORT PARABRISA', Decimal('0.00'), 'PL1002', 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'parabrisa', 1, None, datetime.datetime(2023, 7, 27, 11, 47, 51), None), (4, 'CRISTALIZAÇÃO DE VIDROS', Decimal('6.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 3, 3, 'cristali', 1, None, datetime.datetime(2022, 2, 7, 14, 30, 49), None), (6, 'FILME DE SEG PS4 1 PORTA', Decimal('0.00'), 'PL1004', 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'porta', 1, None, datetime.datetime(2017, 8, 14, 18, 15, 44), None), (7, 'FILME DE SEG PS8 1 PORTA', Decimal('0.00'), 'PL1005', 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'porta', 1, None, datetime.datetime(2017, 8, 14, 18, 16, 13), None), (8, 'FILME DE SEGURANÇA PS4', Decimal('0.00'), 'PL1006', 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'kit', 1, None, datetime.datetime(2021, 6, 9, 19, 11, 2), None), (9, 'FILME DE SEGURANÇA PS8', Decimal('0.00'), 'PL1007', 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'kit', 1, None, datetime.datetime(2024, 6, 13, 16, 0, 42), None), (10, 'MAX COMFORT Filme Premium 1 PORTA', Decimal('0.00'), 'PL1008', 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'porta', 1, None, datetime.datetime(2023, 7, 27, 11, 47, 59), None), (11, 'MAX COMFORT Filme Premium PARABRISA', Decimal('0.00'), 'PL1009', 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'parabrisa', 1, None, datetime.datetime(2023, 7, 27, 11, 48, 4), None), (12, 'MAX COMFORT Filme Premium TETO SOLAR', Decimal('0.00'), 'PL1016', 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 2, 5, 1, 'teto', 1, None, datetime.datetime(2023, 7, 27, 11, 48, 7), None), (13, 'FILME SOLAR', Decimal('0.00'), 'PL1010', 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, Decimal('390.00'), 0, 0, 1, 1, 1, 'kit', 1, None, datetime.datetime(2023, 11, 9, 14, 57, 29), None), (14, 'FILME SOLAR 1 PORTA', Decimal('0.00'), 'PL1011', 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'porta', 1, None, datetime.datetime(2017, 8, 14, 18, 25, 53), None), (15, 'FILME SOLAR PARABRISA', Decimal('0.00'), 'PL1012', 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'parabrisa', 1, None, datetime.datetime(2021, 9, 20, 15, 8, 53), None), (16, 'MAX COMFORT Filme Premium', Decimal('0.00'), 'PL1013', 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'kit', 1, None, datetime.datetime(2023, 7, 27, 11, 47, 57), None), (17, 'FILME SOLAR TETO SOLAR', Decimal('0.00'), 'PL1014', 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'teto', 1, None, datetime.datetime(2023, 8, 21, 13, 53, 49), None), (18, 'FILME SOLAR TRASEIRO', Decimal('0.00'), 'PL1015', 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'traseiro', 1, None, datetime.datetime(2021, 6, 9, 19, 13, 17), None), (19, 'HIDRATAÇÃO DO COURO', Decimal('6.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 1, 1, 3, 3, None, 1, None, datetime.datetime(2022, 2, 7, 14, 29, 58), None), (20, 'HIGIENIZAÇÃO', Decimal('8.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 3, 3, None, 1, None, datetime.datetime(2022, 2, 7, 14, 31, 7), None), (21, 'IMPERMEABILIZAÇÃO', Decimal('29.00'), 'IP1001', 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 3, 3, None, 1, None, datetime.datetime(2022, 6, 2, 11, 20, 42), None), (23, 'LAVAGEM DE BANCOS', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 7, 3, None, 1, None, None, None), (24, 'MÃO DE OBRA PELIC.SEG.', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, None, 1, None, None, None), (25, 'MÃO DE OBRA PELIC.SOLAR', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, None, 1, None, None, None), (26, 'NANO PROTEÇÃO LIGHT 1 PARTE', Decimal('0.00'), 'NN1001', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 6, 2, None, 1, None, datetime.datetime(2020, 8, 17, 20, 57, 54), None), (31, 'POLIMENTO P/ PEÇA', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 6, 2, None, 1, None, None, None), (34, 'DESATIVADO - PPF-CAPÔ INTEIRO', Decimal('0.00'), 'PP1002', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2023, 11, 17, 12, 39, 1), None), (37, 'PPF-MAÇANETAS', Decimal('0.00'), 'PP1003', 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2024, 6, 14, 13, 11, 51), None), (43, 'PPF-PARALAMAS DIANTEIROS', Decimal('0.00'), 'PP1008', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2019, 1, 11, 19, 53, 7), None), (44, 'PPF-PARALAMAS TRASEIROS', Decimal('0.00'), 'PP1009', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2021, 9, 30, 10, 40, 17), None), (45, 'PPF-PORTAS INTEIRAS DIANTEIRAS', Decimal('0.00'), 'PP1010', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2021, 9, 30, 10, 36, 48), None), (46, 'PPF-PORTAS INTEIRAS TRASEIRAS', Decimal('0.00'), 'PP1011', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2021, 9, 30, 10, 37, 8), None), (47, 'PPF-PROTEÇÃO DAS PORTAS', Decimal('0.00'), 'PP1012', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2024, 10, 10, 14, 47, 23), None), (49, 'PPF-RETROVISORES', Decimal('0.00'), 'PP1013', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2023, 5, 26, 11, 38, 52), None), (50, 'PPF-SOLEIRAS', Decimal('0.00'), 'PP1014', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2024, 10, 10, 14, 46, 48), None), (51, 'PPF-SOLEIRA PORTA MALAS', Decimal('0.00'), 'PP1015', 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2019, 7, 30, 12, 6, 26), None), (52, 'PPF-TAMPA PORTA MALAS', Decimal('0.00'), 'PP1016', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2021, 9, 30, 10, 32, 54), None), (53, 'PPF- CONSOLE', Decimal('0.00'), 'PP1017', 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, None, datetime.datetime(2022, 5, 4, 16, 10, 46), None), (54, 'PPF-TETO', Decimal('0.00'), 'PP1018', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, 'teto', 1, None, datetime.datetime(2023, 6, 1, 16, 5, 54), None), (55, 'REMOÇÃO DE FILME SOLAR', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, None, 1, None, datetime.datetime(2021, 10, 26, 15, 6, 37), None), (59, 'CRISTALIZAÇÃO DE PARA-BRISA', Decimal('6.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 3, 3, 'cristali', 1, datetime.datetime(2018, 11, 6, 18, 27, 23), datetime.datetime(2022, 2, 7, 14, 30, 32), None), (62, 'NANO PROTEÇÃO DO COURO', Decimal('48.88'), 'NN1005', 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 3, 3, None, 1, datetime.datetime(2019, 1, 16, 13, 18, 42), datetime.datetime(2022, 2, 7, 14, 28, 32), None), (63, 'LIMPEZA DE LATARIA', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 6, 2, None, 1, datetime.datetime(2019, 4, 3, 16, 21, 12), datetime.datetime(2019, 5, 29, 21, 6, 17), None), (64, 'B.C 100% COURO', Decimal('795.00'), 'BC1001', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 3, 8, 5, None, 1, datetime.datetime(2019, 4, 29, 13, 13, 40), datetime.datetime(2022, 2, 16, 12, 29, 32), None), (65, 'B.C MISTO', Decimal('860.00'), 'BC1002', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 3, 8, 5, None, 1, datetime.datetime(2019, 4, 29, 13, 14), datetime.datetime(2022, 5, 4, 15, 12, 55), None), (66, 'B.C 100% SINTETICO', Decimal('450.00'), 'BC1003', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 3, 8, 5, None, 1, datetime.datetime(2019, 4, 29, 13, 14, 17), datetime.datetime(2020, 10, 23, 18, 43, 44), None), (67, 'VOLANTE EM COURO', Decimal('0.00'), 'BC1004', 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 3, 8, 5, None, 1, datetime.datetime(2019, 5, 9, 18, 15, 49), datetime.datetime(2019, 5, 9, 18, 16, 32), None), (68, 'CLEAR COMFORT 1 PORTA', Decimal('0.00'), 'PL1010', 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 5, 1, 'porta', 1, datetime.datetime(2019, 7, 25, 20, 25, 42), datetime.datetime(2023, 7, 27, 11, 47, 47), None), (70, 'PPF - FAROIS DIANTEIROS - PAR', Decimal('0.00'), 'PP1019', 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2019, 8, 6, 14, 39, 59), datetime.datetime(2021, 7, 14, 20, 17, 23), None), (71, 'FILME PS4 PROTECTION', Decimal('0.00'), 'PL1016', 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 1, 1, 1, 'kit', 1, datetime.datetime(2019, 10, 10, 20, 42, 13), datetime.datetime(2024, 3, 8, 11, 19, 14), None), (72, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', Decimal('0.00'), 'XP1000', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 5, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2019, 10, 18, 21, 21, 26), datetime.datetime(2024, 6, 11, 17, 49, 24), None), (73, 'PPF REGENERATIVA  - CAPÔ INTEIRO', Decimal('0.00'), 'XP1003', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2019, 10, 18, 21, 22, 14), datetime.datetime(2021, 10, 31, 8, 15, 33), None), (75, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', Decimal('0.00'), 'XP1001', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 2, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2019, 11, 19, 13, 14, 51), datetime.datetime(2024, 6, 6, 14, 48, 9), None), (76, 'NANO PROTEÇÃO 9H - 1 PARTE', Decimal('0.00'), 'NN1006', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 2, 2, None, 1, datetime.datetime(2019, 11, 22, 14, 58, 2), datetime.datetime(2021, 10, 26, 15, 18, 6), None), (77, 'Taxa de Delivery', Decimal('0.00'), '123456', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 9, 6, None, 1, datetime.datetime(2020, 4, 1, 19, 18, 46), datetime.datetime(2020, 4, 1, 19, 18, 46), None), (80, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', Decimal('0.00'), 'XP1004', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2020, 9, 30, 18, 22, 39), datetime.datetime(2021, 3, 8, 12, 18, 7), None), (81, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', Decimal('0.00'), 'XP1006', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2020, 11, 19, 18, 11, 28), datetime.datetime(2022, 3, 16, 17, 51, 6), None), (83, 'REMESSA PARA CONSERTO DE SOPRADORES', Decimal('0.00'), 'EMC01', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 4, 10, 6, None, 1, datetime.datetime(2021, 3, 30, 13, 49, 34), datetime.datetime(2022, 5, 26, 14, 41, 38), None), (84, 'DEVOLUÇÃO MONITOR EMC', Decimal('0.00'), 'EMC02', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 4, 10, 6, None, 1, datetime.datetime(2021, 5, 20, 17, 54, 51), datetime.datetime(2021, 5, 20, 17, 54, 51), None), (89, 'POLIMENTO DE FAROL', Decimal('0.00'), 'NN1008', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 2, 6, 2, None, 1, datetime.datetime(2022, 7, 4, 15, 51, 30), datetime.datetime(2022, 7, 4, 15, 51, 30), None), (90, 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', Decimal('0.00'), 'PP1020', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 1, 12, 17, 46, 59), datetime.datetime(2023, 1, 12, 17, 46, 59), None), (91, 'FORROS DE PORTA - EM VINIL / COURO', Decimal('0.00'), 'BC1005', 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 3, 8, 5, None, 1, datetime.datetime(2023, 1, 12, 17, 58, 28), datetime.datetime(2023, 1, 13, 16, 17, 33), None), (92, 'LAVAGEM DETALHADA - EXTERNA', Decimal('0.00'), 'NN1009', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 5, 3, 3, None, 1, datetime.datetime(2023, 3, 20, 15, 9, 54), datetime.datetime(2023, 8, 24, 16, 16, 6), None), (93, 'PELICULA ARQUITETONICA', Decimal('0.00'), 'PL1018', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 4, 1, 1, 'teto', 1, datetime.datetime(2023, 3, 29, 9, 47, 51), datetime.datetime(2023, 3, 29, 9, 51, 49), None), (94, 'SUPER BRILHO DE PINTURA', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, datetime.datetime(2023, 5, 2, 14, 21, 54), datetime.datetime(2023, 5, 12, 10, 21, 12), None), (96, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', Decimal('0.00'), 'NN1010', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 5, 3, 3, None, 1, datetime.datetime(2023, 5, 29, 16, 7, 13), datetime.datetime(2023, 8, 24, 16, 40, 37), None), (109, 'PLOTAGEM FULL', Decimal('0.00'), 'PP1021', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 8, 8, 17, 16, 51), datetime.datetime(2023, 8, 14, 17, 57, 7), None), (110, 'CHROME DELETE - KIT BLACK', Decimal('0.00'), 'PP1022', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 8, 9, 12, 21, 22), datetime.datetime(2023, 8, 9, 12, 21, 22), None), (111, 'PPF FUMÊ - FAROIS DIANTEIROS', Decimal('0.00'), 'PP1023', 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 8, 10, 15, 58, 26), datetime.datetime(2023, 8, 10, 15, 58, 26), None), (112, 'PPF FUMÊ - LANTERNAS TRASEIRAS', Decimal('0.00'), 'PP1024', 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 8, 10, 15, 59, 23), datetime.datetime(2023, 8, 10, 15, 59, 23), None), (113, 'PINTURA DE EMBLEMA', Decimal('0.00'), 'NN1014', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 6, 2, None, 1, datetime.datetime(2023, 8, 10, 16, 40, 44), datetime.datetime(2024, 6, 19, 11, 54, 50), None), (114, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', Decimal('0.00'), 'NN1011', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 5, 3, 3, None, 1, datetime.datetime(2023, 8, 24, 16, 18, 21), datetime.datetime(2023, 8, 24, 16, 35, 45), None), (115, 'PLOTAGEM DE TETO', Decimal('0.00'), 'PL1020', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 1, 1, 'teto', 1, datetime.datetime(2023, 9, 12, 11, 24, 13), datetime.datetime(2023, 10, 3, 16, 54, 23), None), (116, 'ADIANTAMENTO DE CRÉDITO', Decimal('0.00'), 'PL1019', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 4, 1, 1, None, 1, datetime.datetime(2023, 9, 22, 14, 55, 38), datetime.datetime(2024, 1, 23, 11, 22, 28), None), (117, 'PLOTAGEM - 1 PARTE', Decimal('0.00'), 'PL1021', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 1, 1, None, 1, datetime.datetime(2023, 10, 3, 17, 1, 26), datetime.datetime(2023, 10, 3, 17, 1, 26), None), (118, 'PINTURA DE RODAS - JOGO COMPLETO', Decimal('0.00'), 'NN1012', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 6, 2, None, 1, datetime.datetime(2023, 10, 24, 15, 0, 31), datetime.datetime(2024, 1, 9, 17, 49, 52), None), (119, 'PINTURA DE PINÇAS DE FREIOS', Decimal('0.00'), 'NN1013', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 6, 2, None, 1, datetime.datetime(2023, 10, 25, 12, 11, 25), datetime.datetime(2023, 10, 26, 10, 7, 28), None), (120, 'APLIQUE DE PROTEÇÃO DE PARACHOQUE DIANTEIRO (EMBORRACHADO)', Decimal('0.00'), 'PP1026', 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 10, 26, 9, 36, 29), datetime.datetime(2023, 10, 26, 10, 8, 4), None), (121, 'APLIQUE DE PROTEÇÃO DE PARACHOQUE TRASEIRO (EMBORRACHADO)', Decimal('0.00'), 'PP1027', 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 10, 26, 10, 6, 10), datetime.datetime(2023, 10, 26, 10, 8, 20), None), (122, 'PPF FULL - MOTOCICLETA', Decimal('0.00'), 'PP1028', 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 4, 4, None, 1, datetime.datetime(2023, 12, 11, 14, 55, 59), datetime.datetime(2023, 12, 14, 15, 33, 37), None), (123, 'PLOTAGEM DE RODAS', Decimal('0.00'), 'PL1022', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 1, 1, None, 1, datetime.datetime(2024, 1, 22, 14, 32, 54), datetime.datetime(2024, 1, 22, 14, 33, 35), None), (124, 'LPF - PPF Líquido', Decimal('0.00'), 'NN1015', 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 4, 3, 4, None, 1, datetime.datetime(2024, 8, 23, 10, 41, 49), datetime.datetime(2024, 10, 21, 10, 31, 25), None), (125, 'PLOTAGEM TETO COLOR', Decimal('0.00'), 'PL1023', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 6, 13, 7, 'teto', 1, datetime.datetime(2024, 9, 11, 14, 21, 30), datetime.datetime(2024, 9, 30, 15, 54, 52), None), (126, 'FAIXAS DE CUSTOMIZAÇÃO COLOR', Decimal('0.00'), 'PL1024', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 6, 13, 7, None, 1, datetime.datetime(2024, 9, 11, 14, 24, 27), datetime.datetime(2024, 9, 11, 14, 24, 27), None), (127, 'FAIXA DE CUSTOMIZAÇÃO PRETA', Decimal('0.00'), 'PL1025', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, Decimal('0.00'), 0, 0, 6, 13, 7, None, 1, datetime.datetime(2024, 9, 11, 14, 25, 16), datetime.datetime(2024, 9, 11, 14, 25, 16), None), (3, 'CLEAR COMFORT TETO SOLAR', Decimal('0.00'), 'PL1003', 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, Decimal('0.00'), 1, 0, 2, 5, 1, 'teto', 1, None, datetime.datetime(2024, 10, 8, 9, 33, 22), None), (5, 'ESPELHAMENTO DE PINTURA', Decimal('22.00'), '', 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, None, datetime.datetime(2022, 2, 7, 14, 30, 13), None), (27, 'NANO PROTEÇÃO LIGHT', Decimal('61.75'), 'NN1002', 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, None, datetime.datetime(2022, 2, 7, 14, 27, 16), None), (30, 'POLIMENTO', Decimal('0.00'), '', 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, None, datetime.datetime(2021, 10, 26, 15, 7, 2), None), (57, 'NANO PROTEÇÃO 9H EVO', Decimal('143.55'), 'NN1003', 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, datetime.datetime(2017, 8, 29, 17, 8, 34), datetime.datetime(2022, 2, 7, 14, 27, 43), None), (58, 'NANO PROTEÇÃO EVO', Decimal('99.70'), 'NN1004', 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, datetime.datetime(2018, 7, 19, 21, 9, 34), datetime.datetime(2022, 2, 7, 14, 29, 13), None), (79, 'NANO PROTEÇÃO EVO - 1 PARTE', Decimal('0.00'), 'NN 1008', 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, Decimal('0.00'), 0, 0, 2, 2, 2, None, 1, datetime.datetime(2020, 8, 17, 21, 0, 20), datetime.datetime(2020, 9, 22, 13, 47, 34), None), (85, 'NANO 9H EVO BLACK FRIDAY', Decimal('0.00'), 'NN1003', 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, Decimal('0.00'), 0, 0, 1, 2, 2, None, 1, datetime.datetime(2021, 11, 25, 17, 43, 59), datetime.datetime(2024, 12, 26, 11, 16, 53), None)]
+2025-01-15 13:38:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:38:36 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:38:36 - INFO - String que contem a query: Parece que você não fez uma solicitação específica. Por favor, forneça mais detalhes sobre o que você gostaria de buscar ou calcular em relação aos dados armazenados no banco de dados. Estou aqui para ajudar!
+2025-01-15 13:38:36 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Parece que você não fez uma solicitação específica. Por favor, forneça mais detalhes sobre o que você gostaria de buscar ou calcular em relação aos dados armazenados no banco de dados. Estou aqui para ajudar!
+2025-01-15 13:38:36 - INFO - Executar run_mysql_query()
+2025-01-15 13:38:36 - INFO - Query: None
+2025-01-15 13:38:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:02 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:39:02 - INFO - String que contem a query: Para atender à sua solicitação, precisamos identificar quais concessionárias venderam mais serviços no departamento de usados em 2025, junto com os serviços que foram vendidos. 
+
+Aqui está a consulta SQL que pode ser utilizada:
+
+```sql
+SELECT 
+    con.nome AS concessionaria, 
+    ser.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o 
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id 
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id 
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id 
+WHERE 
+    YEAR(o.created_at) = 2025 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas c 
+        WHERE c.os_id = o.id 
+        AND c.cancelado = 0
+    )
+GROUP BY 
+    con.id, ser.id 
+ORDER BY 
+    quantidade_vendida DESC;
+```
+
+### Explicação da consulta:
+
+1. **Seleção das Colunas**: A consulta seleciona o nome da concessionária, o nome do serviço e a quantidade vendida.
+2. **Joins**: Estamos unindo as tabelas `os`, `os_servicos`, `servicos` e `concessionarias` para obter as informações necessárias sobre as ordens de serviço, os serviços vendidos e suas respectivas concessionárias.
+3. **Filtragem**: A consulta filtra os dados para incluir apenas os registros do ano de 2025, onde a ordem de serviço é ativa, não foi deletada, e está paga (com um registro correspondente na tabela `caixas` que não foi cancelado).
+4. **Agrupamento e Ordenação**: Os resultados são agrupados por concessionária e serviço, e ordenados pela quantidade vendida em ordem decrescente.
+
+Se precisar de mais detalhes ou ajustes na consulta, por favor, me avise!
+2025-01-15 13:39:02 - INFO - Query extraida da resposta: SELECT 
+    con.nome AS concessionaria, 
+    ser.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o 
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id 
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id 
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id 
+WHERE 
+    YEAR(o.created_at) = 2025 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas c 
+        WHERE c.os_id = o.id 
+        AND c.cancelado = 0
+    )
+GROUP BY 
+    con.id, ser.id 
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:39:02 - INFO - Executar run_mysql_query()
+2025-01-15 13:39:02 - INFO - Query: SELECT 
+    con.nome AS concessionaria, 
+    ser.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida
+FROM 
+    os AS o 
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id 
+JOIN 
+    servicos AS ser ON ser.id = oss.servico_id 
+JOIN 
+    concessionarias AS con ON con.id = o.concessionaria_id 
+WHERE 
+    YEAR(o.created_at) = 2025 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND o.paga = 1 
+    AND EXISTS (
+        SELECT 1 
+        FROM caixas c 
+        WHERE c.os_id = o.id 
+        AND c.cancelado = 0
+    )
+GROUP BY 
+    con.id, ser.id 
+ORDER BY 
+    quantidade_vendida DESC;
+2025-01-15 13:39:02 - INFO - Resultado da query: [('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium', 2), ('BYD GO GREEN', 'FILME DE SEGURANÇA PS4', 2), ('BYD RAJA', 'NANO PROTEÇÃO DO COURO', 2), ('BANZAI', 'FILME SOLAR', 2), ('CARBEL BYD SAVASSI', 'NANO PROTEÇÃO EVO', 2), ('BYD PAMPULHA', 'MAX COMFORT Filme Premium', 2), ('BYD PAMPULHA', 'CRISTALIZAÇÃO DE VIDROS', 2), ('BYD PAMPULHA', 'NANO PROTEÇÃO EVO', 2), ('BYD PAMPULHA', 'CLEAR COMFORT PARABRISA', 2), ('BYD GO GREEN', 'CLEAR COMFORT PARABRISA', 2), ('CARBEL BYD SAVASSI', 'FILME SOLAR', 2), ('STRADA JEEP', 'NANO PROTEÇÃO 9H EVO', 2), ('STRADA LINHA VERDE', 'FILME SOLAR', 2), ('OSAKA PAMPULHA', 'FILME SOLAR', 2), ('STRADA', 'NANO PROTEÇÃO EVO', 2), ('STRADA', 'LIMPEZA DE LATARIA', 2), ('STRADA JEEP', 'MAX COMFORT Filme Premium', 2), ('CARBEL BYD SAVASSI', 'CLEAR COMFORT PARABRISA', 2), ('STRADA', 'FILME DE SEGURANÇA PS4', 2), ('GWM BAMAQ', 'LIMPEZA DE LATARIA', 2), ('GWM BAMAQ', 'CLEAR COMFORT PARABRISA', 2), ('GWM BAMAQ', 'FILME DE SEGURANÇA PS4', 2), ('XTREME CAR DETAIL', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 1), ('STRADA LINHA VERDE', 'LIMPEZA DE LATARIA', 1), ('BANZAI PAMPULHA', 'FILME SOLAR', 1), ('CARBIG SION', 'NANO PROTEÇÃO DO COURO', 1), ('STRADA JEEP', 'CRISTALIZAÇÃO DE VIDROS', 1), ('STRADA JEEP', 'NANO PROTEÇÃO DO COURO', 1), ('STRADA JEEP', 'PPF-MAÇANETAS', 1), ('GARRA', 'FILME PS4 PROTECTION', 1), ('STRADA JEEP', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('STRADA JEEP', 'CLEAR COMFORT PARABRISA', 1), ('GWM BAMAQ PAMPULHA', 'FILME DE SEGURANÇA PS4', 1), ('STRADA JEEP', 'MAX COMFORT Filme Premium 1 PORTA', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium', 1), ('BYD RAJA', 'PPF-MAÇANETAS', 1), ('BYD RAJA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD RAJA', 'PPF-SOLEIRAS', 1), ('BYD RAJA', 'MAX COMFORT Filme Premium PARABRISA', 1), ('STRADA JEEP', 'FILME SOLAR', 1), ('OSAKA PAMPULHA', 'LIMPEZA DE LATARIA', 1), ('OSAKA CONTAGEM', 'FILME DE SEGURANÇA PS4', 1), ('OSAKA CONTAGEM', 'NANO PROTEÇÃO EVO', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('STRADA', 'IMPERMEABILIZAÇÃO', 1), ('BYD RAJA', 'NANO PROTEÇÃO EVO', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO 9H EVO', 1), ('GARRA', 'FILME DE SEGURANÇA PS4', 1), ('STRADA', 'FILME SOLAR', 1), ('STRADA', 'HIDRATAÇÃO DO COURO', 1), ('OSAKA CONTAGEM', 'FILME PS4 PROTECTION', 1), ('OSAKA CONTAGEM', 'CLEAR COMFORT PARABRISA', 1), ('STRADA LINHA VERDE', 'FILME SOLAR PARABRISA', 1), ('OSAKA PAMPULHA', 'MAX COMFORT Filme Premium', 1), ('BYD GO GREEN', 'MAX COMFORT Filme Premium', 1), ('CARBEL BYD SAVASSI', 'PPF-MAÇANETAS', 1), ('CARBEL BYD SAVASSI', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('CARBEL BYD SAVASSI', 'MAX COMFORT Filme Premium TETO SOLAR', 1), ('CARBEL BYD SAVASSI', 'CRISTALIZAÇÃO DE VIDROS', 1), ('CARBEL BYD CONTAGEM', 'CLEAR COMFORT PARABRISA', 1), ('GARRA', 'FILME SOLAR', 1), ('GWM BAMAQ', 'NANO PROTEÇÃO DO COURO', 1), ('GWM BAMAQ', 'PPF-MAÇANETAS', 1), ('GWM BAMAQ', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BAMAQ - OFICINA', 'CLEAR COMFORT PARABRISA', 1), ('BAMAQ - OFICINA', 'FILME DE SEGURANÇA PS4', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO 9H EVO', 1), ('BAMAQ - OFICINA', 'NANO PROTEÇÃO DO COURO', 1), ('BAMAQ - OFICINA', 'PPF-MAÇANETAS', 1), ('BAMAQ - OFICINA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('OSAKA', 'FILME DE SEGURANÇA PS4', 1), ('BYD PAMPULHA', 'PPF-PROTEÇÃO DAS PORTAS', 1), ('BYD PAMPULHA', 'PPF-SOLEIRAS', 1), ('BYD PAMPULHA', 'HIDRATAÇÃO DO COURO', 1)]
+2025-01-15 13:39:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:16 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:39:16 - INFO - String que contem a query: Como posso ajudar você hoje? Se você tiver uma pergunta específica ou uma solicitação relacionada a dados, sinta-se à vontade para compartilhar!
+2025-01-15 13:39:16 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Como posso ajudar você hoje? Se você tiver uma pergunta específica ou uma solicitação relacionada a dados, sinta-se à vontade para compartilhar!
+2025-01-15 13:39:16 - INFO - Executar run_mysql_query()
+2025-01-15 13:39:16 - INFO - Query: None
+2025-01-15 13:39:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:23 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:39:23 - INFO - String que contem a query: Como posso ajudá-lo hoje? Se você tiver uma solicitação específica relacionada a consultas SQL ou dados que deseja buscar, por favor, descreva-a!
+2025-01-15 13:39:23 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Como posso ajudá-lo hoje? Se você tiver uma solicitação específica relacionada a consultas SQL ou dados que deseja buscar, por favor, descreva-a!
+2025-01-15 13:39:23 - INFO - Executar run_mysql_query()
+2025-01-15 13:39:23 - INFO - Query: None
+2025-01-15 13:39:26 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:39:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:43:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:43:46 - INFO - package: mysql.connector.plugins
+2025-01-15 13:43:46 - INFO - plugin_name: mysql_native_password
+2025-01-15 13:43:46 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-15 13:44:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 13:44:37 - INFO - Executar search_for_query_in_string()
+2025-01-15 13:44:37 - INFO - String que contem a query: Para obter as vendas mais recorrentes no último ano, você pode utilizar a seguinte consulta SQL:
+
+```sql
+SELECT 
+    YEAR(os.created_at) AS ano, 
+    MONTH(os.created_at) AS mes, 
+    ser.nome, 
+    COUNT(*) AS quantidade_vendida 
+FROM 
+    os 
+JOIN 
+    os_servicos AS oss ON (oss.os_id = os.id) 
+JOIN 
+    servicos AS ser ON (ser.id = oss.servico_id) 
+JOIN 
+    caixas AS c ON (c.os_id = os.id AND c.cancelado = 0) 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+GROUP BY 
+    ano, mes, ser.nome 
+ORDER BY 
+    ano DESC, mes DESC, quantidade_vendida DESC;
+```
+
+### Explicação da consulta:
+- **Seleciona**: O ano e o mês da criação da ordem de serviço, o nome do serviço e a quantidade vendida.
+- **Faz JOIN**: Relaciona as tabelas `os`, `os_servicos` e `servicos` para juntar as informações das ordens de serviço e os serviços relacionados a elas. Também faz JOIN com a tabela `caixas` para garantir que a ordem de serviço foi paga.
+- **Filtra**: Considera apenas as ordens de serviço criadas no último ano, que estão ativas e não foram deletadas. Também filtra os serviços que estão ativos e não foram deletados.
+- **Agrupa**: Os resultados por ano, mês e nome do serviço.
+- **Ordena**: Os resultados em ordem decrescente por ano, mês e quantidade vendida.
+
+Essa consulta irá retornar as vendas mais recorrentes no último ano, fornecendo uma boa visão das vendas realizadas.
+2025-01-15 13:44:37 - INFO - Query extraida da resposta: SELECT 
+    YEAR(os.created_at) AS ano, 
+    MONTH(os.created_at) AS mes, 
+    ser.nome, 
+    COUNT(*) AS quantidade_vendida 
+FROM 
+    os 
+JOIN 
+    os_servicos AS oss ON (oss.os_id = os.id) 
+JOIN 
+    servicos AS ser ON (ser.id = oss.servico_id) 
+JOIN 
+    caixas AS c ON (c.os_id = os.id AND c.cancelado = 0) 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+GROUP BY 
+    ano, mes, ser.nome 
+ORDER BY 
+    ano DESC, mes DESC, quantidade_vendida DESC;
+2025-01-15 13:44:37 - INFO - Executar run_mysql_query()
+2025-01-15 13:44:37 - INFO - Query: SELECT 
+    YEAR(os.created_at) AS ano, 
+    MONTH(os.created_at) AS mes, 
+    ser.nome, 
+    COUNT(*) AS quantidade_vendida 
+FROM 
+    os 
+JOIN 
+    os_servicos AS oss ON (oss.os_id = os.id) 
+JOIN 
+    servicos AS ser ON (ser.id = oss.servico_id) 
+JOIN 
+    caixas AS c ON (c.os_id = os.id AND c.cancelado = 0) 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND ser.ativo = 1 
+    AND ser.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+GROUP BY 
+    ano, mes, ser.nome 
+ORDER BY 
+    ano DESC, mes DESC, quantidade_vendida DESC;
+2025-01-15 13:44:38 - INFO - Resultado da query: [(2025, 1, 'MAX COMFORT Filme Premium', 81), (2025, 1, 'CLEAR COMFORT PARABRISA', 78), (2025, 1, 'NANO PROTEÇÃO EVO', 62), (2025, 1, 'FILME DE SEGURANÇA PS4', 56), (2025, 1, 'PPF-PROTEÇÃO DAS PORTAS', 47), (2025, 1, 'PPF-MAÇANETAS', 42), (2025, 1, 'FILME SOLAR', 41), (2025, 1, 'CRISTALIZAÇÃO DE VIDROS', 35), (2025, 1, 'NANO PROTEÇÃO DO COURO', 35), (2025, 1, 'NANO PROTEÇÃO 9H EVO', 32), (2025, 1, 'LIMPEZA DE LATARIA', 31), (2025, 1, 'PPF-SOLEIRAS', 15), (2025, 1, 'MAX COMFORT Filme Premium TETO SOLAR', 12), (2025, 1, 'HIDRATAÇÃO DO COURO', 10), (2025, 1, 'IMPERMEABILIZAÇÃO', 10), (2025, 1, 'MAX COMFORT Filme Premium PARABRISA', 10), (2025, 1, 'FILME PS4 PROTECTION', 4), (2025, 1, 'FILME SOLAR PARABRISA', 2), (2025, 1, 'HIGIENIZAÇÃO', 2), (2025, 1, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 2), (2025, 1, 'MAX COMFORT Filme Premium 1 PORTA', 2), (2024, 12, 'CLEAR COMFORT PARABRISA', 2111), (2024, 12, 'MAX COMFORT Filme Premium', 1444), (2024, 12, 'LIMPEZA DE LATARIA', 1158), (2024, 12, 'NANO PROTEÇÃO EVO', 1151), (2024, 12, 'FILME DE SEGURANÇA PS4', 1148), (2024, 12, 'CRISTALIZAÇÃO DE VIDROS', 996), (2024, 12, 'FILME SOLAR', 963), (2024, 12, 'NANO PROTEÇÃO 9H EVO', 866), (2024, 12, 'PPF-MAÇANETAS', 764), (2024, 12, 'HIDRATAÇÃO DO COURO', 740), (2024, 12, 'PPF-PROTEÇÃO DAS PORTAS', 667), (2024, 12, 'NANO PROTEÇÃO DO COURO', 546), (2024, 12, 'FILME PS4 PROTECTION', 263), (2024, 12, 'PPF-SOLEIRAS', 207), (2024, 12, 'NANO 9H EVO BLACK FRIDAY', 176), (2024, 12, 'MAX COMFORT Filme Premium TETO SOLAR', 117), (2024, 12, 'CLEAR COMFORT TETO SOLAR', 102), (2024, 12, 'MAX COMFORT Filme Premium PARABRISA', 92), (2024, 12, 'LAVAGEM DE BANCOS', 74), (2024, 12, 'ESPELHAMENTO DE PINTURA', 60), (2024, 12, 'NANO PROTEÇÃO LIGHT', 60), (2024, 12, 'CRISTALIZAÇÃO DE PARA-BRISA', 43), (2024, 12, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 43), (2024, 12, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 42), (2024, 12, 'IMPERMEABILIZAÇÃO', 40), (2024, 12, 'FILME SOLAR TETO SOLAR', 36), (2024, 12, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 31), (2024, 12, 'REMOÇÃO DE FILME SOLAR', 29), (2024, 12, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 25), (2024, 12, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 20), (2024, 12, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 19), (2024, 12, 'FILME SOLAR PARABRISA', 15), (2024, 12, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 13), (2024, 12, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 12), (2024, 12, 'FILME DE SEG PS4 1 PORTA', 11), (2024, 12, 'PPF FUMÊ - FAROIS DIANTEIROS', 10), (2024, 12, 'HIGIENIZAÇÃO', 7), (2024, 12, 'PPF-SOLEIRA PORTA MALAS', 7), (2024, 12, 'PPF- CONSOLE', 6), (2024, 12, 'POLIMENTO', 5), (2024, 12, 'FILME SOLAR 1 PORTA', 4), (2024, 12, 'MAX COMFORT Filme Premium 1 PORTA', 4), (2024, 12, 'FILME SOLAR TRASEIRO', 3), (2024, 12, 'LAVAGEM DETALHADA - EXTERNA', 1), (2024, 12, 'PINTURA DE EMBLEMA', 1), (2024, 11, 'CLEAR COMFORT PARABRISA', 2494), (2024, 11, 'FILME SOLAR', 1516), (2024, 11, 'MAX COMFORT Filme Premium', 1323), (2024, 11, 'FILME DE SEGURANÇA PS4', 1254), (2024, 11, 'LIMPEZA DE LATARIA', 1187), (2024, 11, 'NANO PROTEÇÃO EVO', 1055), (2024, 11, 'FILME PS4 PROTECTION', 795), (2024, 11, 'PPF-MAÇANETAS', 753), (2024, 11, 'CRISTALIZAÇÃO DE VIDROS', 687), (2024, 11, 'PPF-PROTEÇÃO DAS PORTAS', 686), (2024, 11, 'NANO 9H EVO BLACK FRIDAY', 683), (2024, 11, 'NANO PROTEÇÃO 9H EVO', 657), (2024, 11, 'NANO PROTEÇÃO DO COURO', 501), (2024, 11, 'HIDRATAÇÃO DO COURO', 487), (2024, 11, 'LAVAGEM DE BANCOS', 143), (2024, 11, 'CLEAR COMFORT TETO SOLAR', 136), (2024, 11, 'ESPELHAMENTO DE PINTURA', 132), (2024, 11, 'IMPERMEABILIZAÇÃO', 129), (2024, 11, 'PPF-SOLEIRAS', 120), (2024, 11, 'MAX COMFORT Filme Premium PARABRISA', 97), (2024, 11, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 93), (2024, 11, 'MAX COMFORT Filme Premium TETO SOLAR', 84), (2024, 11, 'NANO PROTEÇÃO LIGHT', 46), (2024, 11, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 46), (2024, 11, 'FILME SOLAR PARABRISA', 36), (2024, 11, 'CRISTALIZAÇÃO DE PARA-BRISA', 33), (2024, 11, 'REMOÇÃO DE FILME SOLAR', 27), (2024, 11, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 23), (2024, 11, 'PINTURA DE EMBLEMA', 20), (2024, 11, 'PLOTAGEM DE TETO', 20), (2024, 11, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 20), (2024, 11, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 17), (2024, 11, 'FILME SOLAR 1 PORTA', 14), (2024, 11, 'FILME SOLAR TETO SOLAR', 12), (2024, 11, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 11), (2024, 11, 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 11), (2024, 11, 'PPF FUMÊ - FAROIS DIANTEIROS', 10), (2024, 11, 'PPF-PARALAMAS DIANTEIROS', 10), (2024, 11, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 10), (2024, 11, 'FILME SOLAR TRASEIRO', 9), (2024, 11, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 7), (2024, 11, 'POLIMENTO', 6), (2024, 11, 'MAX COMFORT Filme Premium 1 PORTA', 4), (2024, 11, 'VOLANTE EM COURO', 4), (2024, 11, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 3), (2024, 11, 'POLIMENTO P/ PEÇA', 3), (2024, 11, 'PLOTAGEM FULL', 1), (2024, 11, 'POLIMENTO DE FAROL', 1), (2024, 11, 'PPF-PARALAMAS TRASEIROS', 1), (2024, 10, 'CLEAR COMFORT PARABRISA', 2273), (2024, 10, 'FILME SOLAR', 1849), (2024, 10, 'FILME DE SEGURANÇA PS4', 1726), (2024, 10, 'NANO PROTEÇÃO EVO', 1333), (2024, 10, 'LIMPEZA DE LATARIA', 1310), (2024, 10, 'MAX COMFORT Filme Premium', 1159), (2024, 10, 'NANO PROTEÇÃO 9H EVO', 1000), (2024, 10, 'PPF-MAÇANETAS', 971), (2024, 10, 'PPF-PROTEÇÃO DAS PORTAS', 808), (2024, 10, 'NANO PROTEÇÃO DO COURO', 616), (2024, 10, 'HIDRATAÇÃO DO COURO', 595), (2024, 10, 'CRISTALIZAÇÃO DE VIDROS', 561), (2024, 10, 'ESPELHAMENTO DE PINTURA', 243), (2024, 10, 'CLEAR COMFORT TETO SOLAR', 196), (2024, 10, 'PPF-SOLEIRAS', 195), (2024, 10, 'LAVAGEM DE BANCOS', 151), (2024, 10, 'FILME PS4 PROTECTION', 139), (2024, 10, 'MAX COMFORT Filme Premium TETO SOLAR', 125), (2024, 10, 'NANO PROTEÇÃO LIGHT', 123), (2024, 10, 'IMPERMEABILIZAÇÃO', 120), (2024, 10, 'MAX COMFORT Filme Premium PARABRISA', 97), (2024, 10, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 76), (2024, 10, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 70), (2024, 10, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 69), (2024, 10, 'REMOÇÃO DE FILME SOLAR', 41), (2024, 10, 'FILME SOLAR PARABRISA', 30), (2024, 10, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 29), (2024, 10, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 24), (2024, 10, 'FILME SOLAR TETO SOLAR', 20), (2024, 10, 'PINTURA DE EMBLEMA', 18), (2024, 10, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 18), (2024, 10, 'CRISTALIZAÇÃO DE PARA-BRISA', 16), (2024, 10, 'HIGIENIZAÇÃO', 14), (2024, 10, 'POLIMENTO', 11), (2024, 10, 'POLIMENTO P/ PEÇA', 11), (2024, 10, 'CHROME DELETE - KIT BLACK', 10), (2024, 10, 'PLOTAGEM DE RODAS', 10), (2024, 10, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10), (2024, 10, 'FILME SOLAR 1 PORTA', 9), (2024, 10, 'PINTURA DE RODAS - JOGO COMPLETO', 7), (2024, 10, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 6), (2024, 10, 'PPF-PARALAMAS DIANTEIROS', 5), (2024, 10, 'MAX COMFORT Filme Premium 1 PORTA', 2), (2024, 10, 'PPF FUMÊ - FAROIS DIANTEIROS', 2), (2024, 10, 'B.C 100% COURO', 1), (2024, 10, 'FILME SOLAR TRASEIRO', 1), (2024, 10, 'LAVAGEM DETALHADA - EXTERNA', 1), (2024, 10, 'PPF- CONSOLE', 1), (2024, 10, 'PPF-PARALAMAS TRASEIROS', 1), (2024, 10, 'SUPER BRILHO DE PINTURA', 1), (2024, 10, 'VOLANTE EM COURO', 1), (2024, 9, 'CLEAR COMFORT PARABRISA', 2079), (2024, 9, 'FILME SOLAR', 1819), (2024, 9, 'LIMPEZA DE LATARIA', 1488), (2024, 9, 'MAX COMFORT Filme Premium', 1426), (2024, 9, 'FILME DE SEGURANÇA PS4', 1283), (2024, 9, 'NANO PROTEÇÃO EVO', 1269), (2024, 9, 'NANO PROTEÇÃO 9H EVO', 926), (2024, 9, 'PPF-MAÇANETAS', 763), (2024, 9, 'PPF-PROTEÇÃO DAS PORTAS', 694), (2024, 9, 'NANO PROTEÇÃO DO COURO', 494), (2024, 9, 'HIDRATAÇÃO DO COURO', 445), (2024, 9, 'CRISTALIZAÇÃO DE VIDROS', 231), (2024, 9, 'PPF-SOLEIRAS', 197), (2024, 9, 'ESPELHAMENTO DE PINTURA', 179), (2024, 9, 'CLEAR COMFORT TETO SOLAR', 173), (2024, 9, 'IMPERMEABILIZAÇÃO', 129), (2024, 9, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 125), (2024, 9, 'NANO PROTEÇÃO LIGHT', 115), (2024, 9, 'FILME PS4 PROTECTION', 114), (2024, 9, 'LAVAGEM DE BANCOS', 110), (2024, 9, 'MAX COMFORT Filme Premium PARABRISA', 89), (2024, 9, 'MAX COMFORT Filme Premium TETO SOLAR', 83), (2024, 9, 'FILME SOLAR PARABRISA', 43), (2024, 9, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 42), (2024, 9, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 38), (2024, 9, 'CRISTALIZAÇÃO DE PARA-BRISA', 37), (2024, 9, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 34), (2024, 9, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 23), (2024, 9, 'FILME SOLAR TETO SOLAR', 22), (2024, 9, 'B.C MISTO', 20), (2024, 9, 'CHROME DELETE - KIT BLACK', 20), (2024, 9, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 20), (2024, 9, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 14), (2024, 9, 'POLIMENTO', 14), (2024, 9, 'PLOTAGEM DE RODAS', 13), (2024, 9, 'PPF-PARALAMAS TRASEIROS', 11), (2024, 9, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 10), (2024, 9, 'PPF-PORTAS INTEIRAS TRASEIRAS', 10), (2024, 9, 'PPF-SOLEIRA PORTA MALAS', 10), (2024, 9, 'PPF-TAMPA PORTA MALAS', 10), (2024, 9, 'REMOÇÃO DE FILME SOLAR', 10), (2024, 9, 'FILME SOLAR TRASEIRO', 9), (2024, 9, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 7), (2024, 9, 'POLIMENTO P/ PEÇA', 7), (2024, 9, 'FILME SOLAR 1 PORTA', 5), (2024, 9, 'FILME DE SEG PS4 1 PORTA', 3), (2024, 9, 'HIGIENIZAÇÃO', 3), (2024, 9, 'B.C 100% COURO', 2), (2024, 9, 'NANO PROTEÇÃO EVO - 1 PARTE', 2), (2024, 9, 'PINTURA DE PINÇAS DE FREIOS', 2), (2024, 9, 'PLOTAGEM DE TETO', 2), (2024, 9, 'VOLANTE EM COURO', 2), (2024, 9, 'LAVAGEM DETALHADA - EXTERNA', 1), (2024, 9, 'LPF - PPF Líquido', 1), (2024, 9, 'POLIMENTO DE FAROL', 1), (2024, 9, 'PPF- CONSOLE', 1), (2024, 8, 'CLEAR COMFORT PARABRISA', 1947), (2024, 8, 'FILME SOLAR', 1759), (2024, 8, 'FILME DE SEGURANÇA PS4', 1415), (2024, 8, 'LIMPEZA DE LATARIA', 1343), (2024, 8, 'MAX COMFORT Filme Premium', 1156), (2024, 8, 'NANO PROTEÇÃO EVO', 1149), (2024, 8, 'NANO PROTEÇÃO 9H EVO', 923), (2024, 8, 'PPF-MAÇANETAS', 771), (2024, 8, 'PPF-PROTEÇÃO DAS PORTAS', 723), (2024, 8, 'HIDRATAÇÃO DO COURO', 442), (2024, 8, 'NANO PROTEÇÃO DO COURO', 404), (2024, 8, 'CRISTALIZAÇÃO DE VIDROS', 288), (2024, 8, 'ESPELHAMENTO DE PINTURA', 210), (2024, 8, 'LAVAGEM DE BANCOS', 163), (2024, 8, 'PPF-SOLEIRAS', 152), (2024, 8, 'IMPERMEABILIZAÇÃO', 149), (2024, 8, 'CLEAR COMFORT TETO SOLAR', 136), (2024, 8, 'MAX COMFORT Filme Premium PARABRISA', 102), (2024, 8, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 82), (2024, 8, 'FILME PS4 PROTECTION', 74), (2024, 8, 'NANO PROTEÇÃO LIGHT', 65), (2024, 8, 'MAX COMFORT Filme Premium TETO SOLAR', 46), (2024, 8, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 41), (2024, 8, 'POLIMENTO', 40), (2024, 8, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 39), (2024, 8, 'REMOÇÃO DE FILME SOLAR', 34), (2024, 8, 'CRISTALIZAÇÃO DE PARA-BRISA', 25), (2024, 8, 'FILME SOLAR PARABRISA', 18), (2024, 8, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 18), (2024, 8, 'PPF- CONSOLE', 16), (2024, 8, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 14), (2024, 8, 'HIGIENIZAÇÃO', 13), (2024, 8, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 12), (2024, 8, 'PLOTAGEM FULL', 10), (2024, 8, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10), (2024, 8, 'PPF-RETROVISORES', 10), (2024, 8, 'FILME DE SEG PS4 1 PORTA', 7), (2024, 8, 'FILME SOLAR 1 PORTA', 5), (2024, 8, 'PINTURA DE PINÇAS DE FREIOS', 5), (2024, 8, 'POLIMENTO P/ PEÇA', 5), (2024, 8, 'MAX COMFORT Filme Premium 1 PORTA', 4), (2024, 8, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 3), (2024, 8, 'PPF FUMÊ - FAROIS DIANTEIROS', 3), (2024, 8, 'SUPER BRILHO DE PINTURA', 2), (2024, 8, 'FILME SOLAR TETO SOLAR', 1), (2024, 8, 'FILME SOLAR TRASEIRO', 1), (2024, 8, 'LAVAGEM DETALHADA - EXTERNA', 1), (2024, 8, 'PINTURA DE EMBLEMA', 1), (2024, 8, 'PLOTAGEM - 1 PARTE', 1), (2024, 8, 'PLOTAGEM DE TETO', 1), (2024, 7, 'CLEAR COMFORT PARABRISA', 2034), (2024, 7, 'FILME SOLAR', 1991), (2024, 7, 'FILME DE SEGURANÇA PS4', 1522), (2024, 7, 'LIMPEZA DE LATARIA', 1439), (2024, 7, 'NANO PROTEÇÃO EVO', 1431), (2024, 7, 'MAX COMFORT Filme Premium', 1152), (2024, 7, 'NANO PROTEÇÃO 9H EVO', 904), (2024, 7, 'PPF-PROTEÇÃO DAS PORTAS', 775), (2024, 7, 'PPF-MAÇANETAS', 731), (2024, 7, 'HIDRATAÇÃO DO COURO', 578), (2024, 7, 'NANO PROTEÇÃO DO COURO', 483), (2024, 7, 'CRISTALIZAÇÃO DE VIDROS', 246), (2024, 7, 'ESPELHAMENTO DE PINTURA', 212), (2024, 7, 'LAVAGEM DE BANCOS', 210), (2024, 7, 'IMPERMEABILIZAÇÃO', 177), (2024, 7, 'NANO PROTEÇÃO LIGHT', 151), (2024, 7, 'CLEAR COMFORT TETO SOLAR', 145), (2024, 7, 'PPF-SOLEIRAS', 135), (2024, 7, 'FILME PS4 PROTECTION', 115), (2024, 7, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 115), (2024, 7, 'MAX COMFORT Filme Premium PARABRISA', 92), (2024, 7, 'REMOÇÃO DE FILME SOLAR', 87), (2024, 7, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 69), (2024, 7, 'MAX COMFORT Filme Premium TETO SOLAR', 46), (2024, 7, 'PPF-RETROVISORES', 45), (2024, 7, 'POLIMENTO', 39), (2024, 7, 'CRISTALIZAÇÃO DE PARA-BRISA', 38), (2024, 7, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 30), (2024, 7, 'FILME SOLAR PARABRISA', 29), (2024, 7, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 26), (2024, 7, 'B.C MISTO', 21), (2024, 7, 'PINTURA DE RODAS - JOGO COMPLETO', 17), (2024, 7, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 17), (2024, 7, 'POLIMENTO DE FAROL', 14), (2024, 7, 'FILME SOLAR TRASEIRO', 13), (2024, 7, 'PINTURA DE EMBLEMA', 13), (2024, 7, 'PPF-PARALAMAS DIANTEIROS', 12), (2024, 7, 'PPF- CONSOLE', 11), (2024, 7, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 11), (2024, 7, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 10), (2024, 7, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 10), (2024, 7, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10), (2024, 7, 'PPF-PARALAMAS TRASEIROS', 10), (2024, 7, 'PPF-PORTAS INTEIRAS TRASEIRAS', 10), (2024, 7, 'PPF-SOLEIRA PORTA MALAS', 10), (2024, 7, 'PPF-TETO', 10), (2024, 7, 'VOLANTE EM COURO', 10), (2024, 7, 'CHROME DELETE - KIT BLACK', 9), (2024, 7, 'FILME SOLAR 1 PORTA', 3), (2024, 7, 'HIGIENIZAÇÃO', 2), (2024, 7, 'LAVAGEM DETALHADA - EXTERNA', 2), (2024, 7, 'PLOTAGEM DE RODAS', 2), (2024, 7, 'POLIMENTO P/ PEÇA', 2), (2024, 7, 'B.C 100% COURO', 1), (2024, 7, 'FILME DE SEG PS4 1 PORTA', 1), (2024, 7, 'MAX COMFORT Filme Premium 1 PORTA', 1), (2024, 7, 'NANO PROTEÇÃO EVO - 1 PARTE', 1), (2024, 7, 'PINTURA DE PINÇAS DE FREIOS', 1), (2024, 7, 'PLOTAGEM - 1 PARTE', 1), (2024, 6, 'CLEAR COMFORT PARABRISA', 1735), (2024, 6, 'FILME SOLAR', 1507), (2024, 6, 'LIMPEZA DE LATARIA', 1313), (2024, 6, 'FILME DE SEGURANÇA PS4', 1311), (2024, 6, 'MAX COMFORT Filme Premium', 1024), (2024, 6, 'NANO PROTEÇÃO EVO', 966), (2024, 6, 'NANO PROTEÇÃO 9H EVO', 886), (2024, 6, 'PPF-MAÇANETAS', 672), (2024, 6, 'PPF-PROTEÇÃO DAS PORTAS', 622), (2024, 6, 'NANO PROTEÇÃO DO COURO', 499), (2024, 6, 'HIDRATAÇÃO DO COURO', 477), (2024, 6, 'LAVAGEM DE BANCOS', 258), (2024, 6, 'CRISTALIZAÇÃO DE VIDROS', 243), (2024, 6, 'NANO PROTEÇÃO LIGHT', 213), (2024, 6, 'ESPELHAMENTO DE PINTURA', 208), (2024, 6, 'CLEAR COMFORT TETO SOLAR', 193), (2024, 6, 'IMPERMEABILIZAÇÃO', 107), (2024, 6, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 97), (2024, 6, 'MAX COMFORT Filme Premium PARABRISA', 78), (2024, 6, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 63), (2024, 6, 'PPF-SOLEIRAS', 63), (2024, 6, 'MAX COMFORT Filme Premium TETO SOLAR', 61), (2024, 6, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 46), (2024, 6, 'FILME SOLAR PARABRISA', 40), (2024, 6, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 36), (2024, 6, 'REMOÇÃO DE FILME SOLAR', 30), (2024, 6, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 26), (2024, 6, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 26), (2024, 6, 'POLIMENTO', 20), (2024, 6, 'FILME PS4 PROTECTION', 17), (2024, 6, 'CRISTALIZAÇÃO DE PARA-BRISA', 14), (2024, 6, 'PLOTAGEM DE TETO', 13), (2024, 6, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 11), (2024, 6, 'FILME SOLAR TRASEIRO', 10), (2024, 6, 'PLOTAGEM DE RODAS', 10), (2024, 6, 'PPF- CONSOLE', 10), (2024, 6, 'PPF-PARALAMAS TRASEIROS', 10), (2024, 6, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 10), (2024, 6, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 7), (2024, 6, 'FILME DE SEG PS4 1 PORTA', 6), (2024, 6, 'FILME SOLAR 1 PORTA', 6), (2024, 6, 'NANO PROTEÇÃO EVO - 1 PARTE', 6), (2024, 6, 'POLIMENTO DE FAROL', 6), (2024, 6, 'PPF - FAROIS DIANTEIROS - PAR', 6), (2024, 6, 'PPF FUMÊ - FAROIS DIANTEIROS', 5), (2024, 6, 'PPF-RETROVISORES', 5), (2024, 6, 'B.C MISTO', 4), (2024, 6, 'POLIMENTO P/ PEÇA', 4), (2024, 6, 'VOLANTE EM COURO', 4), (2024, 6, 'LAVAGEM DETALHADA - EXTERNA', 3), (2024, 6, 'HIGIENIZAÇÃO', 2), (2024, 6, 'MAX COMFORT Filme Premium 1 PORTA', 2), (2024, 6, 'PINTURA DE EMBLEMA', 2), (2024, 6, 'PINTURA DE RODAS - JOGO COMPLETO', 2), (2024, 6, 'FILME SOLAR TETO SOLAR', 1), (2024, 6, 'PPF-PARALAMAS DIANTEIROS', 1), (2024, 6, 'PPF-SOLEIRA PORTA MALAS', 1), (2024, 5, 'CLEAR COMFORT PARABRISA', 1683), (2024, 5, 'FILME SOLAR', 1553), (2024, 5, 'LIMPEZA DE LATARIA', 1236), (2024, 5, 'MAX COMFORT Filme Premium', 1130), (2024, 5, 'FILME DE SEGURANÇA PS4', 1123), (2024, 5, 'NANO PROTEÇÃO EVO', 1012), (2024, 5, 'NANO PROTEÇÃO 9H EVO', 787), (2024, 5, 'PPF-MAÇANETAS', 716), (2024, 5, 'PPF-PROTEÇÃO DAS PORTAS', 624), (2024, 5, 'NANO PROTEÇÃO DO COURO', 587), (2024, 5, 'HIDRATAÇÃO DO COURO', 369), (2024, 5, 'LAVAGEM DE BANCOS', 250), (2024, 5, 'ESPELHAMENTO DE PINTURA', 219), (2024, 5, 'CRISTALIZAÇÃO DE VIDROS', 177), (2024, 5, 'NANO PROTEÇÃO LIGHT', 164), (2024, 5, 'IMPERMEABILIZAÇÃO', 159), (2024, 5, 'PPF-SOLEIRAS', 145), (2024, 5, 'CLEAR COMFORT TETO SOLAR', 127), (2024, 5, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 87), (2024, 5, 'PPF-PARALAMAS DIANTEIROS', 72), (2024, 5, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 70), (2024, 5, 'PPF-RETROVISORES', 57), (2024, 5, 'MAX COMFORT Filme Premium TETO SOLAR', 54), (2024, 5, 'MAX COMFORT Filme Premium PARABRISA', 31), (2024, 5, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 27), (2024, 5, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 27), (2024, 5, 'POLIMENTO', 25), (2024, 5, 'REMOÇÃO DE FILME SOLAR', 25), (2024, 5, 'FILME PS4 PROTECTION', 21), (2024, 5, 'FILME SOLAR TRASEIRO', 21), (2024, 5, 'MAX COMFORT Filme Premium 1 PORTA', 21), (2024, 5, 'PINTURA DE PINÇAS DE FREIOS', 20), (2024, 5, 'CHROME DELETE - KIT BLACK', 14), (2024, 5, 'HIGIENIZAÇÃO', 14), (2024, 5, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 12), (2024, 5, 'PINTURA DE EMBLEMA', 11), (2024, 5, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 11), (2024, 5, 'PPF- CONSOLE', 10), (2024, 5, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 8), (2024, 5, 'FILME SOLAR 1 PORTA', 7), (2024, 5, 'FILME DE SEG PS4 1 PORTA', 5), (2024, 5, 'FILME SOLAR PARABRISA', 5), (2024, 5, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 5), (2024, 5, 'PPF-PORTAS INTEIRAS TRASEIRAS', 5), (2024, 5, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 4), (2024, 5, 'POLIMENTO P/ PEÇA', 4), (2024, 5, 'VOLANTE EM COURO', 4), (2024, 5, 'CRISTALIZAÇÃO DE PARA-BRISA', 2), (2024, 5, 'NANO PROTEÇÃO 9H - 1 PARTE', 2), (2024, 5, 'PLOTAGEM DE TETO', 2), (2024, 5, 'PPF-SOLEIRA PORTA MALAS', 2), (2024, 5, 'SUPER BRILHO DE PINTURA', 2), (2024, 5, 'ADIANTAMENTO DE CRÉDITO', 1), (2024, 5, 'FILME SOLAR TETO SOLAR', 1), (2024, 5, 'LAVAGEM DETALHADA - EXTERNA', 1), (2024, 5, 'PLOTAGEM DE RODAS', 1), (2024, 5, 'PPF-PARALAMAS TRASEIROS', 1), (2024, 4, 'CLEAR COMFORT PARABRISA', 1731), (2024, 4, 'FILME SOLAR', 1582), (2024, 4, 'FILME DE SEGURANÇA PS4', 1411), (2024, 4, 'LIMPEZA DE LATARIA', 1307), (2024, 4, 'NANO PROTEÇÃO 9H EVO', 988), (2024, 4, 'NANO PROTEÇÃO EVO', 983), (2024, 4, 'MAX COMFORT Filme Premium', 889), (2024, 4, 'PPF-MAÇANETAS', 640), (2024, 4, 'PPF-PROTEÇÃO DAS PORTAS', 587), (2024, 4, 'HIDRATAÇÃO DO COURO', 540), (2024, 4, 'NANO PROTEÇÃO DO COURO', 517), (2024, 4, 'LAVAGEM DE BANCOS', 366), (2024, 4, 'ESPELHAMENTO DE PINTURA', 245), (2024, 4, 'CRISTALIZAÇÃO DE VIDROS', 212), (2024, 4, 'CLEAR COMFORT TETO SOLAR', 168), (2024, 4, 'IMPERMEABILIZAÇÃO', 134), (2024, 4, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 105), (2024, 4, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 100), (2024, 4, 'NANO PROTEÇÃO LIGHT', 98), (2024, 4, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 78), (2024, 4, 'PPF-RETROVISORES', 78), (2024, 4, 'MAX COMFORT Filme Premium PARABRISA', 73), (2024, 4, 'PPF-SOLEIRAS', 69), (2024, 4, 'PPF-PARALAMAS DIANTEIROS', 59), (2024, 4, 'MAX COMFORT Filme Premium TETO SOLAR', 53), (2024, 4, 'FILME SOLAR PARABRISA', 43), (2024, 4, 'CRISTALIZAÇÃO DE PARA-BRISA', 34), (2024, 4, 'FILME PS4 PROTECTION', 34), (2024, 4, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 32), (2024, 4, 'REMOÇÃO DE FILME SOLAR', 27), (2024, 4, 'FILME SOLAR 1 PORTA', 20), (2024, 4, 'PLOTAGEM DE TETO', 17), (2024, 4, 'PLOTAGEM DE RODAS', 13), (2024, 4, 'FILME SOLAR TETO SOLAR', 12), (2024, 4, 'PPF- CONSOLE', 11), (2024, 4, 'B.C MISTO', 10), (2024, 4, 'FILME SOLAR TRASEIRO', 7), (2024, 4, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 7), (2024, 4, 'POLIMENTO P/ PEÇA', 7), (2024, 4, 'LAVAGEM DETALHADA - EXTERNA', 6), (2024, 4, 'HIGIENIZAÇÃO', 5), (2024, 4, 'POLIMENTO', 4), (2024, 4, 'PPF-SOLEIRA PORTA MALAS', 3), (2024, 4, 'ADIANTAMENTO DE CRÉDITO', 2), (2024, 4, 'PLOTAGEM - 1 PARTE', 2), (2024, 4, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 2), (2024, 4, 'FILME DE SEG PS4 1 PORTA', 1), (2024, 4, 'MAX COMFORT Filme Premium 1 PORTA', 1), (2024, 4, 'NANO PROTEÇÃO 9H - 1 PARTE', 1), (2024, 4, 'PINTURA DE EMBLEMA', 1), (2024, 4, 'PPF - FAROIS DIANTEIROS - PAR', 1), (2024, 4, 'VOLANTE EM COURO', 1), (2024, 3, 'CLEAR COMFORT PARABRISA', 1562), (2024, 3, 'FILME SOLAR', 1518), (2024, 3, 'FILME DE SEGURANÇA PS4', 1228), (2024, 3, 'LIMPEZA DE LATARIA', 1203), (2024, 3, 'NANO PROTEÇÃO EVO', 1193), (2024, 3, 'MAX COMFORT Filme Premium', 1029), (2024, 3, 'NANO PROTEÇÃO 9H EVO', 850), (2024, 3, 'NANO PROTEÇÃO DO COURO', 645), (2024, 3, 'PPF-MAÇANETAS', 538), (2024, 3, 'PPF-PROTEÇÃO DAS PORTAS', 464), (2024, 3, 'HIDRATAÇÃO DO COURO', 431), (2024, 3, 'LAVAGEM DE BANCOS', 379), (2024, 3, 'ESPELHAMENTO DE PINTURA', 245), (2024, 3, 'CRISTALIZAÇÃO DE VIDROS', 237), (2024, 3, 'CLEAR COMFORT TETO SOLAR', 207), (2024, 3, 'IMPERMEABILIZAÇÃO', 192), (2024, 3, 'MAX COMFORT Filme Premium PARABRISA', 97), (2024, 3, 'NANO PROTEÇÃO LIGHT', 94), (2024, 3, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 48), (2024, 3, 'MAX COMFORT Filme Premium TETO SOLAR', 47), (2024, 3, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 46), (2024, 3, 'CRISTALIZAÇÃO DE PARA-BRISA', 45), (2024, 3, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 45), (2024, 3, 'PPF-RETROVISORES', 44), (2024, 3, 'B.C MISTO', 40), (2024, 3, 'PPF-SOLEIRAS', 40), (2024, 3, 'FILME DE SEG PS4 1 PORTA', 35), (2024, 3, 'PPF-PARALAMAS DIANTEIROS', 35), (2024, 3, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 26), (2024, 3, 'FILME PS4 PROTECTION', 16), (2024, 3, 'FILME SOLAR PARABRISA', 16), (2024, 3, 'PINTURA DE RODAS - JOGO COMPLETO', 16), (2024, 3, 'REMOÇÃO DE FILME SOLAR', 16), (2024, 3, 'POLIMENTO', 15), (2024, 3, 'POLIMENTO P/ PEÇA', 15), (2024, 3, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 11), (2024, 3, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 11), (2024, 3, 'PPF-PARALAMAS TRASEIROS', 11), (2024, 3, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 11), (2024, 3, 'PPF-PORTAS INTEIRAS TRASEIRAS', 11), (2024, 3, 'PPF-TAMPA PORTA MALAS', 11), (2024, 3, 'PPF-TETO', 11), (2024, 3, 'FILME SOLAR TETO SOLAR', 10), (2024, 3, 'FILME SOLAR 1 PORTA', 9), (2024, 3, 'PINTURA DE EMBLEMA', 9), (2024, 3, 'HIGIENIZAÇÃO', 8), (2024, 3, 'ADIANTAMENTO DE CRÉDITO', 6), (2024, 3, 'MAX COMFORT Filme Premium 1 PORTA', 4), (2024, 3, 'FILME SOLAR TRASEIRO', 3), (2024, 3, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 3), (2024, 3, 'LAVAGEM DETALHADA - EXTERNA', 3), (2024, 3, 'SUPER BRILHO DE PINTURA', 3), (2024, 3, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 2), (2024, 3, 'PLOTAGEM - 1 PARTE', 1), (2024, 3, 'PPF FUMÊ - FAROIS DIANTEIROS', 1), (2024, 3, 'PPF- CONSOLE', 1), (2024, 3, 'VOLANTE EM COURO', 1), (2024, 2, 'CLEAR COMFORT PARABRISA', 1295), (2024, 2, 'FILME SOLAR', 1156), (2024, 2, 'FILME DE SEGURANÇA PS4', 1088), (2024, 2, 'LIMPEZA DE LATARIA', 969), (2024, 2, 'MAX COMFORT Filme Premium', 865), (2024, 2, 'NANO PROTEÇÃO EVO', 815), (2024, 2, 'NANO PROTEÇÃO 9H EVO', 551), (2024, 2, 'NANO PROTEÇÃO DO COURO', 445), (2024, 2, 'CRISTALIZAÇÃO DE VIDROS', 415), (2024, 2, 'HIDRATAÇÃO DO COURO', 412), (2024, 2, 'PPF-MAÇANETAS', 387), (2024, 2, 'LAVAGEM DE BANCOS', 339), (2024, 2, 'PPF-PROTEÇÃO DAS PORTAS', 309), (2024, 2, 'ESPELHAMENTO DE PINTURA', 205), (2024, 2, 'CLEAR COMFORT TETO SOLAR', 160), (2024, 2, 'IMPERMEABILIZAÇÃO', 156), (2024, 2, 'NANO PROTEÇÃO LIGHT', 135), (2024, 2, 'MAX COMFORT Filme Premium PARABRISA', 76), (2024, 2, 'MAX COMFORT Filme Premium TETO SOLAR', 61), (2024, 2, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 55), (2024, 2, 'PPF-SOLEIRAS', 48), (2024, 2, 'CRISTALIZAÇÃO DE PARA-BRISA', 38), (2024, 2, 'REMOÇÃO DE FILME SOLAR', 33), (2024, 2, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 26), (2024, 2, 'FILME SOLAR PARABRISA', 24), (2024, 2, 'PLOTAGEM DE RODAS', 21), (2024, 2, 'POLIMENTO', 18), (2024, 2, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 15), (2024, 2, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 15), (2024, 2, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 13), (2024, 2, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 11), (2024, 2, 'CHROME DELETE - KIT BLACK', 10), (2024, 2, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10), (2024, 2, 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 10), (2024, 2, 'ADIANTAMENTO DE CRÉDITO', 8), (2024, 2, 'FILME SOLAR 1 PORTA', 8), (2024, 2, 'FILME SOLAR TETO SOLAR', 8), (2024, 2, 'POLIMENTO P/ PEÇA', 7), (2024, 2, 'FILME DE SEG PS4 1 PORTA', 5), (2024, 2, 'HIGIENIZAÇÃO', 5), (2024, 2, 'PPF FULL - MOTOCICLETA', 4), (2024, 2, 'LAVAGEM DETALHADA - EXTERNA', 3), (2024, 2, 'PPF-PARALAMAS DIANTEIROS', 3), (2024, 2, 'PPF-RETROVISORES', 3), (2024, 2, 'FILME SOLAR TRASEIRO', 2), (2024, 2, 'MAX COMFORT Filme Premium 1 PORTA', 2), (2024, 2, 'PLOTAGEM - 1 PARTE', 2), (2024, 2, 'PLOTAGEM DE TETO', 2), (2024, 2, 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 1), (2024, 2, 'NANO PROTEÇÃO 9H - 1 PARTE', 1), (2024, 2, 'POLIMENTO DE FAROL', 1), (2024, 2, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 1), (2024, 2, 'PPF-PORTAS INTEIRAS TRASEIRAS', 1), (2024, 2, 'PPF-SOLEIRA PORTA MALAS', 1), (2024, 1, 'CRISTALIZAÇÃO DE VIDROS', 2104), (2024, 1, 'LIMPEZA DE LATARIA', 1253), (2024, 1, 'CLEAR COMFORT PARABRISA', 1097), (2024, 1, 'FILME SOLAR', 757), (2024, 1, 'FILME DE SEGURANÇA PS4', 755), (2024, 1, 'NANO PROTEÇÃO EVO', 694), (2024, 1, 'MAX COMFORT Filme Premium', 675), (2024, 1, 'NANO PROTEÇÃO 9H EVO', 434), (2024, 1, 'PPF-MAÇANETAS', 395), (2024, 1, 'NANO PROTEÇÃO DO COURO', 379), (2024, 1, 'PPF-PROTEÇÃO DAS PORTAS', 362), (2024, 1, 'CRISTALIZAÇÃO DE PARA-BRISA', 321), (2024, 1, 'HIDRATAÇÃO DO COURO', 300), (2024, 1, 'LAVAGEM DE BANCOS', 279), (2024, 1, 'ESPELHAMENTO DE PINTURA', 142), (2024, 1, 'IMPERMEABILIZAÇÃO', 102), (2024, 1, 'CLEAR COMFORT TETO SOLAR', 92), (2024, 1, 'MAX COMFORT Filme Premium PARABRISA', 79), (2024, 1, 'PPF-SOLEIRAS', 67), (2024, 1, 'NANO PROTEÇÃO LIGHT', 63), (2024, 1, 'MAX COMFORT Filme Premium TETO SOLAR', 55), (2024, 1, 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 35), (2024, 1, 'CLEAR COMFORT - LATERAIS E TRASEIRA', 28), (2024, 1, 'PLOTAGEM DE TETO', 27), (2024, 1, 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 26), (2024, 1, 'REMOÇÃO DE FILME SOLAR', 24), (2024, 1, 'HIGIENIZAÇÃO', 19), (2024, 1, 'PPF-SOLEIRA PORTA MALAS', 17), (2024, 1, 'PPF REGENERATIVA  - CAPÔ INTEIRO', 15), (2024, 1, 'PPF-PARALAMAS DIANTEIROS', 12), (2024, 1, 'PPF-RETROVISORES', 12), (2024, 1, 'PPF-PORTAS INTEIRAS DIANTEIRAS', 11), (2024, 1, 'PPF-PORTAS INTEIRAS TRASEIRAS', 11), (2024, 1, 'PPF-TAMPA PORTA MALAS', 11), (2024, 1, 'ADIANTAMENTO DE CRÉDITO', 7), (2024, 1, 'FILME SOLAR PARABRISA', 7), (2024, 1, 'FILME SOLAR TRASEIRO', 6), (2024, 1, 'FILME SOLAR 1 PORTA', 5), (2024, 1, 'MAX COMFORT Filme Premium 1 PORTA', 4), (2024, 1, 'POLIMENTO P/ PEÇA', 4), (2024, 1, 'FILME DE SEG PS4 1 PORTA', 3), (2024, 1, 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 3), (2024, 1, 'POLIMENTO', 3), (2024, 1, 'LAVAGEM DETALHADA - EXTERNA', 2), (2024, 1, 'PLOTAGEM DE RODAS', 2), (2024, 1, 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 2), (2024, 1, 'MÃO DE OBRA PELIC.SEG.', 1), (2024, 1, 'NANO PROTEÇÃO 9H - 1 PARTE', 1), (2024, 1, 'NANO PROTEÇÃO EVO - 1 PARTE', 1), (2024, 1, 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 1), (2024, 1, 'PPF- CONSOLE', 1), (2024, 1, 'SUPER BRILHO DE PINTURA', 1)]
+2025-01-15 13:48:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 14:05:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 14:05:04 - INFO - Executar search_for_query_in_string()
+2025-01-15 14:05:04 - INFO - String que contem a query: Para converter o objeto JSON fornecido em uma tabela legível e bem formatada, aqui está a tabela correspondente:
+
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver um objeto JSON específico que gostaria de converter, por favor, forneça-o e eu ficarei feliz em ajudar!
+2025-01-15 14:05:04 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para converter o objeto JSON fornecido em uma tabela legível e bem formatada, aqui está a tabela correspondente:
+
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver um objeto JSON específico que gostaria de converter, por favor, forneça-o e eu ficarei feliz em ajudar!
+2025-01-15 14:05:04 - INFO - Executar run_mysql_query()
+2025-01-15 14:05:04 - INFO - Query: None
+2025-01-15 14:05:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

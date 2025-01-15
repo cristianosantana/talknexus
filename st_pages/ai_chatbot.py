@@ -27,11 +27,11 @@ class AiChatbot:
         and processes chat interactions. Implements real-time streaming of model responses
         and maintains chat history.
         """
-        st.markdown('''
-        <div class="header-container">
-            <p class="header-subtitle">🤖 Converse com modelos de linguagem de última geração</p>
-        </div>
-        ''', unsafe_allow_html=True)
+        # st.markdown('''
+        # <div class="header-container">
+        #     <p class="header-subtitle">🤖 Converse com modelos de linguagem de última geração</p>
+        # </div>
+        # ''', unsafe_allow_html=True)
 
         # Initialize session state
         if 'messages' not in st.session_state:
@@ -39,7 +39,8 @@ class AiChatbot:
         if 'conversation' not in st.session_state:
             st.session_state.conversation = None
 
-        self.global_variables.model_name = self.model_selection()
+        # self.global_variables.model_name = self.model_selection()
+        self.global_variables.model_name = "gpt-4o-mini"
         self.initialize_conversation(
             self.global_variables.model_name, self.global_variables.prompt_query_builder)
 
@@ -61,12 +62,12 @@ class AiChatbot:
                 if self.global_variables.response != None:
                     st.session_state.messages = []
                     st.session_state.conversation = None
-                    self.global_variables.model_name = "deepseek-coder-v2:16b"
+                    self.global_variables.model_name = "gpt-4o-mini"
                     self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
                     prompt_response_llm = f"Faça uma tabela com os dados a seguir: {self.global_variables.response}"
-                    self.generate_display_assistant_response(st.session_state.messages, prompt_response_llm)
+                    self.generate_display_assistant_response(st.session_state.messages, prompt_response_llm, False)
 
-    def generate_display_assistant_response(self, messages, message, run_smart_api=False):
+    def generate_display_assistant_response(self, messages, message, run_smart_controller=False):
         """ Generate and display assistant response """
         # clear to response_placeholder
         response_placeholder = st.empty()
@@ -81,9 +82,10 @@ class AiChatbot:
             st.session_state.conversation.llm.callbacks = [stream_handler]
 
             # Generate response
+            # response = st.session_state.conversation.run(history=messages, input=message)
             response = st.session_state.conversation.run(message)
 
-            if run_smart_api:
+            if run_smart_controller:
                 self.smart_controller.handler(self.smart_controller, response)
 
             # Clear the stream handler after generation
@@ -106,7 +108,7 @@ class AiChatbot:
         """ Initialize conversation if needed """
         if st.session_state.conversation is None:
             conversational_chain_factory = ConversationalChainFactory
-            st.session_state.conversation = conversational_chain_factory.get_conversation_chain(
+            st.session_state.conversation = conversational_chain_factory.get_conversation_chain_openai(
                 model_name, prompt)
 
     def model_selection(self):

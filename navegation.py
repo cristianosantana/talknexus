@@ -23,7 +23,7 @@ st.markdown(f"""
     <div class="animated-bg"></div>
     <div class="header-content">
         <h1 class="header-title">Chatbot Inteligente</h1> 
-        <p class="header-subtitle">Modelos de linguagem inteligentes</p>
+        <p class="header-subtitle">Converse com modelos de linguagem de última geração</p>
     </div>
 </div>
 """, unsafe_allow_html=True)
