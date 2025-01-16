@@ -51,7 +51,8 @@ class ConversationalChainFactory:
         llm = ChatOpenAI(
             temperature=0.6,
             model=model_name,
-            api_key=openai_api_key
+            api_key=openai_api_key,
+            streaming=True
         )
 
         # Definindo o template de prompt

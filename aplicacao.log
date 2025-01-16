@@ -3796,3 +3796,469 @@ Se você tiver um objeto JSON específico que gostaria de converter, por favor, 
 2025-01-15 14:05:04 - INFO - Executar run_mysql_query()
 2025-01-15 14:05:04 - INFO - Query: None
 2025-01-15 14:05:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:30:21 - INFO - package: mysql.connector.plugins
+2025-01-16 11:30:21 - INFO - plugin_name: mysql_native_password
+2025-01-16 11:30:21 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 11:31:21 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:31:21 - INFO - Executar search_for_query_in_string()
+2025-01-16 11:31:21 - INFO - String que contem a query: Para obter o faturamento do mês de abril de 2022, precisamos consultar as ordens de serviço (os) que foram pagas no período e somar o valor dos serviços associados a essas ordens. A consulta deve considerar apenas as ordens que estão ativas e não foram deletadas, além de garantir que a ordem de serviço tenha um registro na tabela 'caixas' que indique que foi paga e não cancelada.
+
+Aqui está a consulta SQL:
+
+```sql
+SELECT 
+    SUM(os_serv.valor_venda) AS faturamento_total
+FROM 
+    os
+JOIN 
+    caixas ON caixas.os_id = os.id AND caixas.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+WHERE 
+    os.data_pagamento >= '2022-04-01' AND os.data_pagamento < '2022-05-01'
+    AND os.ativo = 1
+    AND os.deleted_at IS NULL
+    AND os_serv.ativo = 1
+    AND os_serv.deleted_at IS NULL;
+```
+
+### Explicação da consulta:
+- **SUM(os_serv.valor_venda)**: Calcula o total faturado somando o valor de venda dos serviços.
+- **FROM os**: Inicia a seleção a partir da tabela de ordens de serviço.
+- **JOIN caixas**: Relaciona a tabela de caixas para considerar apenas as ordens que foram pagas e não canceladas.
+- **JOIN os_servicos**: Relaciona a tabela de serviços associados às ordens de serviço.
+- **WHERE**: Filtra os registros para incluir apenas aqueles pagos em abril de 2022, que estão ativos e não foram deletados.
+
+Essa consulta retornará o faturamento total das ordens de serviço pagas no mês de abril de 2022.
+2025-01-16 11:31:21 - INFO - Query extraida da resposta: SELECT 
+    SUM(os_serv.valor_venda) AS faturamento_total
+FROM 
+    os
+JOIN 
+    caixas ON caixas.os_id = os.id AND caixas.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+WHERE 
+    os.data_pagamento >= '2022-04-01' AND os.data_pagamento < '2022-05-01'
+    AND os.ativo = 1
+    AND os.deleted_at IS NULL
+    AND os_serv.ativo = 1
+    AND os_serv.deleted_at IS NULL;
+2025-01-16 11:31:21 - INFO - Executar run_mysql_query()
+2025-01-16 11:31:21 - INFO - Query: SELECT 
+    SUM(os_serv.valor_venda) AS faturamento_total
+FROM 
+    os
+JOIN 
+    caixas ON caixas.os_id = os.id AND caixas.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+WHERE 
+    os.data_pagamento >= '2022-04-01' AND os.data_pagamento < '2022-05-01'
+    AND os.ativo = 1
+    AND os.deleted_at IS NULL
+    AND os_serv.ativo = 1
+    AND os_serv.deleted_at IS NULL;
+2025-01-16 11:31:21 - INFO - Resultado da query: [(Decimal('6716559.49'),)]
+2025-01-16 11:31:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:31:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:31:38 - INFO - Executar search_for_query_in_string()
+2025-01-16 11:31:38 - INFO - String que contem a query: Claro! Vamos converter o objeto JSON fornecido em uma tabela legível em formato Markdown. 
+
+Dado o objeto JSON:
+
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+Aqui está a tabela correspondente:
+
+```markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+```
+
+Se você tiver outros objetos JSON ou precisar de mais assistência, é só avisar!
+2025-01-16 11:31:38 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Claro! Vamos converter o objeto JSON fornecido em uma tabela legível em formato Markdown. 
+
+Dado o objeto JSON:
+
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+Aqui está a tabela correspondente:
+
+```markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+```
+
+Se você tiver outros objetos JSON ou precisar de mais assistência, é só avisar!
+2025-01-16 11:31:38 - INFO - Executar run_mysql_query()
+2025-01-16 11:31:38 - INFO - Query: None
+2025-01-16 11:31:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:32:29 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:32:29 - INFO - Executar search_for_query_in_string()
+2025-01-16 11:32:29 - INFO - String que contem a query: Para criar uma tabela em Markdown a partir do objeto JSON que você forneceu, podemos usar o seguinte formato de entrada:
+
+### Objeto JSON
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+### Tabela em Markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver dados específicos que deseja converter em tabela, por favor, forneça e eu ficarei feliz em ajudar!
+2025-01-16 11:32:29 - WARNING - Erro ao estrai query da resposta do modelo! RESPOSTA: Para criar uma tabela em Markdown a partir do objeto JSON que você forneceu, podemos usar o seguinte formato de entrada:
+
+### Objeto JSON
+```json
+{
+    "nome": "nome",
+    "idade": "idade",
+    "profissão": "profissao"
+}
+```
+
+### Tabela em Markdown
+| Nome | Idade | Profissão |
+|------|-------|-----------|
+| nome | idade | profissao |
+
+Se você tiver dados específicos que deseja converter em tabela, por favor, forneça e eu ficarei feliz em ajudar!
+2025-01-16 11:32:29 - INFO - Executar run_mysql_query()
+2025-01-16 11:32:29 - INFO - Query: None
+2025-01-16 11:32:31 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:40:27 - INFO - package: mysql.connector.plugins
+2025-01-16 11:40:27 - INFO - plugin_name: mysql_native_password
+2025-01-16 11:40:27 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 11:42:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:42:32 - INFO - Executar search_for_query_in_string()
+2025-01-16 11:42:32 - INFO - String que contem a query: Para responder à sua solicitação sobre quais serviços venderam mais por departamento e quanto geraram no ano passado, podemos criar a seguinte consulta SQL:
+
+```sql
+SELECT 
+    d.nome AS departamento,
+    s.nome AS servico,
+    COUNT(os.id) AS quantidade_vendida,
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas AS c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+JOIN 
+    servicos AS s ON s.id = os_serv.servico_id
+JOIN 
+    departamentos AS d ON d.id = os.departamento_id
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    total_gerado DESC;
+```
+
+### Explicação da consulta:
+- **Seleção de Campos**: Estamos selecionando o nome do departamento (`d.nome`), o nome do serviço (`s.nome`), a quantidade de serviços vendidos (`COUNT(os.id)`) e o total gerado por esses serviços (`SUM(os_serv.valor_venda)`).
+- **Joins**: Estamos unindo as tabelas `os`, `caixas`, `os_servicos`, `servicos` e `departamentos` para obter as informações necessárias.
+- **Condições de Filtragem**:
+  - Filtramos as ordens de serviço que foram criadas no último ano (`os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)`).
+  - Consideramos apenas ordens de serviços que estão ativas (`os.ativo = 1` e `os.deleted_at IS NULL`).
+  - Consideramos apenas serviços que estão ativos (`s.ativo = 1` e `s.deleted_at IS NULL`).
+  - As ordens de serviço precisam ter um registro na tabela `caixas` que não tenha sido cancelado (`c.cancelado = 0`).
+- **Agrupamento**: Agrupamos os resultados pelo nome do departamento e pelo nome do serviço.
+- **Ordenação**: Os resultados são ordenados pelo total gerado em ordem decrescente.
+
+Com essa consulta, você poderá obter uma visão clara de quais serviços foram mais vendidos por departamento e quanto geraram no ano passado.
+2025-01-16 11:42:32 - INFO - Query extraida da resposta: SELECT 
+    d.nome AS departamento,
+    s.nome AS servico,
+    COUNT(os.id) AS quantidade_vendida,
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas AS c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+JOIN 
+    servicos AS s ON s.id = os_serv.servico_id
+JOIN 
+    departamentos AS d ON d.id = os.departamento_id
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    total_gerado DESC;
+2025-01-16 11:42:32 - INFO - Executar run_mysql_query()
+2025-01-16 11:42:32 - INFO - Query: SELECT 
+    d.nome AS departamento,
+    s.nome AS servico,
+    COUNT(os.id) AS quantidade_vendida,
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas AS c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos AS os_serv ON os_serv.os_id = os.id
+JOIN 
+    servicos AS s ON s.id = os_serv.servico_id
+JOIN 
+    departamentos AS d ON d.id = os.departamento_id
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    total_gerado DESC;
+2025-01-16 11:42:33 - INFO - Resultado da query: [('Veículos Novos', 'NANO PROTEÇÃO 9H EVO', 9075, Decimal('19856368.00')), ('Veículos Novos', 'CLEAR COMFORT PARABRISA', 20632, Decimal('19563917.93')), ('Veículos Novos', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 743, Decimal('15695290.00')), ('Veículos Novos', 'FILME DE SEGURANÇA PS4', 13881, Decimal('13487846.68')), ('Veículos Novos', 'MAX COMFORT Filme Premium', 12215, Decimal('10992682.10')), ('Veículos Novos', 'NANO PROTEÇÃO EVO', 8662, Decimal('9886537.00')), ('Veículos Novos', 'FILME SOLAR', 15290, Decimal('6368577.88')), ('Veículos Novos', 'NANO PROTEÇÃO DO COURO', 5525, Decimal('2678021.89')), ('Oficina', 'NANO PROTEÇÃO EVO', 2197, Decimal('2631913.90')), ('Veículos Novos', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 256, Decimal('2452835.00')), ('Veículos Usados', 'NANO PROTEÇÃO EVO', 2256, Decimal('2437904.00')), ('Veículos Novos', 'FILME PS4 PROTECTION', 1524, Decimal('2132112.00')), ('Veículos Novos', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 342, Decimal('2127290.00')), ('Veículos Novos', 'PPF-PROTEÇÃO DAS PORTAS', 6703, Decimal('1742338.44')), ('Veículos Novos', 'PPF-MAÇANETAS', 7435, Decimal('1702094.50')), ('Veículos Novos', 'HIDRATAÇÃO DO COURO', 3782, Decimal('1481200.00')), ('PPF', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 69, Decimal('1405500.00')), ('Veículos Usados', 'NANO PROTEÇÃO 9H EVO', 630, Decimal('1317154.00')), ('Veículos Novos', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 373, Decimal('1107840.00')), ('Veículos Novos', 'CRISTALIZAÇÃO DE VIDROS', 5051, Decimal('1059297.00')), ('Veículos Novos', 'CLEAR COMFORT TETO SOLAR', 1778, Decimal('951098.79')), ('Veículos Usados', 'FILME DE SEGURANÇA PS4', 965, Decimal('892231.00')), ('Veículos Usados', 'CLEAR COMFORT PARABRISA', 933, Decimal('861461.90')), ('Veículos Novos', 'NANO PROTEÇÃO LIGHT', 932, Decimal('829158.00')), ('Oficina', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 37, Decimal('724800.00')), ('Oficina', 'CLEAR COMFORT PARABRISA', 680, Decimal('630148.00')), ('Veículos Novos', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 104, Decimal('600600.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium', 686, Decimal('598974.00')), ('Oficina', 'NANO PROTEÇÃO 9H EVO', 274, Decimal('591668.00')), ('Veículos Usados', 'FILME SOLAR', 1359, Decimal('546633.50')), ('Veículos Novos', 'PPF-SOLEIRAS', 1319, Decimal('514535.00')), ('Veículos Usados', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 63, Decimal('511400.00')), ('Veículos Usados', 'HIDRATAÇÃO DO COURO', 1129, Decimal('440684.00')), ('Oficina', 'FILME DE SEGURANÇA PS4', 456, Decimal('436720.00')), ('Veículos Novos', 'IMPERMEABILIZAÇÃO', 1054, Decimal('399490.00')), ('Veículos Novos', 'MAX COMFORT Filme Premium PARABRISA', 782, Decimal('375087.00')), ('Veículos Novos', 'PPF-PARALAMAS DIANTEIROS', 144, Decimal('372820.00')), ('Veículos Novos', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 55, Decimal('368510.00')), ('Veículos Novos', 'MAX COMFORT Filme Premium TETO SOLAR', 819, Decimal('364166.85')), ('Oficina', 'MAX COMFORT Filme Premium', 422, Decimal('361532.00')), ('Veículos Usados', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 18, Decimal('359800.00')), ('PPF', 'PLOTAGEM FULL', 10, Decimal('300000.00')), ('Oficina', 'HIDRATAÇÃO DO COURO', 774, Decimal('297683.90')), ('Veículos Usados', 'B.C MISTO', 94, Decimal('287040.00')), ('Oficina', 'FILME SOLAR', 691, Decimal('274890.00')), ('Oficina', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 72, Decimal('269800.00')), ('Veículos Novos', 'ESPELHAMENTO DE PINTURA', 1161, Decimal('266783.00')), ('Veículos Novos', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 279, Decimal('266247.95')), ('Veículos Usados', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 10, Decimal('263000.00')), ('Oficina', 'ESPELHAMENTO DE PINTURA', 504, Decimal('250227.00')), ('PPF', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 10, Decimal('250000.00')), ('Veículos Usados', 'ESPELHAMENTO DE PINTURA', 570, Decimal('245555.90')), ('Veículos Novos', 'PPF-PORTAS INTEIRAS TRASEIRAS', 33, Decimal('244365.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO EVO', 236, Decimal('232220.00')), ('Venda Direta Interna', 'FILME SOLAR', 551, Decimal('202779.00')), ('Venda Direta Interna', 'FILME DE SEGURANÇA PS4', 198, Decimal('198320.00')), ('Oficina', 'NANO PROTEÇÃO DO COURO', 365, Decimal('183075.00')), ('Oficina', 'NANO PROTEÇÃO LIGHT', 209, Decimal('181270.00')), ('Venda Direta Interna', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 20, Decimal('180000.00')), ('Veículos Usados', 'NANO PROTEÇÃO DO COURO', 378, Decimal('179575.00')), ('Venda Direta Interna', 'MAX COMFORT Filme Premium', 206, Decimal('177340.00')), ('Venda Direta Interna', 'CLEAR COMFORT PARABRISA', 179, Decimal('167270.00')), ('Veículos Novos', 'PLOTAGEM DE TETO', 72, Decimal('159220.00')), ('Veículos Novos', 'PPF-RETROVISORES', 207, Decimal('153300.00')), ('ESTÉTICA', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 7, Decimal('142000.00')), ('Veículos Usados', 'PPF-PROTEÇÃO DAS PORTAS', 502, Decimal('135790.00')), ('Veículos Usados', 'PPF-MAÇANETAS', 555, Decimal('134245.00')), ('Veículos Novos', 'PPF-TETO', 21, Decimal('129570.00')), ('Veículos Usados', 'CRISTALIZAÇÃO DE VIDROS', 773, Decimal('118730.00')), ('Veículos Usados', 'IMPERMEABILIZAÇÃO', 301, Decimal('116554.00')), ('Veículos Novos', 'PLOTAGEM DE RODAS', 70, Decimal('113150.00')), ('Veículos Usados', 'NANO PROTEÇÃO LIGHT', 120, Decimal('103340.00')), ('Veículos Novos', 'CHROME DELETE - KIT BLACK', 47, Decimal('100400.00')), ('Frotista', 'FILME SOLAR', 300, Decimal('100106.00')), ('ESTÉTICA', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 12, Decimal('98860.00')), ('Oficina', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 34, Decimal('96600.00')), ('Veículos Usados', 'FILME PS4 PROTECTION', 74, Decimal('95710.00')), ('PPF', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 12, Decimal('94600.00')), ('ESTÉTICA', 'PINTURA DE RODAS - JOGO COMPLETO', 26, Decimal('85600.00')), ('Oficina', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 20, Decimal('84000.00')), ('Veículos Novos', 'PPF-PARALAMAS TRASEIROS', 33, Decimal('83680.00')), ('Oficina', 'IMPERMEABILIZAÇÃO', 203, Decimal('79249.00')), ('Oficina', 'CRISTALIZAÇÃO DE VIDROS', 578, Decimal('77114.00')), ('Venda Direta Externa', 'CLEAR COMFORT PARABRISA', 81, Decimal('76680.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 25, Decimal('75000.00')), ('Veículos Usados', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 25, Decimal('74300.00')), ('Veículos Usados', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 20, Decimal('70300.00')), ('ESTÉTICA', 'PINTURA DE PINÇAS DE FREIOS', 27, Decimal('67500.00')), ('Oficina', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 6, Decimal('67400.00')), ('Oficina', 'PPF-PORTAS INTEIRAS TRASEIRAS', 15, Decimal('67000.00')), ('Venda Direta Interna', 'HIDRATAÇÃO DO COURO', 189, Decimal('66250.00')), ('PPF', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 22, Decimal('64800.00')), ('Frotista', 'MAX COMFORT Filme Premium', 71, Decimal('62730.00')), ('PPF', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 22, Decimal('62600.00')), ('Oficina', 'PPF-PARALAMAS DIANTEIROS', 24, Decimal('61840.00')), ('Veículos Novos', 'PPF-TAMPA PORTA MALAS', 22, Decimal('59440.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium PARABRISA', 129, Decimal('59140.00')), ('Oficina', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 15, Decimal('59100.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO LIGHT', 67, Decimal('58710.00')), ('Frotista', 'CLEAR COMFORT PARABRISA', 59, Decimal('56780.00')), ('PPF', 'PPF- CONSOLE', 28, Decimal('56000.00')), ('Veículos Usados', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 14, Decimal('55400.00')), ('Veículos Novos', 'PPF- CONSOLE', 29, Decimal('55300.00')), ('Oficina', 'FILME PS4 PROTECTION', 47, Decimal('54530.00')), ('Venda Direta Externa', 'MAX COMFORT Filme Premium', 57, Decimal('51930.00')), ('Veículos Novos', 'FILME SOLAR PARABRISA', 214, Decimal('51203.50')), ('PPF', 'PPF-PARALAMAS DIANTEIROS', 23, Decimal('49500.00')), ('ESTÉTICA', 'CLEAR COMFORT PARABRISA', 50, Decimal('48770.00')), ('ESTÉTICA', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 51, Decimal('47145.99')), ('Veículos Novos', 'CRISTALIZAÇÃO DE PARA-BRISA', 450, Decimal('42962.00')), ('Venda Direta Externa', 'FILME SOLAR', 137, Decimal('41324.00')), ('ESTÉTICA', 'CHROME DELETE - KIT BLACK', 16, Decimal('40000.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10, Decimal('40000.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 13, Decimal('38700.00')), ('Veículos Novos', 'FILME SOLAR TETO SOLAR', 127, Decimal('37330.00')), ('Frotista', 'NANO PROTEÇÃO 9H EVO', 17, Decimal('35800.00')), ('Oficina', 'PPF-PROTEÇÃO DAS PORTAS', 136, Decimal('35320.00')), ('Veículos Novos', 'PINTURA DE EMBLEMA', 31, Decimal('33400.00')), ('PPF', 'PPF-RETROVISORES', 22, Decimal('33000.00')), ('ESTÉTICA', 'MAX COMFORT Filme Premium', 35, Decimal('31880.00')), ('Oficina', 'PPF-TAMPA PORTA MALAS', 10, Decimal('31000.00')), ('Veículos Novos', 'PPF-SOLEIRA PORTA MALAS', 51, Decimal('30120.00')), ('Veículos Novos', 'PINTURA DE RODAS - JOGO COMPLETO', 10, Decimal('30000.00')), ('Veículos Novos', 'PLOTAGEM FULL', 1, Decimal('30000.00')), ('Veículos Usados', 'PLOTAGEM DE TETO', 12, Decimal('30000.00')), ('ESTÉTICA', 'PINTURA DE EMBLEMA', 30, Decimal('29900.00')), ('Veículos Novos', 'POLIMENTO', 129, Decimal('29855.10')), ('Veículos Usados', 'LAVAGEM DE BANCOS', 1536, Decimal('28620.00')), ('Oficina', 'PPF-MAÇANETAS', 126, Decimal('28500.00')), ('PPF', 'PPF FULL - MOTOCICLETA', 4, Decimal('28000.00')), ('Oficina', 'MAX COMFORT Filme Premium PARABRISA', 83, Decimal('27715.00')), ('Venda Direta Interna', 'PPF-SOLEIRAS', 73, Decimal('27690.00')), ('Venda Direta Interna', 'PPF-PROTEÇÃO DAS PORTAS', 110, Decimal('27050.00')), ('ESTÉTICA', 'FILME DE SEGURANÇA PS4', 27, Decimal('26940.00')), ('Frotista', 'FILME DE SEGURANÇA PS4', 22, Decimal('25370.00')), ('ESTÉTICA', 'NANO PROTEÇÃO 9H EVO', 12, Decimal('25300.00')), ('Veículos Novos', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 1, Decimal('25000.00')), ('Oficina', 'HIGIENIZAÇÃO', 42, Decimal('23170.00')), ('Veículos Usados', 'HIGIENIZAÇÃO', 43, Decimal('22800.00')), ('Veículos Usados', 'CLEAR COMFORT TETO SOLAR', 46, Decimal('22390.00')), ('ESTÉTICA', 'PPF-PARALAMAS DIANTEIROS', 10, Decimal('21000.00')), ('Oficina', 'PPF-PARALAMAS TRASEIROS', 10, Decimal('21000.00')), ('PPF', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 95, Decimal('19000.00')), ('Venda Direta Externa', 'FILME DE SEGURANÇA PS4', 18, Decimal('18800.00')), ('ESTÉTICA', 'FILME PS4 PROTECTION', 10, Decimal('18400.00')), ('Veículos Novos', 'LIMPEZA DE LATARIA', 11633, Decimal('18070.19')), ('Oficina', 'PINTURA DE RODAS - JOGO COMPLETO', 6, Decimal('18000.00')), ('Venda Direta Interna', 'IMPERMEABILIZAÇÃO', 49, Decimal('17900.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO 9H EVO', 8, Decimal('17800.00')), ('Oficina', 'FILME SOLAR TRASEIRO', 77, Decimal('16596.00')), ('Veículos Usados', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 17, Decimal('16520.00')), ('Veículos Usados', 'PPF-RETROVISORES', 11, Decimal('16500.00')), ('PPF', 'PPF FUMÊ - FAROIS DIANTEIROS', 16, Decimal('16000.00')), ('Venda Direta Interna', 'CRISTALIZAÇÃO DE VIDROS', 74, Decimal('15920.00')), ('Venda Direta Externa', 'NANO PROTEÇÃO EVO', 16, Decimal('15880.00')), ('Venda Direta Externa', 'ESPELHAMENTO DE PINTURA', 83, Decimal('15520.00')), ('Oficina', 'LAVAGEM DE BANCOS', 1129, Decimal('15445.00')), ('Veículos Usados', 'PPF-PARALAMAS DIANTEIROS', 8, Decimal('15400.00')), ('ESTÉTICA', 'PPF-RETROVISORES', 10, Decimal('15000.00')), ('Oficina', 'FILME DE SEG PS4 1 PORTA', 76, Decimal('14520.00')), ('PPF', 'CLEAR COMFORT PARABRISA', 13, Decimal('13650.00')), ('Venda Direta Interna', 'PPF-MAÇANETAS', 63, Decimal('13600.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium TETO SOLAR', 32, Decimal('13310.00')), ('ESTÉTICA', 'PPF FUMÊ - FAROIS DIANTEIROS', 15, Decimal('13250.00')), ('ESTÉTICA', 'PPF-MAÇANETAS', 36, Decimal('13100.00')), ('ESTÉTICA', 'PPF-PROTEÇÃO DAS PORTAS', 36, Decimal('13100.00')), ('Oficina', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 12, Decimal('12760.00')), ('Veículos Novos', 'LAVAGEM DE BANCOS', 74, Decimal('12510.00')), ('PPF', 'MAX COMFORT Filme Premium', 13, Decimal('12415.00')), ('Veículos Novos', 'PLOTAGEM - 1 PARTE', 4, Decimal('12000.00')), ('Venda Direta Interna', 'MAX COMFORT Filme Premium PARABRISA', 40, Decimal('11930.00')), ('Veículos Usados', 'FILME SOLAR PARABRISA', 61, Decimal('11647.00')), ('Veículos Usados', 'PPF- CONSOLE', 11, Decimal('11300.00')), ('Oficina', 'CRISTALIZAÇÃO DE PARA-BRISA', 142, Decimal('10768.00')), ('Frotista', 'HIDRATAÇÃO DO COURO', 25, Decimal('10590.00')), ('PPF', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 10, Decimal('10500.00')), ('ESTÉTICA', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 10, Decimal('10000.00')), ('Veículos Usados', 'PPF-SOLEIRAS', 25, Decimal('9695.00')), ('ESTÉTICA', 'LAVAGEM DETALHADA - EXTERNA', 24, Decimal('9578.99')), ('Oficina', 'PPF-SOLEIRAS', 25, Decimal('9540.00')), ('PPF', 'PPF-MAÇANETAS', 27, Decimal('9500.00')), ('PPF', 'PPF-PROTEÇÃO DAS PORTAS', 27, Decimal('9500.00')), ('Venda Direta Externa', 'HIDRATAÇÃO DO COURO', 26, Decimal('9500.00')), ('Veículos Usados', 'REMOÇÃO DE FILME SOLAR', 145, Decimal('9420.00')), ('Veículos Usados', 'POLIMENTO', 32, Decimal('9327.00')), ('ESTÉTICA', 'ESPELHAMENTO DE PINTURA', 14, Decimal('9244.00')), ('Venda Direta Interna', 'FILME PS4 PROTECTION', 6, Decimal('9050.00')), ('Venda Direta Externa', 'FILME PS4 PROTECTION', 6, Decimal('9030.00')), ('Oficina', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 10, Decimal('8990.00')), ('Veículos Novos', 'ADIANTAMENTO DE CRÉDITO', 19, Decimal('8815.00')), ('Oficina', 'POLIMENTO', 26, Decimal('8560.00')), ('Veículos Novos', 'B.C 100% COURO', 2, Decimal('8200.00')), ('Veículos Usados', 'B.C 100% COURO', 2, Decimal('8000.00')), ('ESTÉTICA', 'PPF-SOLEIRAS', 16, Decimal('7900.00')), ('Veículos Usados', 'VOLANTE EM COURO', 18, Decimal('7810.00')), ('Oficina', 'REMOÇÃO DE FILME SOLAR', 131, Decimal('7780.00')), ('Oficina', 'MAX COMFORT Filme Premium TETO SOLAR', 20, Decimal('7675.00')), ('Oficina', 'FILME SOLAR PARABRISA', 36, Decimal('7649.00')), ('Veículos Novos', 'REMOÇÃO DE FILME SOLAR', 115, Decimal('7570.00')), ('ESTÉTICA', 'NANO PROTEÇÃO EVO', 4, Decimal('6880.00')), ('Venda Direta Externa', 'PPF-MAÇANETAS', 30, Decimal('6570.00')), ('Veículos Usados', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 8, Decimal('6298.00')), ('PPF', 'PINTURA DE EMBLEMA', 10, Decimal('6000.00')), ('ESTÉTICA', 'POLIMENTO', 10, Decimal('5990.00')), ('Oficina', 'CLEAR COMFORT TETO SOLAR', 13, Decimal('5830.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO DO COURO', 12, Decimal('5740.00')), ('Venda Direta Externa', 'PPF-PROTEÇÃO DAS PORTAS', 21, Decimal('5250.00')), ('Frotista', 'NANO PROTEÇÃO LIGHT', 6, Decimal('5220.00')), ('ESTÉTICA', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 26, Decimal('5200.00')), ('PPF', 'NANO PROTEÇÃO DO COURO', 10, Decimal('5200.00')), ('Veículos Usados', 'CRISTALIZAÇÃO DE PARA-BRISA', 41, Decimal('5060.00')), ('Oficina', 'MAX COMFORT Filme Premium 1 PORTA', 32, Decimal('5045.00')), ('ESTÉTICA', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 1, Decimal('5000.00')), ('Frotista', 'PPF-MAÇANETAS', 21, Decimal('4970.00')), ('Oficina', 'FILME SOLAR 1 PORTA', 63, Decimal('4876.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium 1 PORTA', 18, Decimal('4800.00')), ('ESTÉTICA', 'PPF - FAROIS DIANTEIROS - PAR', 6, Decimal('4620.00')), ('PPF', 'MAX COMFORT Filme Premium TETO SOLAR', 10, Decimal('4200.00')), ('Oficina', 'B.C MISTO', 1, Decimal('3800.00')), ('Oficina', 'FILME SOLAR TETO SOLAR', 13, Decimal('3770.00')), ('Oficina', 'LIMPEZA DE LATARIA', 1879, Decimal('3500.09')), ('Veículos Usados', 'LIMPEZA DE LATARIA', 1429, Decimal('3460.00')), ('Frotista', 'PPF-PROTEÇÃO DAS PORTAS', 13, Decimal('3250.00')), ('Oficina', 'PINTURA DE EMBLEMA', 5, Decimal('3250.00')), ('Oficina', 'VOLANTE EM COURO', 8, Decimal('3240.00')), ('Venda Direta Externa', 'IMPERMEABILIZAÇÃO', 7, Decimal('3100.00')), ('PPF', 'MAX COMFORT Filme Premium PARABRISA', 10, Decimal('3050.00')), ('Veículos Usados', 'PLOTAGEM - 1 PARTE', 1, Decimal('3000.00')), ('Venda Direta Interna', 'CLEAR COMFORT TETO SOLAR', 6, Decimal('2990.00')), ('PPF', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 1, Decimal('2900.00')), ('Veículos Usados', 'ADIANTAMENTO DE CRÉDITO', 5, Decimal('2870.00')), ('Oficina', 'POLIMENTO DE FAROL', 13, Decimal('2740.00')), ('Venda Direta Externa', 'NANO PROTEÇÃO LIGHT', 3, Decimal('2610.00')), ('ESTÉTICA', 'PPF-PARALAMAS TRASEIROS', 1, Decimal('2500.00')), ('PPF', 'LPF - PPF Líquido', 1, Decimal('2500.00')), ('Frotista', 'IMPERMEABILIZAÇÃO', 7, Decimal('2450.00')), ('Oficina', 'SUPER BRILHO DE PINTURA', 6, Decimal('2335.00')), ('Veículos Novos', 'POLIMENTO P/ PEÇA', 63, Decimal('2200.00')), ('Veículos Novos', 'PINTURA DE PINÇAS DE FREIOS', 1, Decimal('2100.00')), ('Veículos Usados', 'PPF-PARALAMAS TRASEIROS', 1, Decimal('2100.00')), ('Frotista', 'NANO PROTEÇÃO EVO', 2, Decimal('1980.00')), ('ESTÉTICA', 'HIDRATAÇÃO DO COURO', 5, Decimal('1800.00')), ('Oficina', 'PLOTAGEM DE RODAS', 1, Decimal('1800.00')), ('Veículos Usados', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 9, Decimal('1800.00')), ('PPF', 'POLIMENTO', 3, Decimal('1797.00')), ('Veículos Usados', 'FILME SOLAR TETO SOLAR', 7, Decimal('1740.00')), ('Veículos Novos', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 8, Decimal('1600.00')), ('ESTÉTICA', 'CRISTALIZAÇÃO DE VIDROS', 5, Decimal('1560.00')), ('Oficina', 'PPF-RETROVISORES', 3, Decimal('1500.00')), ('Veículos Usados', 'NANO PROTEÇÃO EVO - 1 PARTE', 7, Decimal('1500.00')), ('Veículos Usados', 'PLOTAGEM DE RODAS', 1, Decimal('1500.00')), ('ESTÉTICA', 'HIGIENIZAÇÃO', 3, Decimal('1497.00')), ('Veículos Novos', 'HIGIENIZAÇÃO', 4, Decimal('1495.00')), ('Venda Direta Interna', 'ESPELHAMENTO DE PINTURA', 8, Decimal('1390.00')), ('Veículos Novos', 'FILME SOLAR 1 PORTA', 22, Decimal('1335.00')), ('ESTÉTICA', 'POLIMENTO DE FAROL', 5, Decimal('1250.00')), ('ESTÉTICA', 'FILME SOLAR', 3, Decimal('1170.00')), ('ESTÉTICA', 'SUPER BRILHO DE PINTURA', 3, Decimal('1137.00')), ('Frotista', 'FILME PS4 PROTECTION', 1, Decimal('1000.00')), ('ESTÉTICA', 'LAVAGEM DE BANCOS', 7, Decimal('980.00')), ('Veículos Usados', 'FILME SOLAR TRASEIRO', 5, Decimal('934.00')), ('Frotista', 'ESPELHAMENTO DE PINTURA', 4, Decimal('880.00')), ('Veículos Usados', 'FILME SOLAR 1 PORTA', 14, Decimal('840.00')), ('Frotista', 'PPF-SOLEIRAS', 2, Decimal('780.00')), ('Veículos Novos', 'PPF - FAROIS DIANTEIROS - PAR', 1, Decimal('770.00')), ('Oficina', 'NANO PROTEÇÃO 9H - 1 PARTE', 3, Decimal('750.00')), ('Veículos Usados', 'NANO PROTEÇÃO 9H - 1 PARTE', 2, Decimal('630.00')), ('Venda Direta Interna', 'FILME SOLAR PARABRISA', 3, Decimal('630.00')), ('Oficina', 'NANO PROTEÇÃO EVO - 1 PARTE', 3, Decimal('600.00')), ('PPF', 'PLOTAGEM - 1 PARTE', 1, Decimal('600.00')), ('Veículos Novos', 'FILME SOLAR TRASEIRO', 3, Decimal('504.00')), ('Frotista', 'PPF-RETROVISORES', 1, Decimal('500.00')), ('PPF', 'LAVAGEM DE BANCOS', 1, Decimal('490.00')), ('Veículos Novos', 'MÃO DE OBRA PELIC.SEG.', 1, Decimal('490.00')), ('ESTÉTICA', 'NANO PROTEÇÃO DO COURO', 1, Decimal('460.00')), ('Veículos Novos', 'VOLANTE EM COURO', 1, Decimal('420.00')), ('ESTÉTICA', 'MAX COMFORT Filme Premium TETO SOLAR', 3, Decimal('405.00')), ('Oficina', 'PLOTAGEM - 1 PARTE', 1, Decimal('400.00')), ('Venda Direta Externa', 'PPF-SOLEIRAS', 1, Decimal('390.00')), ('Veículos Usados', 'POLIMENTO DE FAROL', 5, Decimal('300.00')), ('Frotista', 'POLIMENTO', 1, Decimal('200.00')), ('Oficina', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 1, Decimal('200.00')), ('Frotista', 'FILME SOLAR PARABRISA', 1, Decimal('195.00')), ('Veículos Usados', 'FILME DE SEG PS4 1 PORTA', 1, Decimal('190.00')), ('Oficina', 'POLIMENTO P/ PEÇA', 3, Decimal('180.00')), ('Venda Direta Interna', 'CRISTALIZAÇÃO DE PARA-BRISA', 2, Decimal('150.00')), ('Veículos Usados', 'POLIMENTO P/ PEÇA', 3, Decimal('120.00')), ('Venda Direta Interna', 'LIMPEZA DE LATARIA', 413, Decimal('90.00')), ('Frotista', 'CRISTALIZAÇÃO DE VIDROS', 1, Decimal('0.00')), ('Frotista', 'LIMPEZA DE LATARIA', 136, Decimal('0.00')), ('Venda Direta Externa', 'LIMPEZA DE LATARIA', 19, Decimal('0.00'))]
+2025-01-16 11:42:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 11:59:44 - INFO - package: mysql.connector.plugins
+2025-01-16 11:59:44 - INFO - plugin_name: mysql_native_password
+2025-01-16 11:59:44 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 12:00:59 - INFO - package: mysql.connector.plugins
+2025-01-16 12:00:59 - INFO - plugin_name: mysql_native_password
+2025-01-16 12:00:59 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 12:01:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 12:01:12 - INFO - Executar search_for_query_in_string()
+2025-01-16 12:01:12 - INFO - String que contem a query: Para responder à sua solicitação sobre quais serviços venderam mais por departamento e quanto geraram no ano passado, podemos elaborar a seguinte consulta SQL:
+
+```sql
+SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(os.id) AS quantidade_vendida, 
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos os_serv ON os_servicos.os_id = os.id 
+JOIN 
+    servicos s ON s.id = os_servicos.servico_id 
+JOIN 
+    departamentos d ON d.id = os.departamento_id 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND os_serv.ativo = 1 
+    AND os_serv.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome 
+ORDER BY 
+    total_gerado DESC;
+```
+
+### Explicação da consulta:
+- **Selecionamos** o nome do departamento e do serviço, a quantidade vendida e o total gerado.
+- **Fazemos JOIN** nas tabelas `caixas`, `os_servicos`, `servicos` e `departamentos` para obter as informações necessárias.
+- **Filtramos** para considerar apenas ordens de serviço pagas (onde `caixas.cancelado = 0`), válidas (`os.ativo = 1`, `os.deleted_at IS NULL`, `s.ativo = 1`, `s.deleted_at IS NULL`, `os_serv.ativo = 1`, `os_serv.deleted_at IS NULL`).
+- **Consideramos** apenas serviços vendidos no último ano (`os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)`).
+- **Agrupamos** os resultados por departamento e serviço, e **ordenamos** pelo total gerado em ordem decrescente.
+
+Essa consulta irá fornecer uma visão clara de quais serviços foram mais vendidos por departamento e qual foi o total gerado no ano passado.
+2025-01-16 12:01:12 - INFO - Query extraida da resposta: SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(os.id) AS quantidade_vendida, 
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos os_serv ON os_servicos.os_id = os.id 
+JOIN 
+    servicos s ON s.id = os_servicos.servico_id 
+JOIN 
+    departamentos d ON d.id = os.departamento_id 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND os_serv.ativo = 1 
+    AND os_serv.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome 
+ORDER BY 
+    total_gerado DESC;
+2025-01-16 12:01:12 - INFO - Executar run_mysql_query()
+2025-01-16 12:01:12 - INFO - Query: SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(os.id) AS quantidade_vendida, 
+    SUM(os_serv.valor_venda) AS total_gerado
+FROM 
+    os 
+JOIN 
+    caixas c ON c.os_id = os.id AND c.cancelado = 0
+JOIN 
+    os_servicos os_serv ON os_servicos.os_id = os.id 
+JOIN 
+    servicos s ON s.id = os_servicos.servico_id 
+JOIN 
+    departamentos d ON d.id = os.departamento_id 
+WHERE 
+    os.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND os.ativo = 1 
+    AND os.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND os_serv.ativo = 1 
+    AND os_serv.deleted_at IS NULL 
+GROUP BY 
+    d.nome, s.nome 
+ORDER BY 
+    total_gerado DESC;
+2025-01-16 12:01:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 12:34:00 - INFO - package: mysql.connector.plugins
+2025-01-16 12:34:00 - INFO - plugin_name: mysql_native_password
+2025-01-16 12:34:00 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 12:34:33 - INFO - package: mysql.connector.plugins
+2025-01-16 12:34:33 - INFO - plugin_name: mysql_native_password
+2025-01-16 12:34:33 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-01-16 12:34:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 12:34:48 - INFO - Executar search_for_query_in_string()
+2025-01-16 12:34:48 - INFO - String que contem a query: Para atender sua solicitação sobre quais serviços venderam mais por departamento e quanto geraram no ano passado, aqui está a consulta SQL que você pode usar:
+
+```sql
+SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida, 
+    SUM(oss.valor_venda) AS total_gerado
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS s ON s.id = oss.servico_id
+JOIN 
+    departamentos AS d ON d.id = o.departamento_id
+JOIN 
+    caixas AS c ON c.os_id = o.id AND c.cancelado = 0
+WHERE 
+    o.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND c.ativo = 1 
+    AND c.deleted_at IS NULL
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    d.nome, total_gerado DESC;
+```
+
+### Explicação da Consulta:
+- **Seleção de Campos**: A consulta seleciona o nome do departamento, o nome do serviço, a quantidade de serviços vendidos e o total gerado por esses serviços.
+- **Joins**: Utiliza joins para relacionar as tabelas `os`, `os_servicos`, `servicos`, `departamentos` e `caixas`, garantindo que apenas as ordens de serviço pagas e ativas sejam consideradas.
+- **Condições**: Filtra as ordens de serviço criadas no último ano, além de garantir que os registros estejam ativos e não deletados.
+- **Agrupamento**: Agrupa os resultados pelo nome do departamento e do serviço.
+- **Ordenação**: Ordena os resultados pelo nome do departamento e pelo total gerado em ordem decrescente.
+
+Essa consulta proporcionará uma visão clara dos serviços mais vendidos e do total gerado por cada departamento no último ano.
+2025-01-16 12:34:48 - INFO - Query extraida da resposta: SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida, 
+    SUM(oss.valor_venda) AS total_gerado
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS s ON s.id = oss.servico_id
+JOIN 
+    departamentos AS d ON d.id = o.departamento_id
+JOIN 
+    caixas AS c ON c.os_id = o.id AND c.cancelado = 0
+WHERE 
+    o.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND c.ativo = 1 
+    AND c.deleted_at IS NULL
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    d.nome, total_gerado DESC;
+2025-01-16 12:34:48 - INFO - Executar run_mysql_query()
+2025-01-16 12:34:48 - INFO - Query: SELECT 
+    d.nome AS departamento, 
+    s.nome AS servico, 
+    COUNT(oss.id) AS quantidade_vendida, 
+    SUM(oss.valor_venda) AS total_gerado
+FROM 
+    os AS o
+JOIN 
+    os_servicos AS oss ON oss.os_id = o.id
+JOIN 
+    servicos AS s ON s.id = oss.servico_id
+JOIN 
+    departamentos AS d ON d.id = o.departamento_id
+JOIN 
+    caixas AS c ON c.os_id = o.id AND c.cancelado = 0
+WHERE 
+    o.created_at >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR) 
+    AND o.ativo = 1 
+    AND o.deleted_at IS NULL 
+    AND s.ativo = 1 
+    AND s.deleted_at IS NULL 
+    AND oss.ativo = 1 
+    AND oss.deleted_at IS NULL 
+    AND c.ativo = 1 
+    AND c.deleted_at IS NULL
+GROUP BY 
+    d.nome, s.nome
+ORDER BY 
+    d.nome, total_gerado DESC;
+2025-01-16 12:34:49 - INFO - Resultado da query: [('ESTÉTICA', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 7, Decimal('142000.00')), ('ESTÉTICA', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 12, Decimal('98860.00')), ('ESTÉTICA', 'PINTURA DE RODAS - JOGO COMPLETO', 26, Decimal('85600.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 25, Decimal('75000.00')), ('ESTÉTICA', 'PINTURA DE PINÇAS DE FREIOS', 27, Decimal('67500.00')), ('ESTÉTICA', 'CLEAR COMFORT PARABRISA', 50, Decimal('48770.00')), ('ESTÉTICA', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 51, Decimal('47145.99')), ('ESTÉTICA', 'CHROME DELETE - KIT BLACK', 16, Decimal('40000.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 10, Decimal('40000.00')), ('ESTÉTICA', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 13, Decimal('38700.00')), ('ESTÉTICA', 'MAX COMFORT Filme Premium', 35, Decimal('31880.00')), ('ESTÉTICA', 'PINTURA DE EMBLEMA', 30, Decimal('29900.00')), ('ESTÉTICA', 'FILME DE SEGURANÇA PS4', 27, Decimal('26940.00')), ('ESTÉTICA', 'NANO PROTEÇÃO 9H EVO', 12, Decimal('25300.00')), ('ESTÉTICA', 'PPF-PARALAMAS DIANTEIROS', 10, Decimal('21000.00')), ('ESTÉTICA', 'FILME PS4 PROTECTION', 10, Decimal('18400.00')), ('ESTÉTICA', 'PPF-RETROVISORES', 10, Decimal('15000.00')), ('ESTÉTICA', 'PPF FUMÊ - FAROIS DIANTEIROS', 15, Decimal('13250.00')), ('ESTÉTICA', 'PPF-MAÇANETAS', 36, Decimal('13100.00')), ('ESTÉTICA', 'PPF-PROTEÇÃO DAS PORTAS', 36, Decimal('13100.00')), ('ESTÉTICA', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 10, Decimal('10000.00')), ('ESTÉTICA', 'LAVAGEM DETALHADA - EXTERNA', 24, Decimal('9578.99')), ('ESTÉTICA', 'ESPELHAMENTO DE PINTURA', 14, Decimal('9244.00')), ('ESTÉTICA', 'PPF-SOLEIRAS', 16, Decimal('7900.00')), ('ESTÉTICA', 'NANO PROTEÇÃO EVO', 4, Decimal('6880.00')), ('ESTÉTICA', 'POLIMENTO', 10, Decimal('5990.00')), ('ESTÉTICA', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 26, Decimal('5200.00')), ('ESTÉTICA', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 1, Decimal('5000.00')), ('ESTÉTICA', 'PPF - FAROIS DIANTEIROS - PAR', 6, Decimal('4620.00')), ('ESTÉTICA', 'PPF-PARALAMAS TRASEIROS', 1, Decimal('2500.00')), ('ESTÉTICA', 'HIDRATAÇÃO DO COURO', 5, Decimal('1800.00')), ('ESTÉTICA', 'CRISTALIZAÇÃO DE VIDROS', 5, Decimal('1560.00')), ('ESTÉTICA', 'HIGIENIZAÇÃO', 3, Decimal('1497.00')), ('ESTÉTICA', 'POLIMENTO DE FAROL', 5, Decimal('1250.00')), ('ESTÉTICA', 'FILME SOLAR', 3, Decimal('1170.00')), ('ESTÉTICA', 'SUPER BRILHO DE PINTURA', 3, Decimal('1137.00')), ('ESTÉTICA', 'LAVAGEM DE BANCOS', 7, Decimal('980.00')), ('ESTÉTICA', 'NANO PROTEÇÃO DO COURO', 1, Decimal('460.00')), ('ESTÉTICA', 'MAX COMFORT Filme Premium TETO SOLAR', 3, Decimal('405.00')), ('Frotista', 'FILME SOLAR', 300, Decimal('100106.00')), ('Frotista', 'MAX COMFORT Filme Premium', 71, Decimal('62730.00')), ('Frotista', 'CLEAR COMFORT PARABRISA', 59, Decimal('56780.00')), ('Frotista', 'NANO PROTEÇÃO 9H EVO', 17, Decimal('35800.00')), ('Frotista', 'FILME DE SEGURANÇA PS4', 22, Decimal('25370.00')), ('Frotista', 'HIDRATAÇÃO DO COURO', 25, Decimal('10590.00')), ('Frotista', 'NANO PROTEÇÃO LIGHT', 6, Decimal('5220.00')), ('Frotista', 'PPF-MAÇANETAS', 21, Decimal('4970.00')), ('Frotista', 'PPF-PROTEÇÃO DAS PORTAS', 13, Decimal('3250.00')), ('Frotista', 'IMPERMEABILIZAÇÃO', 7, Decimal('2450.00')), ('Frotista', 'NANO PROTEÇÃO EVO', 2, Decimal('1980.00')), ('Frotista', 'FILME PS4 PROTECTION', 1, Decimal('1000.00')), ('Frotista', 'ESPELHAMENTO DE PINTURA', 4, Decimal('880.00')), ('Frotista', 'PPF-SOLEIRAS', 2, Decimal('780.00')), ('Frotista', 'PPF-RETROVISORES', 1, Decimal('500.00')), ('Frotista', 'POLIMENTO', 1, Decimal('200.00')), ('Frotista', 'FILME SOLAR PARABRISA', 1, Decimal('195.00')), ('Frotista', 'CRISTALIZAÇÃO DE VIDROS', 1, Decimal('0.00')), ('Frotista', 'LIMPEZA DE LATARIA', 136, Decimal('0.00')), ('Oficina', 'NANO PROTEÇÃO EVO', 2177, Decimal('2604563.90')), ('Oficina', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 37, Decimal('724800.00')), ('Oficina', 'CLEAR COMFORT PARABRISA', 680, Decimal('630148.00')), ('Oficina', 'NANO PROTEÇÃO 9H EVO', 264, Decimal('569768.00')), ('Oficina', 'FILME DE SEGURANÇA PS4', 455, Decimal('435740.00')), ('Oficina', 'MAX COMFORT Filme Premium', 412, Decimal('358532.00')), ('Oficina', 'HIDRATAÇÃO DO COURO', 774, Decimal('297683.90')), ('Oficina', 'FILME SOLAR', 690, Decimal('274491.00')), ('Oficina', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 72, Decimal('269800.00')), ('Oficina', 'ESPELHAMENTO DE PINTURA', 504, Decimal('250227.00')), ('Oficina', 'NANO PROTEÇÃO LIGHT', 209, Decimal('181270.00')), ('Oficina', 'NANO PROTEÇÃO DO COURO', 360, Decimal('180575.00')), ('Oficina', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 34, Decimal('96600.00')), ('Oficina', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 20, Decimal('84000.00')), ('Oficina', 'IMPERMEABILIZAÇÃO', 203, Decimal('79249.00')), ('Oficina', 'CRISTALIZAÇÃO DE VIDROS', 578, Decimal('77114.00')), ('Oficina', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 6, Decimal('67400.00')), ('Oficina', 'PPF-PORTAS INTEIRAS TRASEIRAS', 15, Decimal('67000.00')), ('Oficina', 'PPF-PARALAMAS DIANTEIROS', 24, Decimal('61840.00')), ('Oficina', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 15, Decimal('59100.00')), ('Oficina', 'FILME PS4 PROTECTION', 47, Decimal('54530.00')), ('Oficina', 'PPF-PROTEÇÃO DAS PORTAS', 136, Decimal('35320.00')), ('Oficina', 'PPF-TAMPA PORTA MALAS', 10, Decimal('31000.00')), ('Oficina', 'PPF-MAÇANETAS', 126, Decimal('28500.00')), ('Oficina', 'MAX COMFORT Filme Premium PARABRISA', 83, Decimal('27715.00')), ('Oficina', 'HIGIENIZAÇÃO', 42, Decimal('23170.00')), ('Oficina', 'PPF-PARALAMAS TRASEIROS', 10, Decimal('21000.00')), ('Oficina', 'PINTURA DE RODAS - JOGO COMPLETO', 6, Decimal('18000.00')), ('Oficina', 'FILME SOLAR TRASEIRO', 77, Decimal('16596.00')), ('Oficina', 'LAVAGEM DE BANCOS', 1124, Decimal('15445.00')), ('Oficina', 'FILME DE SEG PS4 1 PORTA', 76, Decimal('14520.00')), ('Oficina', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 12, Decimal('12760.00')), ('Oficina', 'CRISTALIZAÇÃO DE PARA-BRISA', 142, Decimal('10768.00')), ('Oficina', 'PPF-SOLEIRAS', 25, Decimal('9540.00')), ('Oficina', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 10, Decimal('8990.00')), ('Oficina', 'POLIMENTO', 26, Decimal('8560.00')), ('Oficina', 'MAX COMFORT Filme Premium TETO SOLAR', 20, Decimal('7675.00')), ('Oficina', 'FILME SOLAR PARABRISA', 36, Decimal('7649.00')), ('Oficina', 'REMOÇÃO DE FILME SOLAR', 121, Decimal('7380.00')), ('Oficina', 'CLEAR COMFORT TETO SOLAR', 13, Decimal('5830.00')), ('Oficina', 'MAX COMFORT Filme Premium 1 PORTA', 32, Decimal('5045.00')), ('Oficina', 'FILME SOLAR 1 PORTA', 63, Decimal('4876.00')), ('Oficina', 'B.C MISTO', 1, Decimal('3800.00')), ('Oficina', 'FILME SOLAR TETO SOLAR', 13, Decimal('3770.00')), ('Oficina', 'LIMPEZA DE LATARIA', 1873, Decimal('3500.09')), ('Oficina', 'PINTURA DE EMBLEMA', 5, Decimal('3250.00')), ('Oficina', 'VOLANTE EM COURO', 8, Decimal('3240.00')), ('Oficina', 'POLIMENTO DE FAROL', 13, Decimal('2740.00')), ('Oficina', 'SUPER BRILHO DE PINTURA', 6, Decimal('2335.00')), ('Oficina', 'PLOTAGEM DE RODAS', 1, Decimal('1800.00')), ('Oficina', 'PPF-RETROVISORES', 3, Decimal('1500.00')), ('Oficina', 'NANO PROTEÇÃO 9H - 1 PARTE', 3, Decimal('750.00')), ('Oficina', 'NANO PROTEÇÃO EVO - 1 PARTE', 3, Decimal('600.00')), ('Oficina', 'PLOTAGEM - 1 PARTE', 1, Decimal('400.00')), ('Oficina', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 1, Decimal('200.00')), ('Oficina', 'POLIMENTO P/ PEÇA', 3, Decimal('180.00')), ('PPF', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 69, Decimal('1405500.00')), ('PPF', 'PLOTAGEM FULL', 10, Decimal('300000.00')), ('PPF', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 10, Decimal('250000.00')), ('PPF', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 12, Decimal('94600.00')), ('PPF', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 22, Decimal('64800.00')), ('PPF', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 22, Decimal('62600.00')), ('PPF', 'PPF- CONSOLE', 28, Decimal('56000.00')), ('PPF', 'PPF-PARALAMAS DIANTEIROS', 23, Decimal('49500.00')), ('PPF', 'PPF-RETROVISORES', 22, Decimal('33000.00')), ('PPF', 'PPF FULL - MOTOCICLETA', 4, Decimal('28000.00')), ('PPF', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 95, Decimal('19000.00')), ('PPF', 'PPF FUMÊ - FAROIS DIANTEIROS', 16, Decimal('16000.00')), ('PPF', 'CLEAR COMFORT PARABRISA', 13, Decimal('13650.00')), ('PPF', 'MAX COMFORT Filme Premium', 13, Decimal('12415.00')), ('PPF', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 10, Decimal('10500.00')), ('PPF', 'PPF-MAÇANETAS', 27, Decimal('9500.00')), ('PPF', 'PPF-PROTEÇÃO DAS PORTAS', 27, Decimal('9500.00')), ('PPF', 'PINTURA DE EMBLEMA', 10, Decimal('6000.00')), ('PPF', 'NANO PROTEÇÃO DO COURO', 10, Decimal('5200.00')), ('PPF', 'MAX COMFORT Filme Premium TETO SOLAR', 10, Decimal('4200.00')), ('PPF', 'MAX COMFORT Filme Premium PARABRISA', 10, Decimal('3050.00')), ('PPF', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 1, Decimal('2900.00')), ('PPF', 'LPF - PPF Líquido', 1, Decimal('2500.00')), ('PPF', 'POLIMENTO', 3, Decimal('1797.00')), ('PPF', 'PLOTAGEM - 1 PARTE', 1, Decimal('600.00')), ('PPF', 'LAVAGEM DE BANCOS', 1, Decimal('490.00')), ('Veículos Novos', 'NANO PROTEÇÃO 9H EVO', 9042, Decimal('19786168.00')), ('Veículos Novos', 'CLEAR COMFORT PARABRISA', 20547, Decimal('19481072.93')), ('Veículos Novos', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 733, Decimal('15432290.00')), ('Veículos Novos', 'FILME DE SEGURANÇA PS4', 13804, Decimal('13412226.68')), ('Veículos Novos', 'MAX COMFORT Filme Premium', 12199, Decimal('10978447.10')), ('Veículos Novos', 'NANO PROTEÇÃO EVO', 8637, Decimal('9856837.00')), ('Veículos Novos', 'FILME SOLAR', 15228, Decimal('6340187.88')), ('Veículos Novos', 'NANO PROTEÇÃO DO COURO', 5507, Decimal('2669391.89')), ('Veículos Novos', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 256, Decimal('2452835.00')), ('Veículos Novos', 'FILME PS4 PROTECTION', 1524, Decimal('2132112.00')), ('Veículos Novos', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 342, Decimal('2127290.00')), ('Veículos Novos', 'PPF-PROTEÇÃO DAS PORTAS', 6678, Decimal('1736028.44')), ('Veículos Novos', 'PPF-MAÇANETAS', 7414, Decimal('1697534.50')), ('Veículos Novos', 'HIDRATAÇÃO DO COURO', 3765, Decimal('1473650.00')), ('Veículos Novos', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 373, Decimal('1107840.00')), ('Veículos Novos', 'CRISTALIZAÇÃO DE VIDROS', 5031, Decimal('1053297.00')), ('Veículos Novos', 'CLEAR COMFORT TETO SOLAR', 1778, Decimal('951098.79')), ('Veículos Novos', 'NANO PROTEÇÃO LIGHT', 916, Decimal('815238.00')), ('Veículos Novos', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 104, Decimal('600600.00')), ('Veículos Novos', 'PPF-SOLEIRAS', 1319, Decimal('514535.00')), ('Veículos Novos', 'IMPERMEABILIZAÇÃO', 1044, Decimal('395890.00')), ('Veículos Novos', 'PPF-PARALAMAS DIANTEIROS', 144, Decimal('372820.00')), ('Veículos Novos', 'PPF-PORTAS INTEIRAS DIANTEIRAS', 55, Decimal('368510.00')), ('Veículos Novos', 'MAX COMFORT Filme Premium TETO SOLAR', 819, Decimal('364166.85')), ('Veículos Novos', 'MAX COMFORT Filme Premium PARABRISA', 766, Decimal('362447.00')), ('Veículos Novos', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 279, Decimal('266247.95')), ('Veículos Novos', 'ESPELHAMENTO DE PINTURA', 1155, Decimal('265583.00')), ('Veículos Novos', 'PPF-PORTAS INTEIRAS TRASEIRAS', 33, Decimal('244365.00')), ('Veículos Novos', 'PLOTAGEM DE TETO', 72, Decimal('159220.00')), ('Veículos Novos', 'PPF-RETROVISORES', 207, Decimal('153300.00')), ('Veículos Novos', 'PPF-TETO', 21, Decimal('129570.00')), ('Veículos Novos', 'PLOTAGEM DE RODAS', 70, Decimal('113150.00')), ('Veículos Novos', 'CHROME DELETE - KIT BLACK', 47, Decimal('100400.00')), ('Veículos Novos', 'PPF-PARALAMAS TRASEIROS', 33, Decimal('83680.00')), ('Veículos Novos', 'PPF-TAMPA PORTA MALAS', 22, Decimal('59440.00')), ('Veículos Novos', 'PPF- CONSOLE', 29, Decimal('55300.00')), ('Veículos Novos', 'FILME SOLAR PARABRISA', 214, Decimal('51203.50')), ('Veículos Novos', 'CRISTALIZAÇÃO DE PARA-BRISA', 450, Decimal('42962.00')), ('Veículos Novos', 'FILME SOLAR TETO SOLAR', 127, Decimal('37330.00')), ('Veículos Novos', 'PINTURA DE EMBLEMA', 31, Decimal('33400.00')), ('Veículos Novos', 'PPF-SOLEIRA PORTA MALAS', 51, Decimal('30120.00')), ('Veículos Novos', 'PINTURA DE RODAS - JOGO COMPLETO', 10, Decimal('30000.00')), ('Veículos Novos', 'PLOTAGEM FULL', 1, Decimal('30000.00')), ('Veículos Novos', 'POLIMENTO', 129, Decimal('29855.10')), ('Veículos Novos', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 1, Decimal('25000.00')), ('Veículos Novos', 'LIMPEZA DE LATARIA', 11585, Decimal('18070.19')), ('Veículos Novos', 'LAVAGEM DE BANCOS', 73, Decimal('12020.00')), ('Veículos Novos', 'PLOTAGEM - 1 PARTE', 4, Decimal('12000.00')), ('Veículos Novos', 'ADIANTAMENTO DE CRÉDITO', 19, Decimal('8815.00')), ('Veículos Novos', 'B.C 100% COURO', 2, Decimal('8200.00')), ('Veículos Novos', 'REMOÇÃO DE FILME SOLAR', 115, Decimal('7570.00')), ('Veículos Novos', 'POLIMENTO P/ PEÇA', 63, Decimal('2200.00')), ('Veículos Novos', 'PINTURA DE PINÇAS DE FREIOS', 1, Decimal('2100.00')), ('Veículos Novos', 'HIGIENIZAÇÃO', 4, Decimal('1495.00')), ('Veículos Novos', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 7, Decimal('1400.00')), ('Veículos Novos', 'FILME SOLAR 1 PORTA', 22, Decimal('1335.00')), ('Veículos Novos', 'PPF - FAROIS DIANTEIROS - PAR', 1, Decimal('770.00')), ('Veículos Novos', 'FILME SOLAR TRASEIRO', 3, Decimal('504.00')), ('Veículos Novos', 'MÃO DE OBRA PELIC.SEG.', 1, Decimal('490.00')), ('Veículos Novos', 'VOLANTE EM COURO', 1, Decimal('420.00')), ('Veículos Usados', 'NANO PROTEÇÃO EVO', 2255, Decimal('2436814.00')), ('Veículos Usados', 'NANO PROTEÇÃO 9H EVO', 630, Decimal('1317154.00')), ('Veículos Usados', 'FILME DE SEGURANÇA PS4', 965, Decimal('892231.00')), ('Veículos Usados', 'CLEAR COMFORT PARABRISA', 933, Decimal('861461.90')), ('Veículos Usados', 'MAX COMFORT Filme Premium', 686, Decimal('598974.00')), ('Veículos Usados', 'FILME SOLAR', 1358, Decimal('546243.50')), ('Veículos Usados', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 63, Decimal('511400.00')), ('Veículos Usados', 'HIDRATAÇÃO DO COURO', 1129, Decimal('440684.00')), ('Veículos Usados', 'PPF REGENERATIVA - FULL - CARRO INTEIRO', 18, Decimal('359800.00')), ('Veículos Usados', 'B.C MISTO', 94, Decimal('287040.00')), ('Veículos Usados', 'PPF REGENERATIVO FOSCO - FULL - CARRO INTEIRO', 10, Decimal('263000.00')), ('Veículos Usados', 'ESPELHAMENTO DE PINTURA', 570, Decimal('245555.90')), ('Veículos Usados', 'NANO PROTEÇÃO DO COURO', 378, Decimal('179575.00')), ('Veículos Usados', 'PPF-PROTEÇÃO DAS PORTAS', 502, Decimal('135790.00')), ('Veículos Usados', 'PPF-MAÇANETAS', 555, Decimal('134245.00')), ('Veículos Usados', 'CRISTALIZAÇÃO DE VIDROS', 773, Decimal('118730.00')), ('Veículos Usados', 'IMPERMEABILIZAÇÃO', 300, Decimal('116204.00')), ('Veículos Usados', 'NANO PROTEÇÃO LIGHT', 120, Decimal('103340.00')), ('Veículos Usados', 'FILME PS4 PROTECTION', 74, Decimal('95710.00')), ('Veículos Usados', 'PPF REGENERATIVA  - PARACHOQUE TRASEIRO', 25, Decimal('74300.00')), ('Veículos Usados', 'PPF REGENERATIVA  - CAPÔ INTEIRO', 20, Decimal('70300.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium PARABRISA', 129, Decimal('59140.00')), ('Veículos Usados', 'PPF REGENERATIVA  - PARACHOQUE DIANTEIRO', 14, Decimal('55400.00')), ('Veículos Usados', 'PLOTAGEM DE TETO', 12, Decimal('30000.00')), ('Veículos Usados', 'LAVAGEM DE BANCOS', 1536, Decimal('28620.00')), ('Veículos Usados', 'HIGIENIZAÇÃO', 43, Decimal('22800.00')), ('Veículos Usados', 'CLEAR COMFORT TETO SOLAR', 46, Decimal('22390.00')), ('Veículos Usados', 'CLEAR COMFORT - LATERAIS E TRASEIRA', 17, Decimal('16520.00')), ('Veículos Usados', 'PPF-RETROVISORES', 11, Decimal('16500.00')), ('Veículos Usados', 'PPF-PARALAMAS DIANTEIROS', 8, Decimal('15400.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium TETO SOLAR', 32, Decimal('13310.00')), ('Veículos Usados', 'FILME SOLAR PARABRISA', 61, Decimal('11647.00')), ('Veículos Usados', 'PPF- CONSOLE', 11, Decimal('11300.00')), ('Veículos Usados', 'PPF-SOLEIRAS', 25, Decimal('9695.00')), ('Veículos Usados', 'REMOÇÃO DE FILME SOLAR', 145, Decimal('9420.00')), ('Veículos Usados', 'POLIMENTO', 32, Decimal('9327.00')), ('Veículos Usados', 'B.C 100% COURO', 2, Decimal('8000.00')), ('Veículos Usados', 'VOLANTE EM COURO', 18, Decimal('7810.00')), ('Veículos Usados', 'LAVAGEM DETALHADA PREMIUM - EXTERNA/ INTERNA/ MOTOR', 8, Decimal('6298.00')), ('Veículos Usados', 'CRISTALIZAÇÃO DE PARA-BRISA', 41, Decimal('5060.00')), ('Veículos Usados', 'MAX COMFORT Filme Premium 1 PORTA', 18, Decimal('4800.00')), ('Veículos Usados', 'LIMPEZA DE LATARIA', 1429, Decimal('3460.00')), ('Veículos Usados', 'PLOTAGEM - 1 PARTE', 1, Decimal('3000.00')), ('Veículos Usados', 'ADIANTAMENTO DE CRÉDITO', 5, Decimal('2870.00')), ('Veículos Usados', 'PPF-PARALAMAS TRASEIROS', 1, Decimal('2100.00')), ('Veículos Usados', 'LAVAGEM DE MANUTENÇÃO - PPF OU NANO', 9, Decimal('1800.00')), ('Veículos Usados', 'FILME SOLAR TETO SOLAR', 7, Decimal('1740.00')), ('Veículos Usados', 'NANO PROTEÇÃO EVO - 1 PARTE', 7, Decimal('1500.00')), ('Veículos Usados', 'PLOTAGEM DE RODAS', 1, Decimal('1500.00')), ('Veículos Usados', 'FILME SOLAR TRASEIRO', 5, Decimal('934.00')), ('Veículos Usados', 'FILME SOLAR 1 PORTA', 14, Decimal('840.00')), ('Veículos Usados', 'NANO PROTEÇÃO 9H - 1 PARTE', 2, Decimal('630.00')), ('Veículos Usados', 'POLIMENTO DE FAROL', 5, Decimal('300.00')), ('Veículos Usados', 'FILME DE SEG PS4 1 PORTA', 1, Decimal('190.00')), ('Veículos Usados', 'POLIMENTO P/ PEÇA', 3, Decimal('120.00')), ('Venda Direta Externa', 'CLEAR COMFORT PARABRISA', 81, Decimal('76680.00')), ('Venda Direta Externa', 'MAX COMFORT Filme Premium', 51, Decimal('46770.00')), ('Venda Direta Externa', 'FILME SOLAR', 137, Decimal('41324.00')), ('Venda Direta Externa', 'FILME DE SEGURANÇA PS4', 18, Decimal('18800.00')), ('Venda Direta Externa', 'NANO PROTEÇÃO EVO', 16, Decimal('15880.00')), ('Venda Direta Externa', 'ESPELHAMENTO DE PINTURA', 83, Decimal('15520.00')), ('Venda Direta Externa', 'HIDRATAÇÃO DO COURO', 26, Decimal('9500.00')), ('Venda Direta Externa', 'FILME PS4 PROTECTION', 6, Decimal('9030.00')), ('Venda Direta Externa', 'PPF-MAÇANETAS', 30, Decimal('6570.00')), ('Venda Direta Externa', 'PPF-PROTEÇÃO DAS PORTAS', 21, Decimal('5250.00')), ('Venda Direta Externa', 'IMPERMEABILIZAÇÃO', 7, Decimal('3100.00')), ('Venda Direta Externa', 'NANO PROTEÇÃO LIGHT', 3, Decimal('2610.00')), ('Venda Direta Externa', 'PPF-SOLEIRAS', 1, Decimal('390.00')), ('Venda Direta Externa', 'LIMPEZA DE LATARIA', 19, Decimal('0.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO EVO', 236, Decimal('232220.00')), ('Venda Direta Interna', 'FILME SOLAR', 551, Decimal('202779.00')), ('Venda Direta Interna', 'FILME DE SEGURANÇA PS4', 198, Decimal('198320.00')), ('Venda Direta Interna', 'PPF REGENERATIVA -  FRENTE TOTAL - CAPO, PARA CHOQUE DIANTEIRO, PARALAMAS E RETROVISORES', 20, Decimal('180000.00')), ('Venda Direta Interna', 'MAX COMFORT Filme Premium', 206, Decimal('177340.00')), ('Venda Direta Interna', 'CLEAR COMFORT PARABRISA', 179, Decimal('167270.00')), ('Venda Direta Interna', 'HIDRATAÇÃO DO COURO', 189, Decimal('66250.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO LIGHT', 67, Decimal('58710.00')), ('Venda Direta Interna', 'PPF-SOLEIRAS', 73, Decimal('27690.00')), ('Venda Direta Interna', 'PPF-PROTEÇÃO DAS PORTAS', 110, Decimal('27050.00')), ('Venda Direta Interna', 'IMPERMEABILIZAÇÃO', 49, Decimal('17900.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO 9H EVO', 8, Decimal('17800.00')), ('Venda Direta Interna', 'CRISTALIZAÇÃO DE VIDROS', 74, Decimal('15920.00')), ('Venda Direta Interna', 'PPF-MAÇANETAS', 63, Decimal('13600.00')), ('Venda Direta Interna', 'MAX COMFORT Filme Premium PARABRISA', 40, Decimal('11930.00')), ('Venda Direta Interna', 'FILME PS4 PROTECTION', 6, Decimal('9050.00')), ('Venda Direta Interna', 'NANO PROTEÇÃO DO COURO', 12, Decimal('5740.00')), ('Venda Direta Interna', 'CLEAR COMFORT TETO SOLAR', 6, Decimal('2990.00')), ('Venda Direta Interna', 'ESPELHAMENTO DE PINTURA', 8, Decimal('1390.00')), ('Venda Direta Interna', 'FILME SOLAR PARABRISA', 3, Decimal('630.00')), ('Venda Direta Interna', 'CRISTALIZAÇÃO DE PARA-BRISA', 2, Decimal('150.00')), ('Venda Direta Interna', 'LIMPEZA DE LATARIA', 413, Decimal('90.00'))]
+2025-01-16 12:34:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

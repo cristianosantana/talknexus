@@ -6,6 +6,7 @@ from tools.global_variables import GlobalVariables
 from tools.smart_controller import SmartController
 import streamlit as st
 
+
 class AiChatbot:
     """
     Responsavel por mediar a conversa entre usuario e modelo llm
@@ -38,6 +39,8 @@ class AiChatbot:
             st.session_state.messages = []
         if 'conversation' not in st.session_state:
             st.session_state.conversation = None
+        if 'conversation_analyst' not in st.session_state:
+            st.session_state.conversation_analyst = None
 
         # self.global_variables.model_name = self.model_selection()
         self.global_variables.model_name = "gpt-4o-mini"
@@ -58,16 +61,20 @@ class AiChatbot:
 
             # Generate and display assistant response
             with st.chat_message("assistant"):
-                self.generate_display_assistant_response(st.session_state.messages, prompt, True)
+                self.generate_display_assistant_response(
+                    st.session_state.conversation, st.session_state.messages, prompt, True)
                 if self.global_variables.response != None:
-                    st.session_state.messages = []
-                    st.session_state.conversation = None
+                    # st.session_state.messages = []
+                    # st.session_state.conversation = None
                     self.global_variables.model_name = "gpt-4o-mini"
-                    self.initialize_conversation(self.global_variables.model_name, self.global_variables.prompt_format_response)
-                    prompt_response_llm = f"Faça uma tabela com os dados a seguir: {self.global_variables.response}"
-                    self.generate_display_assistant_response(st.session_state.messages, prompt_response_llm, False)
+                    self.initialize_conversation_analyst(
+                        self.global_variables.model_name, self.global_variables.prompt_format_response)
+                    prompt_response_llm = f"Faça uma tabela com os dados a seguir: {
+                        self.global_variables.response}"
+                    self.generate_display_assistant_response(
+                        st.session_state.conversation_analyst, st.session_state.messages, prompt_response_llm, False)
 
-    def generate_display_assistant_response(self, messages, message, run_smart_controller=False):
+    def generate_display_assistant_response(self, conversation, messages, message, run_smart_controller=False):
         """ Generate and display assistant response """
         # clear to response_placeholder
         response_placeholder = st.empty()
@@ -79,17 +86,17 @@ class AiChatbot:
             stream_handler = StreamHandler(response_placeholder)
 
             # Temporarily add stream handler to the conversation
-            st.session_state.conversation.llm.callbacks = [stream_handler]
+            conversation.llm.callbacks = [stream_handler]
 
             # Generate response
-            # response = st.session_state.conversation.run(history=messages, input=message)
-            response = st.session_state.conversation.run(message)
+            # response = conversation.run(history=messages, input=message)
+            response = conversation.run(message)
 
             if run_smart_controller:
                 self.smart_controller.handler(self.smart_controller, response)
 
             # Clear the stream handler after generation
-            st.session_state.conversation.llm.callbacks = []
+            conversation.llm.callbacks = []
 
             self.add_message_history(messages, "assistant", response)
 
@@ -109,6 +116,13 @@ class AiChatbot:
         if st.session_state.conversation is None:
             conversational_chain_factory = ConversationalChainFactory
             st.session_state.conversation = conversational_chain_factory.get_conversation_chain_openai(
+                model_name, prompt)
+
+    def initialize_conversation_analyst(self, model_name, prompt):
+        """ Initialize conversation if needed """
+        if st.session_state.conversation_analyst is None:
+            conversational_chain_factory = ConversationalChainFactory
+            st.session_state.conversation_analyst = conversational_chain_factory.get_conversation_chain_openai(
                 model_name, prompt)
 
     def model_selection(self):
