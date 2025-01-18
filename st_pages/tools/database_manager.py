@@ -32,11 +32,11 @@ class DatabaseManager:
         """
         self.logger.write_logger("info", f"Query: {query}")
         try:
-            cursor = self.connection.cursor()
+            cursor = self.connection.cursor(dictionary=True)
             cursor.execute(query)
             result = cursor.fetchall()
 
-            self.logger.write_logger("info", f"Resultado da query: {str(result)}")
+            self.logger.write_logger("info", "Query executada com sucesso!")
             return str(result)
         except mysql.connector.Error as err:
             return f"Erro ao executar a query: {err}"
