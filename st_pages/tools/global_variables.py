@@ -10,7 +10,7 @@ class GlobalVariables:
     prompt_original = upload_file_yaml("./prompts/prompt_original.yaml", "PromptOriginal")
     prompt_format_response = upload_file_yaml("./prompts/format_response_v1.yaml", "FormatResponse")
     prompt_select_create_update_delete = upload_file_yaml("./prompts/select_create_update_delete.yaml", "SelectCreateUpdateDelete")
-    prompt_query_builder = upload_file_yaml("./prompts/query_builder.yaml", "QueryBuilder")
+    prompt_query_builder = upload_file_yaml("./prompts/query_builder_v1.yaml", "QueryBuilder")
     user_token = ""
     response = None
     object_found = None

@@ -60,7 +60,7 @@ class AiChatbot:
                 st.markdown(prompt)
 
             # Generate and display assistant response
-            with st.chat_message("assistant"):
+            with st.chat_message("system"):
                 self.generate_display_assistant_response(
                     st.session_state.conversation, st.session_state.messages, prompt, True)
                 if self.global_variables.response != None:
@@ -98,12 +98,12 @@ class AiChatbot:
             # Clear the stream handler after generation
             conversation.llm.callbacks = []
 
-            self.add_message_history(messages, "assistant", response)
+            self.add_message_history(messages, "system", response)
 
         except Exception as e:
             error_message = f"Error generating response: {str(e)}"
             response_placeholder.error(error_message)
-            self.add_message_history(messages, "assistant", error_message)
+            self.add_message_history(messages, "system", error_message)
 
     def add_message_history(self, messages, user, menssage):
         """

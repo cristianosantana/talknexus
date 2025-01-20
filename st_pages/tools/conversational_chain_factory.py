@@ -49,7 +49,7 @@ class ConversationalChainFactory:
     def get_conversation_chain_openai(model_name: str, prompt: str) -> ConversationChain:
         # Inicializando o modelo de chat OpenAI
         llm = ChatOpenAI(
-            temperature=0.6,
+            temperature=1,
             model=model_name,
             api_key=openai_api_key,
             streaming=True
