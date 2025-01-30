@@ -1,0 +1,37 @@
+--
+-- Table structure for table `estoque_saida_produtos`
+--
+TABLE `estoque_saida_produtos` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `cancelado` tinyint(1) NOT NULL DEFAULT '0',
+  `data_cancelamento` datetime DEFAULT NULL,
+  `motivo_cancelamento` enum('incoerencia','em_falta','requisicao_cancelada','estoque_programado_cancelado','devolucao','recuperacao') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `entregue` tinyint(1) NOT NULL DEFAULT '0',
+  `data_entrega` datetime DEFAULT NULL,
+  `os_servico_entrega_id` int unsigned DEFAULT NULL,
+  `funcionario_entrega_id` int unsigned DEFAULT NULL,
+  `recebido` tinyint(1) NOT NULL DEFAULT '0',
+  `data_recebimento` datetime DEFAULT NULL,
+  `funcionario_recebimento_id` int unsigned DEFAULT NULL,
+  `devolvido` tinyint(1) NOT NULL DEFAULT '0',
+  `data_devolucao` datetime DEFAULT NULL,
+  `produto_id` int unsigned NOT NULL,
+  `estoque_saida_id` bigint unsigned NOT NULL,
+  `estoque_entrada_produto_id` int unsigned DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `esppi` (`produto_id`),
+  KEY `espesi` (`estoque_saida_id`),
+  KEY `espeepi` (`estoque_entrada_produto_id`),
+  KEY `estoque_saida_produtos_os_servico_entrega_id_foreign` (`os_servico_entrega_id`),
+  KEY `estoque_saida_produtos_funcionario_entrega_id_foreign` (`funcionario_entrega_id`),
+  KEY `estoque_saida_produtos_funcionario_recebimento_id_foreign` (`funcionario_recebimento_id`),
+  CONSTRAINT `espeepi` FOREIGN KEY (`estoque_entrada_produto_id`) REFERENCES `estoque_entrada_produtos` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `espesi` FOREIGN KEY (`estoque_saida_id`) REFERENCES `estoque_saidas` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `esppi` FOREIGN KEY (`produto_id`) REFERENCES `produtos` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `estoque_saida_produtos_funcionario_entrega_id_foreign` FOREIGN KEY (`funcionario_entrega_id`) REFERENCES `funcionarios` (`id`),
+  CONSTRAINT `estoque_saida_produtos_funcionario_recebimento_id_foreign` FOREIGN KEY (`funcionario_recebimento_id`) REFERENCES `funcionarios` (`id`),
+  CONSTRAINT `estoque_saida_produtos_os_servico_entrega_id_foreign` FOREIGN KEY (`os_servico_entrega_id`) REFERENCES `os_servicos` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=650593 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -38,7 +38,7 @@ QueryBuilder: >
                     * Utilize sempre nomes de tabelas e colunas em letras minúsculas e sem acentos.
                     * Substitua os termos 'ordens_servicos' ou 'ordem_servicos' por 'os'.
                     * O termo "filme" refere-se a película de proteção solar.
-                    * O termo "PS"* refere-se a película de proteção solar de segurança contra vandalismo e intrusão.
+                    * O termo "PS" refere-se a película de proteção solar de segurança contra vandalismo e intrusão.
                 7. Interpretação de Solicitações:
                     * Se a solicitação for ambígua, peça mais informações ao usuário.
                     * Considere como válida apenas a informação fornecida diretamente na solicitação do usuário, sem inferências adicionais.

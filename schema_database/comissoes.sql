@@ -1,0 +1,36 @@
+--
+-- Table structure for table `comissoes`
+--
+TABLE `comissoes` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `valor_dentro` decimal(8,2) NOT NULL,
+  `valor_fora` decimal(8,2) NOT NULL,
+  `valor_combo` decimal(8,2) unsigned DEFAULT NULL,
+  `comissao_couro` tinyint(1) NOT NULL DEFAULT '0',
+  `paga` tinyint(1) NOT NULL DEFAULT '0',
+  `data_pagamento` date DEFAULT NULL,
+  `estorno` tinyint(1) NOT NULL DEFAULT '0',
+  `observacao_estorno` text CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci,
+  `comissionado_id` int NOT NULL,
+  `os_servico_id` int unsigned NOT NULL,
+  `comissao_tipo_id` int unsigned NOT NULL,
+  `comissao_pagamento_id` int unsigned DEFAULT NULL,
+  `comissao_periodo_id` int unsigned DEFAULT NULL,
+  `ativo` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `comissao_estorno_id` int unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `comissoes_os_servico_id_foreign` (`os_servico_id`),
+  KEY `comissoes_comissao_tipo_id_foreign` (`comissao_tipo_id`),
+  KEY `comissoes_comissao_pagamento_id_foreign` (`comissao_pagamento_id`),
+  KEY `comissoes_comissao_periodo_id_foreign` (`comissao_periodo_id`),
+  KEY `comissoes_comissao_estorno_id_foreign` (`comissao_estorno_id`),
+  KEY `comissoes_created_at_index` (`created_at`),
+  CONSTRAINT `comissoes_comissao_estorno_id_foreign` FOREIGN KEY (`comissao_estorno_id`) REFERENCES `comissoes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `comissoes_comissao_pagamento_id_foreign` FOREIGN KEY (`comissao_pagamento_id`) REFERENCES `comissao_pagamentos` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `comissoes_comissao_periodo_id_foreign` FOREIGN KEY (`comissao_periodo_id`) REFERENCES `comissao_periodos` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `comissoes_comissao_tipo_id_foreign` FOREIGN KEY (`comissao_tipo_id`) REFERENCES `comissao_tipos` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT,
+  CONSTRAINT `comissoes_os_servico_id_foreign` FOREIGN KEY (`os_servico_id`) REFERENCES `os_servicos` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT
+) ENGINE=InnoDB AUTO_INCREMENT=976258 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
