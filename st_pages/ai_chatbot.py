@@ -5,7 +5,8 @@ from tools.stream_handler import StreamHandler
 from tools.global_variables import GlobalVariables
 from tools.smart_controller import SmartController
 import streamlit as st
-
+from tools.search_for_tables_mentioned_in_the_question import SearchForTablesMentionedInTheQuestion
+import yaml
 
 class AiChatbot:
     """
@@ -16,6 +17,7 @@ class AiChatbot:
     ollama_api = OllamaAPI
     global_variables = GlobalVariables
     smart_controller = SmartController
+    search_tables = SearchForTablesMentionedInTheQuestion()
 
     def __init__(self):
         self.run()
